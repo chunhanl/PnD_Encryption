@@ -1,0 +1,1 @@
+"../src_speech_crypto/codec.c" "../src_speech_crypto/decode.c" "../src_speech_crypto/encode.c" "../src_speech_crypto/main.c" "../src_speech_crypto/wavpcm_io.c" 

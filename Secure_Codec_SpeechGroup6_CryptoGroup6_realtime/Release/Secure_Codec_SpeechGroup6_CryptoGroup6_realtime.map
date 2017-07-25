@@ -1,0 +1,4235 @@
+******************************************************************************
+               TMS320C6x Linker PC v7.3.1                      
+******************************************************************************
+>> Linked Wed May 11 15:50:22 2016
+
+OUTPUT FILE NAME:   <Secure_Codec_SpeechGroup6_CryptoGroup6_realtime.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: c005e980
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  IRAM                  11800000   00040000  0003a121  00005edf  RWIX
+  CACHE_L1P             11e00000   00008000  00000000  00008000  RWIX
+  CACHE_L1D             11f00000   00008000  00000000  00008000  RWIX
+  L3_CBA_RAM            80000000   00020000  00000000  00020000  RWIX
+  DDR                   c0000000   08000000  0005ed80  07fa1280  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vers      0    00000000    00000040     COPY SECTION
+                  00000000    00000040     audioSamplecfg.obj (.vers)
+
+.prd       0    11800000    00000000     UNINITIALIZED
+
+.far       0    11800000    000142b4     UNINITIALIZED
+                  11800000    00007e38     process_audio.obj (.far)
+                  11807e38    00004900     edma3_drv_bios_c674.lib : edma3_drv_init.obj (.far)
+                  1180c738    00002dc8     edma3_rm_bios.lib : edma3resmgr.obj (.far)
+                  1180f500    00001280                       : edma3_rm_gbl_data.obj (.far)
+                  11810780    00000ae8                       : edma3_c6748_cfg.obj (.far)
+                  11811268    000007a8     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_c6748_cfg.obj (.far)
+                  11811a10    00000670     ti.pspiom.i2c.a674 : I2c.obj (.far)
+                  11812080    00000570     ti.pspiom.mcasp.a674 : Mcasp.obj (.far)
+                  118125f0    00000500     Encrypt.obj (.far)
+                  11812af0    00000500     mont.obj (.far)
+                  11812ff0    00000324     rts6740.lib : defs.obj (.far)
+                  11813314    00000004     bios.a674 : que_crea.o674 (.far)
+                  11813318    000001f8     audioSample_io.obj (.far)
+                  11813510    00000188     rts6740.lib : atexit.obj (.far)
+                  11813698    0000016c     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.far)
+                  11813804    00000004     bios6748.a674 : bcache_wait.o674 (.far)
+                  11813808    00000148     pscl_cfg_evm6748.a674 : pscl_config_evm6748.o674 (.far)
+                  11813950    0000011c     rts6740.lib : lowlev.obj (.far)
+                  11813a6c    000000fc     audioSample_main.obj (.far)
+                  11813b68    000000d8     bios.a674 : knl.o674 (.far)
+                  11813c40    000000d0     rts6740.lib : trgdrv.obj (.far)
+                  11813d10    000000bc     DSP_ADPCM.obj (.far)
+                  11813dcc    00000004     bios6748.a674 : clk_data.o674 (.far)
+                  11813dd0    000000b0     pwrm.a674 : pwrm.o674 (.far)
+                  11813e80    000000aa     DSP_ADPCM_SBC.obj (.far)
+                  11813f2a    00000004     pwrm.a674 : pwrm_ini.o674 (.far)
+                  11813f2e    00000002     --HOLE--
+                  11813f30    000000a4     ti.pspiom.platforms.codec.a674 : Aic31.obj (.far)
+                  11813fd4    00000004     rts6740.lib : fopen.obj (.far)
+                  11813fd8    00000080     transmit.obj (.far)
+                  11814058    0000005c     bios.a674 : tsk.o674 (.far)
+                  118140b4    00000004     rts6740.lib : sinit.obj (.far)
+                  118140b8    00000054     bios.a674 : obj_init.o674 (.far)
+                  1181410c    00000050               : tsk_stup.o674 (.far)
+                  1181415c    00000004     --HOLE--
+                  11814160    00000030     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.far)
+                  11814190    0000002c     ti.pspiom.platforms.evm6748.evmInit.a674 : audio_evmInit.obj (.far)
+                  118141bc    00000004     --HOLE--
+                  118141c0    00000020     bios.a674 : sys.o674 (.far)
+                  118141e0    0000001c     drivers.a674 : dio_tskDynamic.o674 (.far)
+                  118141fc    0000001c     sioboth.a674 : sio.o674 (.far)
+                  11814218    00000018     pscl.a674 : pscl.o674 (.far)
+                  11814230    00000018     rtdx64xplus.lib : rtdx_mon.o64P (.far)
+                  11814248    00000014     bios.a674 : swi_seta.o674 (.far)
+                  1181425c    00000010               : exc.o674 (.far)
+                  1181426c    00000010               : knl_tick.o674 (.far)
+                  1181427c    0000000c               : utl_putc.o674 (.far)
+                  11814288    0000000c     rts6740.lib : exit.obj (.far)
+                  11814294    00000008     bios.a674 : ecm_dispatch.o674 (.far)
+                  1181429c    00000008               : sem_crea.o674 (.far)
+                  118142a4    00000008     rts6740.lib : _lock.obj (.far)
+                  118142ac    00000004     --HOLE--
+                  118142b0    00000004     bios.a674 : dev_init.o674 (.far)
+
+.data      0    11800000    00000000     UNINITIALIZED
+
+.args      0    118142b4    00000004     
+                  118142b4    00000004     --HOLE-- [fill = 0]
+
+.stack     0    118142b8    00010000     UNINITIALIZED
+                  118142b8    00010000     --HOLE--
+
+.const     0    118242b8    0000347d     
+                  118242b8    00000400     aes.obj (.const:_Td0)
+                  118246b8    00000400     aes.obj (.const:_Td1)
+                  11824ab8    00000400     aes.obj (.const:_Td2)
+                  11824eb8    00000400     aes.obj (.const:_Td3)
+                  118252b8    00000400     aes.obj (.const:_Td4)
+                  118256b8    00000400     aes.obj (.const:_Te0)
+                  11825ab8    00000400     aes.obj (.const:_Te1)
+                  11825eb8    00000400     aes.obj (.const:_Te2)
+                  118262b8    00000400     aes.obj (.const:_Te3)
+                  118266b8    00000400     aes.obj (.const:_Te4)
+                  11826ab8    00000193     bios.a674 : exc.o674 (.const:.string)
+                  11826c4b    0000011d     Encrypt.obj (.const)
+                  11826d68    00000110     ti.pspiom.mcasp.a674 : Mcasp.obj (.const)
+                  11826e78    00000106     audioSample_io.obj (.const)
+                  11826f7e    00000002     rts6740.lib : fputs.obj (.const)
+                  11826f80    00000101                 : ctype.obj (.const:__ctypes_)
+                  11827081    00000004     bios.a674 : mem_allo.o674 (.const:.string)
+                  11827085    00000003     rts6740.lib : assert.obj (.const)
+                  11827088    00000100     sha2.obj (.const:_K256)
+                  11827188    000000ab     edma3_rm_bios.lib : edma3resmgr.obj (.const:.string)
+                  11827233    0000007d     edma3_drv_bios_c674.lib : edma3_drv_init.obj (.const:.string)
+                  118272b0    00000073     sha2.obj (.const)
+                  11827323    00000001     --HOLE-- [fill = 0]
+                  11827324    00000060     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.const)
+                  11827384    00000054     ti.pspiom.i2c.a674 : I2c.obj (.const)
+                  118273d8    0000004e     bios.a674 : tsk_stup.o674 (.const:.string)
+                  11827426    00000048     audioSample_main.obj (.const)
+                  1182746e    00000047     audioSamplecfg.obj (.const)
+                  118274b5    00000043     process_audio.obj (.const)
+                  118274f8    00000040     ti.pspiom.i2c.a674 : I2c_edma.obj (.const)
+                  11827538    0000003b     transmit.obj (.const)
+                  11827573    00000004     bios.a674 : mem_free.o674 (.const:.string)
+                  11827577    00000001     --HOLE-- [fill = 0]
+                  11827578    00000028     aes.obj (.const:_rcon)
+                  118275a0    00000028     ti.pspiom.platforms.codec.a674 : Aic31.obj (.const)
+                  118275c8    00000023     bios.a674 : utl_doab.o674 (.const:.string)
+                  118275eb    00000023     rts6740.lib : _printfi.obj (.const)
+                  1182760e    00000022     bios.a674 : utl_doer.o674 (.const:.string)
+                  11827630    00000020               : dev_init.o674 (.const:.string)
+                  11827650    00000020     sha2.obj (.const:_sha256_initial_hash_value)
+                  11827670    00000020     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.const)
+                  11827690    00000020     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.const)
+                  118276b0    0000001c     ti.pspiom.i2c.a674 : I2c.obj (.const:.string)
+                  118276cc    00000004     sioboth.a674 : sio_crea.o674 (.const:.string)
+                  118276d0    00000013     digest-info.obj (.const:_sha256_prefix)
+                  118276e3    00000001     --HOLE-- [fill = 0]
+                  118276e4    00000001     bios.a674 : sem_crea.o674 (.const:.string)
+                  118276e5    00000003     --HOLE-- [fill = 0]
+                  118276e8    00000011               : sys_prin.o674 (.const:_digtohex)
+                  118276f9    00000010     mont.obj (.const)
+                  11827709    0000000f     bios.a674 : sys_prin.o674 (.const:.string)
+                  11827718    00000009     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.const:.string)
+                  11827721    00000003     --HOLE-- [fill = 0]
+                  11827724    00000008     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.const)
+                  1182772c    00000005     ti.pspiom.platforms.codec.a674 : Aic31.obj (.const:.string)
+                  11827731    00000003     --HOLE-- [fill = 0]
+                  11827734    00000001     bios.a674 : tsk.o674 (.const:.string)
+
+.printf    0    11827735    00000059     COPY SECTION
+                  11827735    00000059     audioSamplecfg.obj (.printf)
+
+.bss       0    11827738    0000084c     UNINITIALIZED
+                  11827738    00000440     audioSamplecfg.obj (.bss)
+                  11827b78    00000100     bios.a674 : hwi_disp_asm.o674 (.bss)
+                  11827c78    000000cc               : biosdata.o674 (.bss)
+                  11827d44    0000009c               : swi.o674 (.bss)
+                  11827de0    00000048               : knl.o674 (.bss)
+                  11827e28    00000030     pwrm.a674 : pwrm.o674 (.bss)
+                  11827e58    00000020     bios.a674 : exc_asm.o674 (.bss)
+                  11827e78    0000001e     pwrm.a674 : pwrm_ini.o674 (.bss)
+                  11827e96    00000002     edma3_drv_bios_c674.lib : edma3_drv_init.obj (.bss)
+                  11827e98    00000018     bios.a674 : hwi.o674 (.bss)
+                  11827eb0    00000018     lnkrtdx.a674 : rtdx.o674 (.bss)
+                  11827ec8    00000014     edma3_rm_bios.lib : edma3_rm_gbl_data.obj (.bss)
+                  11827edc    00000010     bios.a674 : exc.o674 (.bss)
+                  11827eec    00000010     rtdx64xplus.lib : buffer1.o64P (.bss)
+                  11827efc    00000010                     : rtdx_mon.o64P (.bss)
+                  11827f0c    0000000c     bios.a674 : tsk.o674 (.bss)
+                  11827f18    0000000c     pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.bss)
+                  11827f24    0000000a     edma3_rm_bios.lib : edma3resmgr.obj (.bss)
+                  11827f2e    00000002     transmit.obj (.bss)
+                  11827f30    00000008     audioSample_io.obj (.bss)
+                  11827f38    00000008     bios.a674 : clk_data.o674 (.bss)
+                  11827f40    00000008               : sys.o674 (.bss)
+                  11827f48    00000008     digest-info.obj (.bss)
+                  11827f50    00000008     pscl.a674 : pscl.o674 (.bss)
+                  11827f58    00000004     bios.a674 : clk_data2.o674 (.bss)
+                  11827f5c    00000004               : dev_init.o674 (.bss)
+                  11827f60    00000004               : idl_busy.o674 (.bss)
+                  11827f64    00000004               : mem_asm.o674 (.bss)
+                  11827f68    00000004               : tsk_disa.o674 (.bss)
+                  11827f6c    00000004     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_c6748_cfg.obj (.bss)
+                  11827f70    00000004     pmi.a674 : pmi_init.o674 (.bss)
+                  11827f74    00000004              : pmi_pll.o674 (.bss)
+                  11827f78    00000004     pscl_cfg_evm6748.a674 : pscl_config_evm6748.o674 (.bss)
+                  11827f7c    00000004     sha2.obj (.bss)
+                  11827f80    00000004     ti.pspiom.mcasp.a674 : Mcasp.obj (.bss)
+
+.gblinit   0    11827f84    00000064     
+                  11827f84    00000064     audioSamplecfg.obj (.gblinit)
+
+.dio       0    11827fe8    00000010     UNINITIALIZED
+                  11827fe8    00000010     audioSamplecfg.obj (.dio)
+
+.clk       0    11827ff8    00000008     UNINITIALIZED
+                  11827ff8    00000008     audioSamplecfg.obj (.clk)
+
+.DVTEvent_Log$buf 
+*          0    11828000    00008000     UNINITIALIZED
+                  11828000    00008000     audioSamplecfg.obj (.DVTEvent_Log$buf)
+
+.cinit     0    11830000    0000415c     
+                  11830000    0000110c     audioSamplecfg.obj (.cinit)
+                  1183110c    00000004     --HOLE-- [fill = 0]
+                  11831110    00000af8     edma3_rm_bios.lib : edma3_c6748_cfg.obj (.cinit)
+                  11831c08    00000808     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_c6748_cfg.obj (.cinit)
+                  11832410    00000528     mont.obj (.cinit)
+                  11832938    00000334     Encrypt.obj (.cinit)
+                  11832c6c    00000004     --HOLE-- [fill = 0]
+                  11832c70    0000026c     bios.a674 : biosdata.o674 (.cinit)
+                  11832edc    00000004     --HOLE-- [fill = 0]
+                  11832ee0    000001a4               : knl.o674 (.cinit)
+                  11833084    00000004     --HOLE-- [fill = 0]
+                  11833088    00000198     pscl_cfg_evm6748.a674 : pscl_config_evm6748.o674 (.cinit)
+                  11833220    00000188     bios6748.a674 : pwrm_rdb6748.o674 (.cinit)
+                  118333a8    00000128     pwrm.a674 : pwrm.o674 (.cinit)
+                  118334d0    00000124     audioSample_io.obj (.cinit)
+                  118335f4    00000004     --HOLE-- [fill = 0]
+                  118335f8    000000f0     DSP_ADPCM.obj (.cinit)
+                  118336e8    000000c2     DSP_ADPCM_SBC.obj (.cinit)
+                  118337aa    00000006     --HOLE-- [fill = 0]
+                  118337b0    000000b0     bios.a674 : swi.o674 (.cinit)
+                  11833860    00000080               : tsk.o674 (.cinit)
+                  118338e0    0000007a     edma3_rm_bios.lib : edma3resmgr.obj (.cinit)
+                  1183395a    00000006     --HOLE-- [fill = 0]
+                  11833960    0000007a     pwrm.a674 : pwrm_ini.o674 (.cinit)
+                  118339da    00000006     --HOLE-- [fill = 0]
+                  118339e0    00000068     rtdx64xplus.lib : rtdx_mon.o64P (.cinit)
+                  11833a48    00000060     bios.a674 : tsk_stup.o674 (.cinit)
+                  11833aa8    0000005c     lnkrtdx.a674 : rtdx.o674 (.cinit)
+                  11833b04    00000004     --HOLE-- [fill = 0]
+                  11833b08    0000005c     rts6740.lib : defs.obj (.cinit)
+                  11833b64    00000004     --HOLE-- [fill = 0]
+                  11833b68    0000005c                 : lowlev.obj (.cinit)
+                  11833bc4    00000004     --HOLE-- [fill = 0]
+                  11833bc8    0000004c     bios.a674 : rta.o674 (.cinit)
+                  11833c14    00000004     --HOLE-- [fill = 0]
+                  11833c18    0000004c     edma3_rm_bios.lib : edma3_rm_gbl_data.obj (.cinit)
+                  11833c64    00000004     --HOLE-- [fill = 0]
+                  11833c68    0000004c     pscl.a674 : pscl.o674 (.cinit)
+                  11833cb4    00000004     --HOLE-- [fill = 0]
+                  11833cb8    0000004c     rtdx64xplus.lib : buffer1.o64P (.cinit)
+                  11833d04    00000004     --HOLE-- [fill = 0]
+                  11833d08    00000048     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.cinit)
+                  11833d50    0000003c     bios.a674 : exc.o674 (.cinit)
+                  11833d8c    00000004     --HOLE-- [fill = 0]
+                  11833d90    0000003c     ti.pspiom.mcasp.a674 : Mcasp.obj (.cinit)
+                  11833dcc    00000004     --HOLE-- [fill = 0]
+                  11833dd0    00000034     bios.a674 : hwi.o674 (.cinit)
+                  11833e04    00000004     --HOLE-- [fill = 0]
+                  11833e08    00000030     ti.pspiom.platforms.codec.a674 : Aic31.obj (.cinit)
+                  11833e38    00000030     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.cinit)
+                  11833e68    0000002c     bios.a674 : utl_putc.o674 (.cinit)
+                  11833e94    00000004     --HOLE-- [fill = 0]
+                  11833e98    0000002c     pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.cinit)
+                  11833ec4    00000004     --HOLE-- [fill = 0]
+                  11833ec8    0000002c     rts6740.lib : exit.obj (.cinit)
+                  11833ef4    00000004     --HOLE-- [fill = 0]
+                  11833ef8    00000029     transmit.obj (.cinit)
+                  11833f21    00000007     --HOLE-- [fill = 0]
+                  11833f28    00000024     bios.a674 : obj_init.o674 (.cinit)
+                  11833f4c    00000004     --HOLE-- [fill = 0]
+                  11833f50    00000024     drivers.a674 : dio_tskDynamic.o674 (.cinit)
+                  11833f74    00000004     --HOLE-- [fill = 0]
+                  11833f78    00000024     sioboth.a674 : sio.o674 (.cinit)
+                  11833f9c    00000004     --HOLE-- [fill = 0]
+                  11833fa0    0000001c     bios.a674 : exc_asm.o674 (.cinit)
+                  11833fbc    00000004     --HOLE-- [fill = 0]
+                  11833fc0    0000001c               : swi_seta.o674 (.cinit)
+                  11833fdc    00000004     --HOLE-- [fill = 0]
+                  11833fe0    0000001c               : sys.o674 (.cinit)
+                  11833ffc    00000004     --HOLE-- [fill = 0]
+                  11834000    0000001c     digest-info.obj (.cinit)
+                  1183401c    00000004     --HOLE-- [fill = 0]
+                  11834020    0000001c     rts6740.lib : _lock.obj (.cinit)
+                  1183403c    00000004     --HOLE-- [fill = 0]
+                  11834040    0000001c                 : atexit.obj (.cinit)
+                  1183405c    00000004     --HOLE-- [fill = 0]
+                  11834060    00000018     bios.a674 : knl_tick.o674 (.cinit)
+                  11834078    00000010               : sem_crea.o674 (.cinit)
+                  11834088    0000000e               : ecm_dispatch.o674 (.cinit)
+                  11834096    00000002     --HOLE-- [fill = 0]
+                  11834098    0000000c               : idl_busy.o674 (.cinit)
+                  118340a4    00000004     --HOLE-- [fill = 0]
+                  118340a8    0000000c               : knl_swit.o674 (.cinit)
+                  118340b4    00000004     --HOLE-- [fill = 0]
+                  118340b8    0000000c               : que_crea.o674 (.cinit)
+                  118340c4    00000004     --HOLE-- [fill = 0]
+                  118340c8    0000000c               : tsk_disa.o674 (.cinit)
+                  118340d4    00000004     --HOLE-- [fill = 0]
+                  118340d8    0000000c     bios6748.a674 : bcache_wait.o674 (.cinit)
+                  118340e4    00000004     --HOLE-- [fill = 0]
+                  118340e8    0000000c     pmi.a674 : pmi_init.o674 (.cinit)
+                  118340f4    00000004     --HOLE-- [fill = 0]
+                  118340f8    0000000c              : pmi_pll.o674 (.cinit)
+                  11834104    00000004     --HOLE-- [fill = 0]
+                  11834108    0000000c     rts6740.lib : fopen.obj (.cinit)
+                  11834114    00000004     --HOLE-- [fill = 0]
+                  11834118    0000000c                 : sinit.obj (.cinit)
+                  11834124    00000004     --HOLE-- [fill = 0]
+                  11834128    0000000c     sha2.obj (.cinit)
+                  11834134    00000004     --HOLE-- [fill = 0]
+                  11834138    0000000c     ti.pspiom.i2c.a674 : I2c.obj (.cinit)
+                  11834144    00000004     --HOLE-- [fill = 0]
+                  11834148    0000000a     edma3_drv_bios_c674.lib : edma3_drv_init.obj (.cinit)
+                  11834152    00000006     --HOLE-- [fill = 0]
+                  11834158    00000004     (.pad.cinit) [fill = 0]
+
+.mem       0    1183415c    00000004     UNINITIALIZED
+                  1183415c    00000004     audioSamplecfg.obj (.mem)
+
+.echoTask$stk 
+*          0    11834160    00002000     UNINITIALIZED
+                  11834160    00002000     audioSamplecfg.obj (.echoTask$stk)
+
+.pmonchip 
+*          0    11836160    00000ce0     
+                  11836160    00000380     pmi_ctl_evm6748.a674 : pmi_i2c.o674 (.pmonchip:slp)
+                  118364e0    00000300     pmi.a674 : pmi_relock1.o674 (.pmonchip)
+                  118367e0    00000020              : pmi_pll.o674 ($Tramp$S$$_PMI_calcWaitBypass)
+                  11836800    000001a0     pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.pmonchip:slp)
+                  118369a0    00000180     bios6748.a674 : pwrm_rdb6748.o674 (.pmonchip) [fill = 0]
+                  11836b20    00000140     pmi.a674 : pmi_onchip.o674 (.pmonchip)
+                  11836c60    00000100              : pmi_pll.o674 (.pmonchip:slp)
+                  11836d60    00000020     rts6740.lib : divu.obj ($Tramp$S$$__divu)
+                  11836d80    000000c0     pmi.a674 : pmi_ms.o674 (.pmonchip)
+
+.cio       0    11836e40    00000120     UNINITIALIZED
+                  11836e40    00000120     rts6740.lib : trgmsg.obj (.cio)
+
+.log       0    11836f60    00000048     
+                  11836f60    00000048     audioSamplecfg.obj (.log)
+
+.sts       0    11836fa8    00000040     
+                  11836fa8    00000040     audioSamplecfg.obj (.sts)
+
+.hst1      0    11836fe8    00000010     UNINITIALIZED
+                  11836fe8    00000010     audioSamplecfg.obj (.hst1)
+
+.LOG_system$buf 
+*          0    11837000    00001000     UNINITIALIZED
+                  11837000    00001000     audioSamplecfg.obj (.LOG_system$buf)
+
+.trace$buf 
+*          0    11838000    00001000     UNINITIALIZED
+                  11838000    00001000     audioSamplecfg.obj (.trace$buf)
+
+.rtdx_data 
+*          0    11839000    000004f4     UNINITIALIZED
+                  11839000    00000080     --HOLE--
+                  11839080    00000410     audioSamplecfg.obj (.rtdx_data)
+                  11839490    00000044     rtdx64xplus.lib : rtdx_mon.o64P (.rtdx_data)
+                  118394d4    00000020                     : buffer1.o64P (.rtdx_data)
+
+.TSK_idle$stk 
+*          0    118394f8    00000400     UNINITIALIZED
+                  118394f8    00000400     audioSamplecfg.obj (.TSK_idle$stk)
+
+.switch    0    118398f8    00000228     
+                  118398f8    000000a0     edma3_rm_bios.lib : edma3resmgr.obj (.switch)
+                  11839998    00000060     edma3_drv_bios_c674.lib : edma3_drv_adv.obj (.switch)
+                  118399f8    00000058                             : edma3_drv_basic.obj (.switch)
+                  11839a50    00000054     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.switch)
+                  11839aa4    00000038     ti.pspiom.i2c.a674 : I2c.obj (.switch)
+                  11839adc    00000028     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.switch)
+                  11839b04    0000001c     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.switch)
+
+.trace     0    11839b20    00000200     
+                  11839b20    00000200     --HOLE-- [fill = 00000000]
+
+.hst0      0    11839d20    00000100     UNINITIALIZED
+                  11839d20    00000100     audioSamplecfg.obj (.hst0)
+
+.devtable 
+*          0    11839e20    000000d8     UNINITIALIZED
+                  11839e20    000000d8     audioSamplecfg.obj (.devtable)
+
+.pip       0    11839ef8    000000c8     UNINITIALIZED
+                  11839ef8    000000c8     audioSamplecfg.obj (.pip)
+
+.tsk       0    11839fc0    000000c0     UNINITIALIZED
+                  11839fc0    000000c0     audioSamplecfg.obj (.tsk)
+
+.hst       0    1183a080    0000003c     UNINITIALIZED
+                  1183a080    0000003c     audioSamplecfg.obj (.hst)
+
+.swi       0    1183a0bc    0000002c     UNINITIALIZED
+                  1183a0bc    0000002c     audioSamplecfg.obj (.swi)
+
+.idl       0    1183a0e8    00000010     UNINITIALIZED
+                  1183a0e8    00000010     audioSamplecfg.obj (.idl)
+
+.idlcal    0    1183a0f8    00000010     UNINITIALIZED
+                  1183a0f8    00000010     audioSamplecfg.obj (.idlcal)
+
+.sys       0    1183a108    00000010     UNINITIALIZED
+                  1183a108    00000010     audioSamplecfg.obj (.sys)
+
+.pinit     0    1183a118    0000000c     
+                  1183a118    00000004     rtdx64xplus.lib : buffer1.o64P (.pinit)
+                  1183a11c    00000004                     : rtdx_mon.o64P (.pinit)
+                  1183a120    00000004     --HOLE-- [fill = 0]
+
+.trcdata   0    1183a124    0000000c     
+                  1183a124    0000000c     bios.a674 : trc.o674 (.trcdata)
+
+.DDR$heap 
+*          0    c0000000    00030000     UNINITIALIZED
+                  c0000000    00030000     --HOLE--
+
+.text      0    c0030000    00027800     
+                  c0030000    00006240     edma3_rm_bios.lib : edma3resmgr.obj (.text)
+                  c0036240    00002380     edma3_drv_bios_c674.lib : edma3_drv_basic.obj (.text)
+                  c00385c0    000017c0                             : edma3_drv_adv.obj (.text)
+                  c0039d80    00001120     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_Mcasp_localSubmitIoctl)
+                  c003aea0    000010e0     aes.obj (.text)
+                  c003bf80    00000bc0     pscl.a674 : pscl.o674 (.text)
+                  c003cb40    00000ac0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdCreateChan)
+                  c003d600    000009c0     DSP_BitPacker.obj (.text)
+                  c003dfc0    000009a0     edma3_drv_bios_c674.lib : edma3_drv_init.obj (.text)
+                  c003e960    00000980     sha2.obj (.text)
+                  c003f2e0    000008c0     DSP_QMF.obj (.text)
+                  c003fba0    00000780     pmi.a674 : pmi_pll.o674 (.text)
+                  c0040320    00000700     DSP_ADPCM.obj (.text)
+                  c0040a20    00000700     mont.obj (.text)
+                  c0041120    000006a0     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cIntrHandler)
+                  c00417c0    00000660     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                  c0041e20    000005a0     rts6740.lib : divd.obj (.text:__divd)
+                  c00423c0    000005a0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdBindDev)
+                  c0042960    000005a0     sym.obj (.text)
+                  c0042f00    00000580     rts6740.lib : _printfi.obj (.text:__getarg_diouxp)
+                  c0043480    00000540     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.text:_Mcasp_localEdmaChanPaRAMsetup)
+                  c00439c0    00000540     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cMdCreateChan)
+                  c0043f00    000004e0     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                  c00443e0    000004a0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localAbortReset)
+                  c0044880    00000480     rts6740.lib : _printfi.obj (.text:__setfield)
+                  c0044d00    00000480     audioSample_io.obj (.text)
+                  c0045180    00000460     Encrypt.obj (.text)
+                  c00455e0    00000440     ti.pspiom.i2c.a674 : I2c_edma.obj (.text:_I2c_completeIOedmaCallback)
+                  c0045a20    00000440     rts6740.lib : _printfi.obj (.text:__printfi)
+                  c0045e60    00000440     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31MdControlChan)
+                  c00462a0    00000440                                    : Aic31.obj (.text:_aic31SetSamplingRate)
+                  c00466e0    00000420     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cMdBindDev)
+                  c0046b00    00000400                        : I2c.obj (.text:_i2cMdSubmitChan)
+                  c0046f00    00000400                        : I2c.obj (.text:_i2cPolledModeTransfer)
+                  c0047300    000003c0     DSP_ADPCM_SBC.obj (.text)
+                  c00476c0    000003c0     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cMdControlChan)
+                  c0047a80    000003a0     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31MdCreateChan)
+                  c0047e20    00000380     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cCompleteIOInIsr)
+                  c00481a0    00000380     edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                  c0048520    00000340     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.text:_Mcasp_localUpdtDtPktToLnkPrms)
+                  c0048860    00000340     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.text:_audioMdCreateChan)
+                  c0048ba0    00000340     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cTransfer)
+                  c0048ee0    00000320     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.text:_Mcasp_localGetIndicesSyncType)
+                  c0049200    00000300     rts6740.lib : fputs.obj (.text:_fputs)
+                  c0049500    00000300     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdDeleteChan)
+                  c0049800    000002c0     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2cNotifyCallback)
+                  c0049ac0    000002c0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localConfigXmtSection)
+                  c0049d80    000002c0     rts6740.lib : _printfi.obj (.text:__pproc_fge)
+                  c004a040    000002c0                 : _printfi.obj (.text:__pproc_fwp)
+                  c004a300    000002c0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspIsrInput)
+                  c004a5c0    000002c0                          : Mcasp.obj (.text:_mcaspIsrOutput)
+                  c004a880    000002a0     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2c_localEnsureIsReadyforNext)
+                  c004ab20    000002a0     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31InitDac)
+                  c004adc0    000002a0     rts6740.lib : _printfi.obj (.text:_ecvt)
+                  c004b060    000002a0                 : _printfi.obj (.text:_fcvt)
+                  c004b300    000002a0     encode.obj (.text)
+                  c004b5a0    00000280     DSP_SBC.obj (.text)
+                  c004b820    00000280     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localConfigRcvSection)
+                  c004baa0    00000280     drivers.a674 : dio_tsk.o674 (.text)
+                  c004bd20    00000260     ti.pspiom.i2c.a674 : I2c_edma.obj (.text:_I2c_localEdmaTransfer)
+                  c004bf80    00000260     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localSetupHwInfo)
+                  c004c1e0    00000260     rts6740.lib : imath64.obj (.text:__divull)
+                  c004c440    00000260                 : _printfi.obj (.text:__pconv_e)
+                  c004c6a0    00000260     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31SelectOutputDest)
+                  c004c900    00000260     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.text:_audioSampleRateConfigure)
+                  c004cb60    00000260     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_mcaspGetHwStatus)
+                  c004cdc0    00000240     rts6740.lib : _printfi.obj (.text:__pproc_diouxp)
+                  c004d000    00000240     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cMdDeleteChan)
+                  c004d240    00000240     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_mcaspConfigLoopBack)
+                  c004d480    00000240     process_audio.obj (.text)
+                  c004d6c0    00000220     rts6740.lib : _printfi.obj (.text:__pproc_str)
+                  c004d8e0    00000220     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31InitAdc)
+                  c004db00    00000200     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2cCalculateConstraints)
+                  c004dd00    00000200     rts6740.lib : _printfi.obj (.text:__pconv_g)
+                  c004df00    00000200     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31DeinitDac)
+                  c004e100    00000200                                    : Aic31.obj (.text:_aic31I2cRead)
+                  c004e300    00000200     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cSoftReset)
+                  c004e500    00000200     drivers.a674 : dio_tskDynamic.o674 (.text)
+                  c004e700    000001e0     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.text:_Mcasp_localSetupEdmaDuringOpen)
+                  c004e8e0    000001c0     rts6740.lib : _printfi.obj (.text:__mcpy)
+                  c004eaa0    000001c0     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31DeinitAdc)
+                  c004ec60    000001c0     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.text:_audioMdBindDev)
+                  c004ee20    000001c0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspSubmitReq)
+                  c004efe0    000001a0     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2cCalculateClkSettings)
+                  c004f180    000001a0                        : I2c.obj (.text:_I2c_loadPendedIops)
+                  c004f320    000001a0     rts6740.lib : imath40.obj (.text:__divul)
+                  c004f4c0    000001a0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspBitSetGblRCtl)
+                  c004f660    000001a0                          : Mcasp.obj (.text:_mcaspBitSetGblXCtl)
+                  c004f800    000001a0     bios6748.a674 : pwrm_rel674.o674 (.text)
+                  c004f9a0    000001a0                   : pwrm_set674.o674 (.text)
+                  c004fb40    00000180     rts6740.lib : trgdrv.obj (.text:_HOSTrename)
+                  c004fcc0    00000180     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localLoadPktToEdma)
+                  c004fe40    00000180     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31I2cWrite)
+                  c004ffc0    00000180                                    : Aic31.obj (.text:_aic31MuteConfig)
+                  c0050140    00000180     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cCancelIO)
+                  c00502c0    00000180     rts6740.lib : setvbuf.obj (.text:_setvbuf)
+                  c0050440    00000160     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2c_localPrepareForTransfer)
+                  c00505a0    00000160                        : I2c.obj (.text:_i2cMdUnBindDev)
+                  c0050700    00000160     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspBitRemoveGblXCtl)
+                  c0050860    00000160     audioSample_main.obj (.text)
+                  c00509c0    00000160     pwrm.a674 : _pwrm_updcst.o674 (.text)
+                  c0050b20    00000160     sha_convert.obj (.text)
+                  c0050c80    00000140     ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.text:_Mcasp_localIsValidPacket)
+                  c0050dc0    00000140                          : Mcasp.obj (.text:_Mcasp_localSmReset)
+                  c0050f00    00000140     rts6740.lib : _printfi.obj (.text:__pproc_fflags)
+                  c0051040    00000140     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31MdDeleteChan)
+                  c0051180    00000140     rts6740.lib : fputc.obj (.text:_fputc)
+                  c00512c0    00000140                 : lowlev.obj (.text:_getdevice)
+                  c0051400    00000140     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdSubmitChan)
+                  c0051540    00000140                          : Mcasp_ioctl.obj (.text:_mcaspSetSamplingRate)
+                  c0051680    00000140     pwrm.a674 : pwrm_reg.o674 (.text)
+                  c00517c0    00000120     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2cConfigureNewClkSettings)
+                  c00518e0    00000120                        : I2c_edma.obj (.text:_I2c_localEdmaChanRequest)
+                  c0051a00    00000120     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_init)
+                  c0051b20    00000120                          : Mcasp.obj (.text:_Mcasp_localIsrSwiFxn)
+                  c0051c40    00000120     rts6740.lib : fclose.obj (.text:_fclose)
+                  c0051d60    00000120     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cWaitForBB)
+                  c0051e80    00000120     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_mcaspActivateClkRcvXmt)
+                  c0051fa0    00000120                          : Mcasp.obj (.text:_mcaspBitRemoveGblRCtl)
+                  c00520c0    00000120                          : Mcasp.obj (.text:_mcaspBitSetGblCtl)
+                  c00521e0    00000100     rts6740.lib : trgdrv.obj (.text:_HOSTlseek)
+                  c00522e0    00000100     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2c_localLpscOff)
+                  c00523e0    00000100                        : I2c.obj (.text:_I2c_restoreContext)
+                  c00524e0    00000100                        : I2c_edma.obj (.text:_I2c_txCallback)
+                  c00525e0    00000100     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localSmSet)
+                  c00526e0    00000100     rts6740.lib : _printfi.obj (.text:__ltostr)
+                  c00527e0    00000100                 : _io_perm.obj (.text:__wrt_ok)
+                  c00528e0    00000100     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31MdBindDev)
+                  c00529e0    00000100                                    : Aic31.obj (.text:_aic31SelectInputSource)
+                  c0052ae0    00000100     rts6740.lib : sinit.obj (.text:_call_dtors)
+                  c0052be0    00000100                 : fflush.obj (.text:_fflush)
+                  c0052ce0    00000100     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdControlChan)
+                  c0052de0    00000100     pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.text)
+                  c0052ee0    00000100     pwrm.a674 : pwrm_regcst.o674 (.text)
+                  c0052fe0    000000e0     rts6740.lib : trgdrv.obj (.text:_HOSTopen)
+                  c00530c0    000000e0     ti.pspiom.i2c.a674 : I2c_edma.obj (.text:_I2c_rxCallback)
+                  c00531a0    000000e0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localCancelAndAbortAllIo)
+                  c0053280    000000e0     rts6740.lib : strasg.obj (.text:__strasgi)
+                  c0053360    000000e0     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31RegWriteBf)
+                  c0053440    000000e0     rts6740.lib : atoi.obj (.text:_atoi)
+                  c0053520    000000e0     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.text:_audioMdControlChan)
+                  c0053600    000000e0                                            : Audio.obj (.text:_audioMdDeleteChan)
+                  c00536e0    000000e0     rts6740.lib : lowlev.obj (.text:_close)
+                  c00537c0    000000e0     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_mcaspActivateRcvClkSer)
+                  c00538a0    000000e0                          : Mcasp_ioctl.obj (.text:_mcaspActivateXmtClkSer)
+                  c0053980    000000e0                          : Mcasp.obj (.text:_mcaspRegisterInt)
+                  c0053a60    000000e0                          : Mcasp.obj (.text:_mcaspValidateBufferConfig)
+                  c0053b40    000000e0                          : Mcasp.obj (.text:_mcaspWriteChanStatRam)
+                  c0053c20    000000e0                          : Mcasp.obj (.text:_mcaspWriteUserDataRam)
+                  c0053d00    000000e0     rts6740.lib : memset.obj (.text:_memset)
+                  c0053de0    000000e0     bios6748.a674 : _pwrm_initcounts.o674 (.text)
+                  c0053ec0    000000c0     rts6740.lib : trgdrv.obj (.text:_HOSTread)
+                  c0053f80    000000c0                 : trgdrv.obj (.text:_HOSTunlink)
+                  c0054040    000000c0                 : trgdrv.obj (.text:_HOSTwrite)
+                  c0054100    000000c0     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2cRegisterNotification)
+                  c00541c0    000000c0                        : I2c.obj (.text:_I2c_localGetNextChannel)
+                  c0054280    000000c0                        : I2c.obj (.text:_I2c_saveContext)
+                  c0054340    000000c0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localCompleteCurrentIo)
+                  c0054400    000000c0                          : Mcasp.obj (.text:_Mcasp_localEdmaProcessPkt)
+                  c00544c0    000000c0     rts6740.lib : fopen.obj (.text:__cleanup)
+                  c0054580    000000c0                 : _printfi.obj (.text:__div)
+                  c0054640    000000c0                 : divu.obj (.text:__divu)
+                  c0054700    000000c0                 : fflush.obj (.text:__doflush)
+                  c00547c0    000000c0                 : atexit.obj (.text:_atexit)
+                  c0054880    000000c0                 : fseek.obj (.text:_fseek)
+                  c0054940    000000c0                 : lowlev.obj (.text:_lseek)
+                  c0054a00    000000c0                 : ltoa.obj (.text:_ltoa)
+                  c0054ac0    000000c0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspInit)
+                  c0054b80    000000c0                          : Mcasp.obj (.text:_mcaspUnRegisterInt)
+                  c0054c40    000000c0     rts6740.lib : lowlev.obj (.text:_write)
+                  c0054d00    000000c0     bios.a674 : tsk_stup.o674 (.text)
+                  c0054dc0    000000c0     pwrm.a674 : pwrm_spi674.o674 (.text)
+                  c0054e80    000000a0     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.text:_Audio_init)
+                  c0054f20    000000a0     rts6740.lib : trgdrv.obj (.text:_HOSTclose)
+                  c0054fc0    000000a0     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2cConfigureNewVfSettings)
+                  c0055060    000000a0                        : I2c.obj (.text:_I2cUnregisterConstraints)
+                  c0055100    000000a0                        : I2c.obj (.text:_I2cUnregisterNotification)
+                  c00551a0    000000a0                        : I2c.obj (.text:_I2c_init)
+                  c0055240    000000a0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localResetXmt)
+                  c00552e0    000000a0     rts6740.lib : imath40.obj (.text:__divli)
+                  c0055380    000000a0                 : _printfi.obj (.text:__ecpy)
+                  c0055420    000000a0                 : _printfi.obj (.text:__fcpy)
+                  c00554c0    000000a0                 : fixdli.obj (.text:__fixdli)
+                  c0055560    000000a0                 : _printfi.obj (.text:__pconv_f)
+                  c0055600    000000a0                 : remu.obj (.text:__remu)
+                  c00556a0    000000a0                 : lowlev.obj (.text:_finddevice)
+                  c0055740    000000a0     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspConfigureFifo)
+                  c00557e0    000000a0                          : Mcasp.obj (.text:_mcaspConfigureXmtChannel)
+                  c0055880    000000a0                          : Mcasp.obj (.text:_mcaspMdUnBindDev)
+                  c0055920    000000a0                          : Mcasp_ioctl.obj (.text:_mcaspReadXmtConfig)
+                  c00559c0    000000a0     rts6740.lib : memcpy64.obj (.text:_memcpy)
+                  c0055a60    000000a0     bios6748.a674 : pwrm_get674.o674 (.text)
+                  c0055b00    000000a0     pwrm.a674 : pwrm.o674 (.text)
+                  c0055ba0    000000a0               : pwrm_urgcst.o674 (.text)
+                  c0055c40    00000080     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localActivateSmFsForBoth)
+                  c0055cc0    00000080     rts6740.lib : fixdu.obj (.text:__fixdu)
+                  c0055d40    00000080                 : fltlid.obj (.text:__fltlid)
+                  c0055dc0    00000080                 : llshift.obj (.text:__llshl)
+                  c0055e40    00000080     ti.pspiom.platforms.evm6748.evmInit.a674 : audio_evmInit.obj (.text:_configureAudio)
+                  c0055ec0    00000080     rts6740.lib : fprintf.obj (.text:_fprintf)
+                  c0055f40    00000080     ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cCalculateClockSettings)
+                  c0055fc0    00000080                        : I2c.obj (.text:_i2cRegisterIntrHandler)
+                  c0056040    00000080     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMultiSerInitializationRcv)
+                  c00560c0    00000080                          : Mcasp.obj (.text:_mcaspMultiSerInitializationXmt)
+                  c0056140    00000080                          : Mcasp_ioctl.obj (.text:_mcaspReadRcvConfig)
+                  c00561c0    00000080     rts6740.lib : printf.obj (.text:_printf)
+                  c0056240    00000080                 : trgmsg.obj (.text:_readmsg)
+                  c00562c0    00000080                 : lowlev.obj (.text:_unlink)
+                  c0056340    00000080     pwrm.a674 : pwrm_gsp674.o674 (.text)
+                  c00563c0    00000080               : pwrm_nsp674.o674 (.text)
+                  c0056440    00000060     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_Aic31_init)
+                  c00564a0    00000060     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_Mcasp_localAbortRequests)
+                  c0056500    00000060                          : Mcasp.obj (.text:_Mcasp_localActivateSmFsForRcv)
+                  c0056560    00000060                          : Mcasp.obj (.text:_Mcasp_localActivateSmFsForXmt)
+                  c00565c0    00000060                          : Mcasp.obj (.text:_Mcasp_localResetRcv)
+                  c0056620    00000060     rts6740.lib : assert.obj (.text:__abort_msg)
+                  c0056680    00000060                 : imath64.obj (.text:__subcull)
+                  c00566e0    00000060     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31CtrlBusRead)
+                  c0056740    00000060                                    : Aic31.obj (.text:_aic31CtrlBusWrite)
+                  c00567a0    00000060     ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.text:_audioMdSubmitChan)
+                  c0056800    00000060                                            : Audio.obj (.text:_audioMdUnBindDev)
+                  c0056860    00000060     ti.pspiom.platforms.evm6748.evmInit.a674 : audio_evmInit.obj (.text:_audioUserI2cInit)
+                  c00568c0    00000060     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_mcaspDeviceInfoGet)
+                  c0056920    00000060                          : Mcasp.obj (.text:_mcaspIsRequestedSerzsFree)
+                  c0056980    00000060                          : Mcasp.obj (.text:_mcaspMultiSerGlobalRestore)
+                  c00569e0    00000060                          : Mcasp.obj (.text:_mcaspSetDitMode)
+                  c0056a40    00000060                          : Mcasp.obj (.text:_mcaspSetSerRcv)
+                  c0056aa0    00000060                          : Mcasp.obj (.text:_mcaspSetSerXmt)
+                  c0056b00    00000060     rts6740.lib : memccpy.obj (.text:_memccpy)
+                  c0056b60    00000060                 : trgmsg.obj (.text:_writemsg)
+                  c0056bc0    00000060     pmi.a674 : pmi_init.o674 (.text)
+                  c0056c20    00000060     pwrm.a674 : pwrm_urg.o674 (.text)
+                  c0056c80    00000040     ti.pspiom.i2c.a674 : I2c.obj (.text:_I2cSuspendCurrentIops)
+                  c0056cc0    00000040     rts6740.lib : sinit.obj (.text:___add_dtor)
+                  c0056d00    00000040                 : isinf.obj (.text:___isinf)
+                  c0056d40    00000040                 : _printfi.obj (.text:___isnan)
+                  c0056d80    00000040                 : frcmpyd_div.obj (.text:__frcmpyd_div)
+                  c0056dc0    00000040                 : llshift.obj (.text:__llshru)
+                  c0056e00    00000040                 : imath40.obj (.text:__remli)
+                  c0056e40    00000040                 : strasg.obj (.text:__strasgi_64plus)
+                  c0056e80    00000040     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31MdUnBindDev)
+                  c0056ec0    00000040                                    : Aic31.obj (.text:_aic31RegRead)
+                  c0056f00    00000040                                    : Aic31.obj (.text:_aic31RegWrite)
+                  c0056f40    00000040     ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_mcaspGetSerMode)
+                  c0056f80    00000040                          : Mcasp_ioctl.obj (.text:_mcaspGetSerRcvReady)
+                  c0056fc0    00000040                          : Mcasp_ioctl.obj (.text:_mcaspGetSerXmtReady)
+                  c0057000    00000040                          : Mcasp_ioctl.obj (.text:_mcaspGetSmFsRcv)
+                  c0057040    00000040                          : Mcasp_ioctl.obj (.text:_mcaspGetSmFsXmt)
+                  c0057080    00000040     drivers.a674 : dio.o674 (.text)
+                  c00570c0    00000020     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localGetNextIndex)
+                  c00570e0    00000020     rts6740.lib : negll.obj (.text:__negll)
+                  c0057100    00000020                 : _lock.obj (.text:__nop)
+                  c0057120    00000020                 : fprintf.obj (.text:__outc)
+                  c0057140    00000020                 : printf.obj (.text:__outc)
+                  c0057160    00000020                 : fprintf.obj (.text:__outs)
+                  c0057180    00000020                 : printf.obj (.text:__outs)
+                  c00571a0    00000020                 : _lock.obj (.text:__register_lock)
+                  c00571c0    00000020                 : _lock.obj (.text:__register_unlock)
+                  c00571e0    00000020                 : exit.obj (.text:_abort)
+                  c0057200    00000020     ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31CallBack)
+                  c0057220    00000020                                    : Aic31.obj (.text:_aic31MdSubmitChan)
+                  c0057240    00000020     ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspIsr)
+                  c0057260    00000020     rts6740.lib : remove.obj (.text:_remove)
+                  c0057280    00000020     bios.a674 : que_get.o674 ($Tramp$S$$_QUE_get)
+                  c00572a0    00000020               : que_get.o674 ($Tramp$S$$_QUE_put)
+                  c00572c0    00000020     pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 ($Tramp$S$$_PMI_setVoltage)
+                  c00572e0    00000020                          : pmi_volt6748evm.o674 ($Tramp$S$$_PMI_getVoltage)
+                  c0057300    00000020     bios6748.a674 : bcache_block.o674 ($Tramp$S$$_BCACHE_wb)
+                  c0057320    00000020     bios.a674 : ecm_enableEvent.o674 ($Tramp$S$$_ECM_enableEvent)
+                  c0057340    00000020     pmi.a674 : pmi_pll.o674 ($Tramp$S$$_PMI_bypassPLL)
+                  c0057360    00000020              : pmi_relock1.o674 ($Tramp$S$$_PMI_waitCpuCycles)
+                  c0057380    00000020              : pmi_onchip.o674 ($Tramp$S$$_PMI_goRelockPLL1)
+                  c00573a0    00000020     bios.a674 : swi_crea.o674 ($Tramp$S$$_SWI_create)
+                  c00573c0    00000020               : hwi_c.o674 ($Tramp$S$$_HWI_disable)
+                  c00573e0    00000020               : ecm_disableEvent.o674 ($Tramp$S$$_ECM_disableEvent)
+                  c0057400    00000020               : hwi_c.o674 ($Tramp$S$$_HWI_restore)
+                  c0057420    00000020               : ecm_dispatchPlug.o674 ($Tramp$S$$_ECM_dispatchPlug)
+                  c0057440    00000020               : c62_c.o674 ($Tramp$S$$_C64_enableIER)
+                  c0057460    00000010     sioboth.a674 : sio_crea.o674 ($Tramp$S$$_SIO_create)
+                  c0057470    00000010     bios.a674 : log_printf.o674 ($Tramp$S$$_LOG_printf)
+                  c0057480    00000010               : mem_vall.o674 ($Tramp$S$$_MEM_valloc)
+                  c0057490    00000010     sioboth.a674 : sio_issu.o674 ($Tramp$S$$_SIO_issue)
+                  c00574a0    00000010                  : sio_recl.o674 ($Tramp$S$$_SIO_reclaim)
+                  c00574b0    00000010     bios.a674 : malloc.o674 ($Tramp$S$$_free)
+                  c00574c0    00000020     bios6748.a674 : clk_gethtime.o674 ($Tramp$S$$_CLK_gethtime)
+                  c00574e0    00000020     bios.a674 : dev_matc.o674 ($Tramp$S$$_DEV_match)
+                  c0057500    00000020               : sem_pend_counting.o674 ($Tramp$S$$_SEM_pend)
+                  c0057520    00000020               : sem_post_asm.o674 ($Tramp$S$$_SEM_post)
+                  c0057540    00000020               : sem_dele.o674 ($Tramp$S$$_SEM_delete)
+                  c0057560    00000020               : sem_crea.o674 ($Tramp$S$$_SEM_create)
+                  c0057580    00000020               : tsk_disa.o674 ($Tramp$S$$_TSK_enable)
+                  c00575a0    00000020               : tsk_disa.o674 ($Tramp$S$$_TSK_disable)
+                  c00575c0    00000020     bios6748.a674 : bcache_block.o674 ($Tramp$S$$_BCACHE_inv)
+                  c00575e0    00000020                   : bcache_block.o674 ($Tramp$S$$_BCACHE_wbInv)
+                  c0057600    00000020     bios.a674 : mem_free.o674 ($Tramp$S$$_MEM_free)
+                  c0057620    00000020               : mem_vall.o674 ($Tramp$S$$_MEM_valloc)
+                  c0057640    00000020               : swi_disable.o674 ($Tramp$S$$_SWI_disable)
+                  c0057660    00000020     pmi.a674 : pmi_ms.o674 ($Tramp$S$$_PMI_setModuleState)
+                  c0057680    00000020              : pmi_ms.o674 ($Tramp$S$$_PMI_getModuleState)
+                  c00576a0    00000020     bios.a674 : swi_disable.o674 ($Tramp$S$$_SWI_enable)
+                  c00576c0    00000010               : malloc.o674 ($Tramp$S$$_malloc)
+                  c00576d0    00000010     --HOLE-- [fill = 0]
+                  c00576e0    00000020               : sys_prin.o674 ($Tramp$S$$_SYS_printf)
+                  c0057700    00000020     pmi_ctl_evm6748.a674 : pmi_i2c.o674 ($Tramp$S$$_PMI_initI2C)
+                  c0057720    00000020                          : pmi_i2c.o674 ($Tramp$S$$_PMI_writeI2C)
+                  c0057740    00000020                          : pmi_i2c.o674 ($Tramp$S$$_PMI_readI2C)
+                  c0057760    00000020     bios.a674 : lck.o674 ($Tramp$S$$_LCK_post)
+                  c0057780    00000020               : lck.o674 ($Tramp$S$$_LCK_pend)
+                  c00577a0    00000020               : sys_abor.o674 ($Tramp$S$$_SYS_abort)
+                  c00577c0    00000020               : atm.o674 ($Tramp$S$$_ATM_deci)
+                  c00577e0    00000020               : swi.o674 ($Tramp$S$$_SWI_post)
+
+.bios      0    c0057800    00005bc0     
+                  c0057800    00000780     bios.a674 : sys_prin.o674 (.bios)
+                  c0057f80    000005c0     lnkrtdx.a674 : rtdx.o674 (.bios)
+                  c0058540    00000580     bios.a674 : exc.o674 (.bios)
+                  c0058ac0    000004e0               : hwi_disp_asm.o674 (.bios)
+                  c0058fa0    000004c0               : swi.o674 (.bios)
+                  c0059460    00000380               : prd.o674 (.bios)
+                  c00597e0    00000320     sioboth.a674 : sio_crea.o674 (.bios)
+                  c0059b00    00000280     bios.a674 : malloc.o674 (.bios)
+                  c0059d80    00000280               : rta.o674 (.bios)
+                  c005a000    00000240               : knl_run.o674 (.bios)
+                  c005a240    00000200               : mem_allo.o674 (.bios:.near)
+                  c005a440    00000200               : knl_tick.o674 (.bios)
+                  c005a640    000001e0               : mem_free.o674 (.bios:.near)
+                  c005a820    000001e0               : exc_asm.o674 (.bios)
+                  c005aa00    000001e0               : pip.o674 (.bios)
+                  c005abe0    000001e0               : sem_pend.o674 (.bios)
+                  c005adc0    000001e0     sioboth.a674 : sio_dele.o674 (.bios)
+                  c005afa0    000001a0     bios.a674 : sem_dopo.o674 (.bios)
+                  c005b140    000001a0               : tsk_setu.o674 (.bios)
+                  c005b2e0    000001a0     bios6748.a674 : clk.o674 (.bios)
+                  c005b480    00000180     bios.a674 : knl_swit.o674 (.bios)
+                  c005b600    00000180     bios6748.a674 : bcache_block.o674 (.bios)
+                  c005b780    00000140     bios.a674 : autoinit.o674 (.bios)
+                  c005b8c0    00000140               : tsk_exit.o674 (.bios)
+                  c005ba00    00000140     bios6748.a674 : bcache_init.o674 (.bios)
+                  c005bb40    00000120     bios.a674 : gbl_cacheinit64P.o674 (.bios)
+                  c005bc60    00000120               : knl_chec.o674 (.bios)
+                  c005bd80    00000120               : tsk_stup.o674 (.bios)
+                  c005bea0    00000100               : ecm_dispatch.o674 (.bios)
+                  c005bfa0    000000e0               : sem_post_asm.o674 (.bios)
+                  c005c080    000000c0               : dev_matc.o674 (.bios)
+                  c005c140    000000c0               : knl_exit.o674 (.bios)
+                  c005c200    000000c0     sioboth.a674 : sio_recl.o674 (.bios)
+                  c005c2c0    000000a0     bios.a674 : dev_mkfr.o674 (.bios)
+                  c005c360    000000a0               : obj_crea.o674 (.bios)
+                  c005c400    000000a0               : sem_post.o674 (.bios)
+                  c005c4a0    000000a0               : swi_seta.o674 (.bios)
+                  c005c540    000000a0               : sys_exit.o674 (.bios)
+                  c005c5e0    000000a0     log8.a674 : log_ts.o674 (.bios)
+                  c005c680    00000080     bios.a674 : atm.o674 (.bios)
+                  c005c700    00000080               : knl_ipos.o674 (.bios)
+                  c005c780    00000080               : knl_post.o674 (.bios)
+                  c005c800    00000080               : lck.o674 (.bios)
+                  c005c880    00000080               : sem_crea.o674 (.bios)
+                  c005c900    00000080               : swi_crea.o674 (.bios)
+                  c005c980    00000080               : tsk_disa.o674 (.bios)
+                  c005ca00    00000080     bios6748.a674 : bcache_wait.o674 (.bios)
+                  c005ca80    00000080                   : idl_cal.o674 (.bios)
+                  c005cb00    00000080     sioboth.a674 : sio_issu.o674 (.bios)
+                  c005cb80    00000060     bios.a674 : mem_vall.o674 (.bios:.near)
+                  c005cbe0    00000060               : sys_erro.o674 (.bios:.near)
+                  c005cc40    00000060               : dev_rmfr.o674 (.bios)
+                  c005cca0    00000060               : fxn.o674 (.bios)
+                  c005cd00    00000060               : hwi_c.o674 (.bios)
+                  c005cd60    00000060               : idl_busy.o674 (.bios)
+                  c005cdc0    00000060               : obj_dele.o674 (.bios)
+                  c005ce20    00000060               : sem_pend_counting.o674 (.bios)
+                  c005ce80    00000060               : sts.o674 (.bios)
+                  c005cee0    00000060               : swi_disable.o674 (.bios)
+                  c005cf40    00000060               : sys_abor.o674 (.bios)
+                  c005cfa0    00000060     bios6748.a674 : clk_meas.o674 (.bios)
+                  c005d000    00000040     bios.a674 : c62_c.o674 (.bios)
+                  c005d040    00000040               : ecm_disableEvent.o674 (.bios)
+                  c005d080    00000040               : ecm_dispatchPlug.o674 (.bios)
+                  c005d0c0    00000040               : ecm_enableEvent.o674 (.bios)
+                  c005d100    00000040               : idl_stub.o674 (.bios)
+                  c005d140    00000040               : que_crea.o674 (.bios)
+                  c005d180    00000040               : que_get.o674 (.bios)
+                  c005d1c0    00000040               : rta_andn.o674 (.bios)
+                  c005d200    00000040               : utl_doab.o674 (.bios)
+                  c005d240    00000040               : utl_putc.o674 (.bios)
+                  c005d280    00000020               : fxn_c.o674 (.bios)
+                  c005d2a0    00000020               : gbl_vers.o674 (.bios)
+                  c005d2c0    00000020               : idl.o674 (.bios)
+                  c005d2e0    00000020               : log_printf.o674 (.bios)
+                  c005d300    00000020               : sem_dele.o674 (.bios)
+                  c005d320    00000020               : sts_set.o674 (.bios)
+                  c005d340    00000020               : sys_one.o674 (.bios)
+                  c005d360    00000020               : utl_doer.o674 (.bios)
+                  c005d380    00000020               : utl_halt.o674 (.bios)
+                  c005d3a0    00000020     bios6748.a674 : clk_gethtime.o674 (.bios)
+
+.rtdx_text 
+*          0    c005d3c0    00000fc0     
+                  c005d3c0    000002a0     rtdx64xplus.lib : rtdx_mon.o64P (.rtdx_text:_HSRTDX_rec)
+                  c005d660    00000260                     : buffer1.o64P (.rtdx_text:_RTDX_Buffer_WriteCB)
+                  c005d8c0    00000260                     : buffer1.o64P (.rtdx_text:_RTDX_write_next)
+                  c005db20    000001a0                     : rtdx_mon.o64P (.rtdx_text:_HSRTDX_xmt)
+                  c005dcc0    00000160                     : rtdx_mon.o64P (.rtdx_text:_RTDX_Send_To_Host)
+                  c005de20    000000e0                     : rtdx_mon.o64P (.rtdx_text:_RTDX_Mon_Queue)
+                  c005df00    000000e0                     : buffer1.o64P (.rtdx_text:_claim)
+                  c005dfe0    000000a0                     : rtdx_mon.o64P (.rtdx_text:_RTDX_GetH2THeader)
+                  c005e080    000000a0                     : rtdx_mon.o64P (.rtdx_text:_RTDX_Poll)
+                  c005e120    00000080                     : rtdx_mon.o64P (.rtdx_text:_RTDX_Final_RT_Monitor)
+                  c005e1a0    00000060                     : buffer1.o64P (.rtdx_text:_RTDX_Buffer_Initialize)
+                  c005e200    00000060                     : rtdx_mon.o64P (.rtdx_text:_RTDX_Init_RT_Monitor)
+                  c005e260    00000040                     : buffer2.o64P (.rtdx_text:_RTDX_Buffer_ReadCB)
+                  c005e2a0    00000040                     : buffer1.o64P (.rtdx_text:_RTDX_Buffer_Size)
+                  c005e2e0    00000040                     : memfill.o64P (.rtdx_text:_RTDX_memfill)
+                  c005e320    00000020                     : buffer2.o64P (.rtdx_text:_RTDX_Buffer_Read)
+                  c005e340    00000020                     : buffer1.o64P (.rtdx_text:_RTDX_Buffer_Write)
+                  c005e360    00000020                     : intr_tgt.o64P (.rtdx_text)
+
+.sysinit   0    c005e380    00000800     
+                  c005e380    00000400     audioSamplecfg.obj (.sysinit)
+                  c005e780    00000100     bios.a674 : dev_init.o674 (.sysinit)
+                  c005e880    00000100     pwrm.a674 : pwrm_ini.o674 (.sysinit)
+                  c005e980    000000c0     bios.a674 : boot.o674 (.sysinit)
+                  c005ea40    000000c0               : mem_init.o674 (.sysinit)
+                  c005eb00    00000060               : tsk_init.o674 (.sysinit)
+                  c005eb60    00000020     drivers.a674 : dio.o674 (.sysinit)
+
+.hwi_vec   0    c005ec00    00000200     
+                  c005ec00    00000200     audioSamplecfg.obj (.hwi_vec)
+
+
+FAR CALL TRAMPOLINES
+
+callee name               trampoline name
+   callee addr  tramp addr   call addr  call info
+--------------  -----------  ---------  ----------------
+$.bios:bios.a674<que_get.o674>$0x0  $Tramp$S$$_QUE_get
+   c005d180     c0057280     c003a1d4   ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_Mcasp_localSubmitIoctl)
+                             c003a494                        : Mcasp_ioctl.obj (.text:_Mcasp_localSubmitIoctl)
+                             c0041818                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c00418cc                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0041958                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c00419f8                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0041a64                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0044614                        : Mcasp.obj (.text:_Mcasp_localAbortReset)
+                             c00446d4                        : Mcasp.obj (.text:_Mcasp_localAbortReset)
+                             c0044708                        : Mcasp.obj (.text:_Mcasp_localAbortReset)
+                             c0044784                        : Mcasp.obj (.text:_Mcasp_localAbortReset)
+                             c004582c   ti.pspiom.i2c.a674 : I2c_edma.obj (.text:_I2c_completeIOedmaCallback)
+                             c0047fa0                      : I2c.obj (.text:_i2cCompleteIOInIsr)
+                             c004baf4   drivers.a674 : dio_tsk.o674 (.text)
+                             c004f1d0   ti.pspiom.i2c.a674 : I2c.obj (.text:_I2c_loadPendedIops)
+                             c0050cd4   ti.pspiom.mcasp.a674 : Mcasp_edma.obj (.text:_Mcasp_localIsValidPacket)
+$.bios:bios.a674<que_get.o674>$0x28  $Tramp$S$$_QUE_put
+   c005d1a8     c00572a0     c003a1f8   ti.pspiom.mcasp.a674 : Mcasp_ioctl.obj (.text:_Mcasp_localSubmitIoctl)
+                             c003a4b8                        : Mcasp_ioctl.obj (.text:_Mcasp_localSubmitIoctl)
+                             c00418d0                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c00418e0                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c004195c                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0041968                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c00419fc                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0041a08                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0041de8                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0041df4                        : Mcasp_edma.obj (.text:_Mcasp_localEdmaCallback)
+                             c0046d54   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cMdSubmitChan)
+                             c004bb5c   drivers.a674 : dio_tsk.o674 (.text)
+                             c004bca0                : dio_tsk.o674 (.text)
+                             c004ef44   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspSubmitReq)
+                             c004ef6c                        : Mcasp.obj (.text:_mcaspSubmitReq)
+                             c0050d40                        : Mcasp_edma.obj (.text:_Mcasp_localIsValidPacket)
+                             c0051744   pwrm.a674 : pwrm_reg.o674 (.text)
+                             c0052f68             : pwrm_regcst.o674 (.text)
+$.pmonchip:slp:pmi_ctl_evm6748.a674<pmi_volt6748evm.o674>$0x0  $Tramp$S$$_PMI_setVoltage
+   11836800     c00572c0     c003c0b4   pscl.a674 : pscl.o674 (.text)
+                             c003c12c             : pscl.o674 (.text)
+$.pmonchip:slp:pmi_ctl_evm6748.a674<pmi_volt6748evm.o674>$0x104  $Tramp$S$$_PMI_getVoltage
+   11836904     c00572e0     c003c958   pscl.a674 : pscl.o674 (.text)
+$.bios:bios6748.a674<bcache_block.o674>$0x144  $Tramp$S$$_BCACHE_wb
+   c005b744     c0057300     c003cd18   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdCreateChan)
+                             c003cd48                        : Mcasp.obj (.text:_mcaspMdCreateChan)
+                             c003cd74                        : Mcasp.obj (.text:_mcaspMdCreateChan)
+                             c00484f0   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c004ee8c   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspSubmitReq)
+$.bios:bios.a674<ecm_enableEvent.o674>$0x0  $Tramp$S$$_ECM_enableEvent
+   c005d0c0     c0057320     c003d424   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdCreateChan)
+                             c003d43c                        : Mcasp.obj (.text:_mcaspMdCreateChan)
+                             c003d480                        : Mcasp.obj (.text:_mcaspMdCreateChan)
+                             c003d4c4                        : Mcasp.obj (.text:_mcaspMdCreateChan)
+                             c004400c   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c004403c                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c00440a0                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0048338                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c0048354                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c0048368                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c004f614   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspBitSetGblRCtl)
+                             c004f7c4                        : Mcasp.obj (.text:_mcaspBitSetGblXCtl)
+                             c0056000   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cRegisterIntrHandler)
+$.pmonchip:slp:pmi.a674<pmi_pll.o674>$0x0  $Tramp$S$$_PMI_bypassPLL
+   11836c60     c0057340     c003fca0   pmi.a674 : pmi_pll.o674 (.text)
+                             c003fccc            : pmi_pll.o674 (.text)
+                             c003fff8            : pmi_pll.o674 (.text)
+                             c0040078            : pmi_pll.o674 (.text)
+$.pmonchip:pmi.a674<pmi_relock1.o674>$0x0  $Tramp$S$$_PMI_waitCpuCycles
+   118364e0     c0057360     c003ff14   pmi.a674 : pmi_pll.o674 (.text)
+                             c00400a8            : pmi_pll.o674 (.text)
+$.pmonchip:pmi.a674<pmi_onchip.o674>$0x0  $Tramp$S$$_PMI_goRelockPLL1
+   11836b20     c0057380     c00400f0   pmi.a674 : pmi_pll.o674 (.text)
+$.bios:bios.a674<swi_crea.o674>$0x0  $Tramp$S$$_SWI_create
+   c005c900     c00573a0     c00428d8   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspMdBindDev)
+$.bios:bios.a674<hwi_c.o674>$0x0  $Tramp$S$$_HWI_disable
+   c005cd00     c00573c0     c0043f08   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0043fd0                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0048488                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+$.bios:bios.a674<ecm_disableEvent.o674>$0x0  $Tramp$S$$_ECM_disableEvent
+   c005d040     c00573e0     c0043f18   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0043f30                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0043f60                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0043f84                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0048410                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c0048440                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c0048460                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c004d090   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cMdDeleteChan)
+                             c004f51c   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspBitSetGblRCtl)
+                             c004f6bc                        : Mcasp.obj (.text:_mcaspBitSetGblXCtl)
+                             c0054c20                        : Mcasp.obj (.text:_mcaspUnRegisterInt)
+$.bios:bios.a674<hwi_c.o674>$0x2c  $Tramp$S$$_HWI_restore
+   c005cd2c     c0057400     c0043f90   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0044134                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0048378                             : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+$.bios:bios.a674<ecm_dispatchPlug.o674>$0x0  $Tramp$S$$_ECM_dispatchPlug
+   c005d080     c0057420     c0043ffc   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0044030                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c004407c                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c00440c4                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0053a00   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspRegisterInt)
+                             c0055ff0   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cRegisterIntrHandler)
+$.bios:bios.a674<c62_c.o674>$0x18  $Tramp$S$$_C64_enableIER
+   c005d018     c0057440     c00440ec   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0044110                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c004412c                             : bios_edma3_drv_sample_init_multi_edma.obj (.text)
+                             c0053a24   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspRegisterInt)
+                             c0056014   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cRegisterIntrHandler)
+$.bios:sioboth.a674<sio_crea.o674>$0x0  $Tramp$S$$_SIO_create
+   c00597e0     c0057460     c0044d70   audioSample_io.obj (.text)
+                             c0044d9c   audioSample_io.obj (.text)
+$.bios:bios.a674<log_printf.o674>$0x0  $Tramp$S$$_LOG_printf
+   c005d2e0     c0057470     c0044da4   audioSample_io.obj (.text)
+                             c0044dd8   audioSample_io.obj (.text)
+                             c0044e88   audioSample_io.obj (.text)
+                             c0044ef8   audioSample_io.obj (.text)
+                             c004502c   audioSample_io.obj (.text)
+                             c0045070   audioSample_io.obj (.text)
+                             c00450c4   audioSample_io.obj (.text)
+                             c0045108   audioSample_io.obj (.text)
+                             c0050880   audioSample_main.obj (.text)
+$.bios:.near:bios.a674<mem_vall.o674>$0x0  $Tramp$S$$_MEM_valloc
+   c005cb80     c0057480     c0044e60   audioSample_io.obj (.text)
+                             c0044ec0   audioSample_io.obj (.text)
+                             c0044ed4   audioSample_io.obj (.text)
+                             c0044f2c   audioSample_io.obj (.text)
+$.bios:sioboth.a674<sio_issu.o674>$0x0  $Tramp$S$$_SIO_issue
+   c005cb00     c0057490     c0044f38   audioSample_io.obj (.text)
+                             c0044f64   audioSample_io.obj (.text)
+                             c0044f78   audioSample_io.obj (.text)
+                             c0044fb0   audioSample_io.obj (.text)
+                             c00450ac   audioSample_io.obj (.text)
+                             c00450c8   audioSample_io.obj (.text)
+                             c00450e4   audioSample_io.obj (.text)
+$.bios:sioboth.a674<sio_recl.o674>$0x0  $Tramp$S$$_SIO_reclaim
+   c005c200     c00574a0     c004500c   audioSample_io.obj (.text)
+                             c0045030   audioSample_io.obj (.text)
+                             c004504c   audioSample_io.obj (.text)
+                             c0045138   audioSample_io.obj (.text)
+$.bios:bios.a674<malloc.o674>$0x0  $Tramp$S$$_free
+   c0059b00     c00574b0     c0050328   rts6740.lib : setvbuf.obj (.text:_setvbuf)
+                             c0051ca8               : fclose.obj (.text:_fclose)
+$.bios:bios6748.a674<clk_gethtime.o674>$0x0  $Tramp$S$$_CLK_gethtime
+   c005d3a0     c00574c0     c0046ff0   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cPolledModeTransfer)
+                             c0047014                      : I2c.obj (.text:_i2cPolledModeTransfer)
+                             c00471e4                      : I2c.obj (.text:_i2cPolledModeTransfer)
+$.bios:bios.a674<dev_matc.o674>$0x0  $Tramp$S$$_DEV_match
+   c005c080     c00574e0     c0047b44   ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31MdCreateChan)
+                             c0048910   ti.pspiom.platforms.evm6748.audio.a674 : Audio.obj (.text:_audioMdCreateChan)
+                             c0048a28                                          : Audio.obj (.text:_audioMdCreateChan)
+                             c0048a58                                          : Audio.obj (.text:_audioMdCreateChan)
+                             c004e5a0   drivers.a674 : dio_tskDynamic.o674 (.text)
+$.bios:bios.a674<sem_pend_counting.o674>$0x0  $Tramp$S$$_SEM_pend
+   c005ce20     c0057500     c00481d4   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c0048da4   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cTransfer)
+                             c0049cd4   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_Mcasp_localConfigXmtSection)
+                             c004b9f4                        : Mcasp.obj (.text:_Mcasp_localConfigRcvSection)
+                             c004baac   drivers.a674 : dio_tsk.o674 (.text)
+                             c004bbe8                : dio_tsk.o674 (.text)
+                             c004e1cc   ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31I2cRead)
+                             c004e23c                                  : Aic31.obj (.text:_aic31I2cRead)
+                             c004f5d8   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspBitSetGblRCtl)
+                             c004f784                        : Mcasp.obj (.text:_mcaspBitSetGblXCtl)
+                             c004ff10   ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31I2cWrite)
+                             c0050800   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspBitRemoveGblXCtl)
+                             c0051dc4   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cWaitForBB)
+                             c0052084   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspBitRemoveGblRCtl)
+                             c0052194                        : Mcasp.obj (.text:_mcaspBitSetGblCtl)
+$.bios:bios.a674<sem_post_asm.o674>$0x0  $Tramp$S$$_SEM_post
+   c005bfa0     c0057520     c004822c   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c0048e08   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cTransfer)
+                             c0048e38                      : I2c.obj (.text:_i2cTransfer)
+                             c004bb74   drivers.a674 : dio_tsk.o674 (.text)
+                             c004bc40                : dio_tsk.o674 (.text)
+                             c004bca4                : dio_tsk.o674 (.text)
+                             c004bcb4                : dio_tsk.o674 (.text)
+                             c004bcd0                : dio_tsk.o674 (.text)
+                             c0057200   ti.pspiom.platforms.codec.a674 : Aic31.obj (.text:_aic31CallBack)
+$.bios:bios.a674<sem_dele.o674>$0x0  $Tramp$S$$_SEM_delete
+   c005d300     c0057540     c0048268   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c004e530   drivers.a674 : dio_tskDynamic.o674 (.text)
+                             c004e548                : dio_tskDynamic.o674 (.text)
+$.bios:bios.a674<sem_crea.o674>$0x0  $Tramp$S$$_SEM_create
+   c005c880     c0057560     c00482ac   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c004e5d8   drivers.a674 : dio_tskDynamic.o674 (.text)
+$.bios:bios.a674<tsk_disa.o674>$0x0  $Tramp$S$$_TSK_enable
+   c005c980     c0057580     c0048370   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+$.bios:bios.a674<tsk_disa.o674>$0x24  $Tramp$S$$_TSK_disable
+   c005c9a4     c00575a0     c0048474   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+$.bios:bios6748.a674<bcache_block.o674>$0x154  $Tramp$S$$_BCACHE_inv
+   c005b754     c00575c0     c00484b4   edma3_drv_bios_sample.lib : bios_edma3_drv_sample_cs_multi_edma.obj (.text)
+                             c004eec8   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspSubmitReq)
+$.bios:bios6748.a674<bcache_block.o674>$0x130  $Tramp$S$$_BCACHE_wbInv
+   c005b730     c00575e0     c004bde8   ti.pspiom.i2c.a674 : I2c_edma.obj (.text:_I2c_localEdmaTransfer)
+$.bios:.near:bios.a674<mem_free.o674>$0x0  $Tramp$S$$_MEM_free
+   c005a640     c0057600     c004e560   drivers.a674 : dio_tskDynamic.o674 (.text)
+                             c004e620                : dio_tskDynamic.o674 (.text)
+                             c0055c00   pwrm.a674 : pwrm_urgcst.o674 (.text)
+                             c0056c50             : pwrm_urg.o674 (.text)
+$.bios:.near:bios.a674<mem_vall.o674>$0x0  $Tramp$S$$_MEM_valloc
+   c005cb80     c0057620     c004e5c4   drivers.a674 : dio_tskDynamic.o674 (.text)
+                             c00516e4   pwrm.a674 : pwrm_reg.o674 (.text)
+                             c0052f28             : pwrm_regcst.o674 (.text)
+$.bios:bios.a674<swi_disable.o674>$0x0  $Tramp$S$$_SWI_disable
+   c005cee0     c0057640     c004f860   bios6748.a674 : pwrm_rel674.o674 (.text)
+                             c004fa04                 : pwrm_set674.o674 (.text)
+                             c00509c4   pwrm.a674 : _pwrm_updcst.o674 (.text)
+                             c0050a30             : _pwrm_updcst.o674 (.text)
+$.pmonchip:pmi.a674<pmi_ms.o674>$0x0  $Tramp$S$$_PMI_setModuleState
+   11836d80     c0057660     c004f8c8   bios6748.a674 : pwrm_rel674.o674 (.text)
+                             c004fa50                 : pwrm_set674.o674 (.text)
+                             c0052e24   pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.text)
+$.pmonchip:pmi.a674<pmi_ms.o674>$0x6c  $Tramp$S$$_PMI_getModuleState
+   11836dec     c0057680     c004f8e4   bios6748.a674 : pwrm_rel674.o674 (.text)
+                             c004fa8c                 : pwrm_set674.o674 (.text)
+                             c0052e04   pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.text)
+                             c0053e60   bios6748.a674 : _pwrm_initcounts.o674 (.text)
+$.bios:bios.a674<swi_disable.o674>$0x24  $Tramp$S$$_SWI_enable
+   c005cf04     c00576a0     c004f954   bios6748.a674 : pwrm_rel674.o674 (.text)
+                             c004f960                 : pwrm_rel674.o674 (.text)
+                             c004faf8                 : pwrm_set674.o674 (.text)
+                             c004fb04                 : pwrm_set674.o674 (.text)
+                             c00509e8   pwrm.a674 : _pwrm_updcst.o674 (.text)
+                             c0050a14             : _pwrm_updcst.o674 (.text)
+                             c0050b08             : _pwrm_updcst.o674 (.text)
+$.bios:bios.a674<malloc.o674>$0x24  $Tramp$S$$_malloc
+   c0059b24     c00576c0     c00503a8   rts6740.lib : setvbuf.obj (.text:_setvbuf)
+$.bios:bios.a674<sys_prin.o674>$0x740  $Tramp$S$$_SYS_printf
+   c0057f40     c00576e0     c0051db4   ti.pspiom.i2c.a674 : I2c.obj (.text:_i2cWaitForBB)
+$.pmonchip:slp:pmi_ctl_evm6748.a674<pmi_i2c.o674>$0x2d4  $Tramp$S$$_PMI_initI2C
+   11836434     c0057700     c0052e60   pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.text)
+$.pmonchip:slp:pmi_ctl_evm6748.a674<pmi_i2c.o674>$0x0  $Tramp$S$$_PMI_writeI2C
+   11836160     c0057720     c0052e70   pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.text)
+                             c0052e98                        : pmi_volt6748evm.o674 (.text)
+$.pmonchip:slp:pmi_ctl_evm6748.a674<pmi_i2c.o674>$0x13c  $Tramp$S$$_PMI_readI2C
+   1183629c     c0057740     c0052e78   pmi_ctl_evm6748.a674 : pmi_volt6748evm.o674 (.text)
+$.bios:bios.a674<lck.o674>$0x0  $Tramp$S$$_LCK_post
+   c005c800     c0057760     c0054d00   bios.a674 : tsk_stup.o674 (.text)
+$.bios:bios.a674<lck.o674>$0x20  $Tramp$S$$_LCK_pend
+   c005c820     c0057780     c0054d64   bios.a674 : tsk_stup.o674 (.text)
+$.bios:bios.a674<sys_abor.o674>$0x0  $Tramp$S$$_SYS_abort
+   c005cf40     c00577a0     c0054d68   bios.a674 : tsk_stup.o674 (.text)
+                             c0054d84             : tsk_stup.o674 (.text)
+$.bios:bios.a674<atm.o674>$0x20  $Tramp$S$$_ATM_deci
+   c005c6a0     c00577c0     c0055b00   pwrm.a674 : pwrm.o674 (.text)
+                             c0055b10             : pwrm.o674 (.text)
+                             c0055b20             : pwrm.o674 (.text)
+                             c0055b30             : pwrm.o674 (.text)
+                             c0055b40             : pwrm.o674 (.text)
+                             c0055b50             : pwrm.o674 (.text)
+                             c0055b60             : pwrm.o674 (.text)
+                             c0055b70             : pwrm.o674 (.text)
+                             c0055b80             : pwrm.o674 (.text)
+                             c0055b90             : pwrm.o674 (.text)
+$.bios:bios.a674<swi.o674>$0x70  $Tramp$S$$_SWI_post
+   c0059010     c00577e0     c0057240   ti.pspiom.mcasp.a674 : Mcasp.obj (.text:_mcaspIsr)
+$.text:pmi.a674<pmi_pll.o674>$0x6ec  $Tramp$S$$_PMI_calcWaitBypass
+   c004028c     118367e0     1183650c   pmi.a674 : pmi_relock1.o674 (.pmonchip)
+$.text:__divu:rts6740.lib<divu.obj>$0x0  $Tramp$S$$__divu
+   c0054640     11836d60     11836ce4   pmi.a674 : pmi_pll.o674 (.pmonchip:slp)
+                             11836d08            : pmi_pll.o674 (.pmonchip:slp)
+
+[49 trampolines]
+[210 trampoline calls]
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+11827738   $bss
+11827738   .bss
+11800000   .data
+c0030000   .text
+c005e544   BIOS$$CLKOFF
+c005e504   BIOS$$CLKON
+c005e380   BIOS_init
+c005e630   BIOS_start
+00000000   BUF$
+00000001   BUF_ENABLED
+c00571e0   C$$EXIT
+c0056bb8   C$$IO$$
+ffffffff   CACHE_L1D
+ffffffff   CACHE_L1P
+00000001   CLK$
+11827ff8   CLK_A_TABBEG
+00000001   CLK_CALDIV
+00000001   CLK_CALMULT
+000493e0   CLK_COUNTSPMS
+00000004   CLK_COUNTSPMSHIGH
+11827ca0   CLK_D_idletime
+11827c9c   CLK_D_isrhook
+11827c98   CLK_D_tabbeg
+11827c94   CLK_D_timefxn
+00000001   CLK_ENABLEHTIME
+c005d3a0   CLK_F_gethtime
+c005b2e0   CLK_F_getltime
+c005b2f0   CLK_F_isr
+c005b430   CLK_F_itime
+c0058ac0   CLK_HOOKFXN
+00000001   CLK_HTIMEDIV
+00000001   CLK_HTIMEMULT
+000493e0   CLK_HTIMEPERLTIME
+00005dc0   CLK_INPUTCLK
+00008000   CLK_INTBIT
+00000001   CLK_LTIMEDIV
+000493e0   CLK_LTIMEMULT
+000003e8   CLK_MICROSECS
+00005dc0   CLK_PRD
+00000000   CLK_PRDHIGH
+01c21000   CLK_REGS
+00000001   CLK_RESETTIMER
+11827c90   CLK_R_time
+00000020   CLK_TCR
+00000000   CLK_TDDR
+00000000   CLK_TDDRHIGH
+c005d3a0   CLK_TIMEFXN
+00000001   CLK_TIMERNUM
+00000005   CLK_TIMMODE
+00000001   CLK_USETIMER
+11827ffc   CLK_null
+11827b44   DDR
+c0000000   DDR$B
+00030000   DDR$L
+00000000   DEV$
+00000000   DGN$
+00000000   DHL$
+00000000   DHL_gChannelsAvailable
+00000001   DIO$
+00000000   DIO_NUMSWIBASE
+00000000   DIO_NUMTSKBASE
+00000000   DIO_STATIC
+11839e50   DIO_dioAudioIN$device
+11839e44   DIO_dioAudioIN$obj
+11839e2c   DIO_dioAudioOUT$device
+11839e20   DIO_dioAudioOUT$obj
+00000000   DPI$
+11836f90   DVTEvent_Log
+11828000   DVTEvent_Log$buf
+00000001   DVTEvent_Log$datatype
+00000000   DVTEvent_Log$log
+00002000   DVTEvent_Log$size
+00000001   ECM$
+00000001   ECM_ENABLE
+ffffffff   ECM_EVTMASK0
+ffffffff   ECM_EVTMASK1
+ffffffff   ECM_EVTMASK2
+ffffffff   ECM_EVTMASK3
+0000000a   EVENT10
+00000064   EVENT100
+00000065   EVENT101
+00000066   EVENT102
+00000067   EVENT103
+00000068   EVENT104
+00000069   EVENT105
+0000006a   EVENT106
+0000006b   EVENT107
+0000006c   EVENT108
+0000006d   EVENT109
+0000000b   EVENT11
+0000006e   EVENT110
+0000006f   EVENT111
+00000070   EVENT112
+00000071   EVENT113
+00000072   EVENT114
+00000073   EVENT115
+00000074   EVENT116
+00000075   EVENT117
+00000076   EVENT118
+00000077   EVENT119
+0000000c   EVENT12
+00000078   EVENT120
+00000079   EVENT121
+0000007a   EVENT122
+0000007b   EVENT123
+0000007c   EVENT124
+0000007d   EVENT125
+0000007e   EVENT126
+0000007f   EVENT127
+0000000d   EVENT13
+0000000e   EVENT14
+0000000f   EVENT15
+00000010   EVENT16
+00000011   EVENT17
+00000012   EVENT18
+00000013   EVENT19
+00000014   EVENT20
+00000015   EVENT21
+00000016   EVENT22
+00000017   EVENT23
+00000018   EVENT24
+00000019   EVENT25
+0000001a   EVENT26
+0000001b   EVENT27
+0000001c   EVENT28
+0000001d   EVENT29
+0000001e   EVENT30
+0000001f   EVENT31
+00000020   EVENT32
+00000021   EVENT33
+00000022   EVENT34
+00000023   EVENT35
+00000024   EVENT36
+00000025   EVENT37
+00000026   EVENT38
+00000027   EVENT39
+00000004   EVENT4
+00000028   EVENT40
+00000029   EVENT41
+0000002a   EVENT42
+0000002b   EVENT43
+0000002c   EVENT44
+0000002d   EVENT45
+0000002e   EVENT46
+0000002f   EVENT47
+00000030   EVENT48
+00000031   EVENT49
+00000005   EVENT5
+00000032   EVENT50
+00000033   EVENT51
+00000034   EVENT52
+00000035   EVENT53
+00000036   EVENT54
+00000037   EVENT55
+00000038   EVENT56
+00000039   EVENT57
+0000003a   EVENT58
+0000003b   EVENT59
+00000006   EVENT6
+0000003c   EVENT60
+0000003d   EVENT61
+0000003e   EVENT62
+0000003f   EVENT63
+00000040   EVENT64
+00000041   EVENT65
+00000042   EVENT66
+00000043   EVENT67
+00000044   EVENT68
+00000045   EVENT69
+00000007   EVENT7
+00000046   EVENT70
+00000047   EVENT71
+00000048   EVENT72
+00000049   EVENT73
+0000004a   EVENT74
+0000004b   EVENT75
+0000004c   EVENT76
+0000004d   EVENT77
+0000004e   EVENT78
+0000004f   EVENT79
+00000008   EVENT8
+00000050   EVENT80
+00000051   EVENT81
+00000052   EVENT82
+00000053   EVENT83
+00000054   EVENT84
+00000055   EVENT85
+00000056   EVENT86
+00000057   EVENT87
+00000058   EVENT88
+00000059   EVENT89
+00000009   EVENT9
+0000005a   EVENT90
+0000005b   EVENT91
+0000005c   EVENT92
+0000005d   EVENT93
+0000005e   EVENT94
+0000005f   EVENT95
+00000060   EVENT96
+00000061   EVENT97
+00000062   EVENT98
+00000063   EVENT99
+c005cca0   FXN_F_nop
+c005cca4   FXN_F_run
+c005cce0   FXN_F_zero
+00000001   GBL$
+00005205   GBL_A_VERSION
+00000000   GBL_BCACHEREADADDR0
+00000000   GBL_BCACHEREADADDR1
+00000000   GBL_BCACHEREADADDR2
+00000000   GBL_BIGENDIAN
+00000000   GBL_CACHE
+00000000   GBL_CALLCSLCFGINIT
+00004e20   GBL_CLKIN
+00001a5b   GBL_CLKTYPE
+00001a5c   GBL_DSPSUBTYPE
+0000003e   GBL_DSPTYPE
+00000001   GBL_ENABLEINST
+00000000   GBL_ENABLE_SK
+00000042   GBL_FOOTPRINT
+000493e0   GBL_FREQ
+00000000   GBL_GEMTRUECOMPEN
+00000007   GBL_L1DMODE
+00000007   GBL_L1PMODE
+00000001   GBL_L2CONFIGURE
+00000000   GBL_L2MAR0_31
+0000ffff   GBL_L2MAR128_159
+00000000   GBL_L2MAR160_191
+ffffffff   GBL_L2MAR192_223
+00000000   GBL_L2MAR224_255
+00000000   GBL_L2MAR32_63
+00000000   GBL_L2MAR64_95
+00000000   GBL_L2MAR96_127
+00000000   GBL_L2MODE
+00000000   GBL_NULL
+00000000   GBL_PROCID
+00000000   GBL_ROM
+00000000   GBL_SUPPORTCSL
+0000dbef   GBL_TRCMASKVALUE
+00000000   GBL_USERINIT
+c005d280   GBL_USERINITFXN
+00000001   GBL_boot
+1183a12c   GBL_initdone
+118142b8   GBL_stackbeg
+118242b7   GBL_stackend
+00000000   GIO$
+c005d280   GIO_CREATEFXN
+c005d280   GIO_DELETEFXN
+c005d280   GIO_PENDFXN
+c005d280   GIO_POSTFXN
+00000000   HOOK$
+00000000   HOOK_KNLID
+00000001   HST$
+1183a080   HST_A_TABBEG
+1183a0bc   HST_A_TABEND
+00000000   HST_DSM
+ffffffff   HST_DSMBUFSEG
+00000400   HST_DSMMEMSIZE
+11827d0c   HST_D_chanmask
+11827d10   HST_D_tabbeg
+11827d14   HST_D_tabend
+000000ff   HST_MAXFRAMEALLOWED
+00000040   HST_MAXFRAMESET
+00000000   HST_NONE
+00000001   HST_RTDX
+00000001   HWI$
+c005ec00   HWI_A_VECS
+00009f88   HWI_CFGDISPATCHED
+11827ea8   HWI_D_bss
+11827eac   HWI_D_ccmask
+11827e98   HWI_D_spsave
+00000001   HWI_ENABLE_EXC
+c0058ac0   HWI_F_dispatch
+00000000   HWI_GENERATE_RESET_VEC
+0000000a   HWI_INT10
+00000000   HWI_INT10$hwi
+0000000b   HWI_INT11
+00000000   HWI_INT11$hwi
+0000000c   HWI_INT12
+00000000   HWI_INT12$hwi
+0000000d   HWI_INT13
+00000000   HWI_INT13$hwi
+0000000e   HWI_INT14
+00000000   HWI_INT14$hwi
+0000000f   HWI_INT15
+00000000   HWI_INT15$hwi
+00000004   HWI_INT4
+00000000   HWI_INT4$hwi
+00000005   HWI_INT5
+00000000   HWI_INT5$hwi
+00000006   HWI_INT6
+00000000   HWI_INT6$hwi
+00000007   HWI_INT7
+00000000   HWI_INT7$hwi
+00000008   HWI_INT8
+00000000   HWI_INT8$hwi
+00000009   HWI_INT9
+00000000   HWI_INT9$hwi
+00060504   HWI_INTRMUX1
+0b030201   HWI_INTRMUX2
+28040d0c   HWI_INTRMUX3
+00000001   HWI_NMI
+00000000   HWI_NMI$hwi
+00000000   HWI_POLARITYMASK
+00000002   HWI_RESERVED0
+00000000   HWI_RESERVED0$hwi
+00000003   HWI_RESERVED1
+00000000   HWI_RESERVED1$hwi
+00000000   HWI_RESET
+00000000   HWI_RESET$hwi
+00000000   HWI_ZEROTAB
+00000001   IDL$
+1183a0f8   IDL_A_CALBEG
+1183a0e8   IDL_A_TABBEG
+00000006   IDL_CALIBRERROR
+c005d100   IDL_CALIBRFXN
+11827f60   IDL_D_busyObj
+11827c80   IDL_D_calbeg
+11827c7c   IDL_D_calibrate
+11827c78   IDL_D_tabbeg
+1183a0f4   IDL_END
+1183a104   IDL_END$
+c005cd60   IDL_F_busy
+c005ca80   IDL_F_calibrate
+c005d2c0   IDL_F_loop
+c005d100   IDL_F_stub
+00000001   IDL_USECLKIDLTIME
+11836fdc   IDL_busyObj
+11827789   IDL_busyObj$avgfmt
+00000001   IDL_busyObj$filter
+00000001   IDL_busyObj$iA
+00000000   IDL_busyObj$iB
+00000001   IDL_busyObj$iC
+11827783   IDL_busyObj$maxfmt
+00000000   IDL_busyObj$operation
+11836fd8   IDL_busyObj$stsobj
+11827786   IDL_busyObj$sumfmt
+00000002   IDL_busyObj$unittype
+1183a0e8   IDL_cpuLoad
+1183a0f8   IDL_cpuLoad$
+ffffffff   IRAM
+00000001   ISRC$
+c005b5d8   KNL_glue
+1183a0bc   KNL_swi
+00000001   KNL_swi$dorta
+00000000   KNL_swi$ord
+00000000   KNL_swi$pri
+11836fac   KNL_swi$sts
+11827745   KNL_swi$sts$avgfmt
+00000002   KNL_swi$sts$filter
+00000001   KNL_swi$sts$filtmaxmult
+00000001   KNL_swi$sts$filtsummult
+11827735   KNL_swi$sts$maxfmt
+11836fa8   KNL_swi$sts$stsobj
+1182773d   KNL_swi$sts$sumfmt
+00000000   KNL_swi$sts$unittype
+00000000   KNL_swi$swi
+ffffffff   L3_CBA_RAM
+00000001   LCK$
+c0057f80   LNK_F_checkBufferCall
+c0058000   LNK_F_dataPump
+c0057fa0   LNK_F_getChanPtr
+c0057ff8   LNK_F_init
+c0058508   LNK_F_readCallBack
+1183a0ec   LNK_dataPump
+1183a0fc   LNK_dataPump$
+11827eb4   LNK_dspFrameReadyMask
+11827eb0   LNK_dspFrameRequestMask
+c0058280   LNK_newin
+c00583b4   LNK_newout
+c0058010   LNK_rcloop
+c00580d4   LNK_rdrtry
+11827ebc   LNK_readDone
+11827ec0   LNK_readFail
+11827eb8   LNK_readPend
+c00580e4   LNK_rrloop
+11827ec4   LNK_writeFail
+c00581b0   LNK_wrloop
+c00581a4   LNK_wrrtry
+00000001   LOG$
+11836f60   LOG_A_TABBEG
+11836fa8   LOG_A_TABEND
+00000003   LOG_A_TABLEN
+11827c84   LOG_D_system
+00000001   LOG_ENABLED
+c005c5e0   LOG_F_event
+11836f60   LOG_system
+11837000   LOG_system$buf
+00000000   LOG_system$datatype
+00000000   LOG_system$log
+00000400   LOG_system$size
+00000000   MBX$
+00000001   MEM$
+11827b44   MEM_MALLOCSEG
+00000000   MEM_NULL
+11827b44   MEM_SEGZERO
+00000000   MEM_USEMPC
+00000001   MEM_gNumHeap
+00000000   MSGQ$
+00000000   MSGQ_USEMSGQ
+00000000   OBJ$
+00000000   PIP$
+11839ef8   PIP_A_TABBEG
+11839fc0   PIP_A_TABEND
+00000002   PIP_A_TABLEN
+11827c88   PIP_D_tabbeg
+11827c8c   PIP_D_tablen
+c005aa78   PIP_F_give
+c005aa78   PIP_F_probe
+c005ab48   PIP_F_start
+c005aa00   PIP_F_take
+00000064   PIP_OBJSIZE
+00000000   PIP_gNextId
+00000002   PIP_gNumEmbed
+c003fc50   PMI_goDiv
+00000000   POOL$
+00000000   POOL_USEPOOL
+00000001   PRD$
+11800000   PRD_A_TABBEG
+11800000   PRD_A_TABEND
+00000000   PRD_A_TABLEN
+11827cc8   PRD_D_cur
+11827ccc   PRD_D_elapsed
+11827cd0   PRD_D_prevtim
+11827cd4   PRD_D_scalar
+11827cd8   PRD_D_swihandle
+11827cdc   PRD_D_tabbeg
+11827ce0   PRD_D_tablen
+11827ce4   PRD_D_thook
+11827cc4   PRD_D_tick
+c0059460   PRD_F_swi
+c00596e4   PRD_F_tick
+00000001   PRD_SCALAR
+00000000   PRD_SWIHANDLE
+c005a614   PRD_THOOKFXN
+11827ff8   PRD_clock
+00000001   PWRM$
+00000238   PWRM_PWRM_CAPSMASK
+0000000a   PWRM_PWRM_CLKTICKSPERSLOT
+00000001   PWRM_PWRM_ENABLE
+00000002   PWRM_PWRM_INITSPCPU
+00000000   PWRM_PWRM_INITSPPER
+00000000   PWRM_PWRM_LOADENABLE
+00000001   PWRM_PWRM_NUMSLOTS
+00000001   PWRM_PWRM_RESOURCETRACKING
+00000001   PWRM_PWRM_SCALING
+c005d280   PWRM_PWRM_SHAREDRESOURCEFXN
+c005d280   PWRM_PWRM_SLOTHOOKFXN
+00000000   PWRM_PWRM_TIMERIDNUM
+00000000   PWRM_PWRM_TIMERINTRMASK
+00000000   PWRM_PWRM_TIMERWUGENMASK
+00000000   PWRM_PWRM_USERRESOURCES
+00000000   PWRM_PWRM_USETIMER
+00000001   QUE$
+11827ce8   RTA_D_fromHost
+11827cf0   RTA_D_logval
+11827d00   RTA_D_stsval
+11827cec   RTA_D_toHost
+c005d1c0   RTA_F_andn
+c0059e60   RTA_F_dispatch
+c0059d80   RTA_F_getlog
+c0059db8   RTA_F_getsts
+c005d1d8   RTA_F_or
+c0059df8   RTA_F_readblk
+c0059e20   RTA_F_resetmem
+c0059e14   RTA_F_writeword
+1183a0f0   RTA_dispatcher
+1183a100   RTA_dispatcher$
+c0059eac   RTA_execute
+1183a084   RTA_fromHost
+11836fe8   RTA_fromHost$buf
+00000004   RTA_fromHost$framesize
+00000000   RTA_fromHost$hst
+00000001   RTA_fromHost$id
+00000000   RTA_fromHost$mode
+11839ef8   RTA_fromHost$pipe
+11839f28   RTA_fromHost$pipe$aaa
+11839f58   RTA_fromHost$pipe$bbb
+11827b48   RTA_fromHost$pipe$dtab
+11839efc   RTA_fromHost$pipe$rd
+11839f2c   RTA_fromHost$pipe$wr
+1183a08c   RTA_fromHost$rtdx
+1183a0a0   RTA_toHost
+11839d20   RTA_toHost$buf
+00000040   RTA_toHost$framesize
+00000000   RTA_toHost$hst
+00000000   RTA_toHost$id
+00000001   RTA_toHost$mode
+11839f5c   RTA_toHost$pipe
+11839f8c   RTA_toHost$pipe$aaa
+11839fbc   RTA_toHost$pipe$bbb
+11827b54   RTA_toHost$pipe$dtab
+11839f60   RTA_toHost$pipe$rd
+11839f90   RTA_toHost$pipe$wr
+1183a0a8   RTA_toHost$rtdx
+00000001   RTDX$
+00000408   RTDX_BUFMEMSIZE
+ffffffff   RTDX_DATAMEMSEG
+00000000   RTDX_MODE
+00000001   RTDX_NORMALIZED_HDR
+00000001   RTDX_USERTDX
+00000000   RTDX_USERTEXECUTION
+00000000   SEM$
+00000000   SIO$
+00000001   STS$
+11836fa8   STS_A_TABBEG
+11836fe8   STS_A_TABEND
+c005ceac   STS_F_add
+c005ce80   STS_F_delta
+c005cec8   STS_F_reset
+00000001   SWI$
+1183a0bc   SWI_A_TABBEG
+1183a0e8   SWI_A_TABEND
+00000001   SWI_A_TABLEN
+11827d5c   SWI_D_curfxn
+11827d4c   SWI_D_curmask
+11827d58   SWI_D_curmbox
+11827d50   SWI_D_curset
+11827d48   SWI_D_execaddr
+11827d64   SWI_D_inswi
+11827d54   SWI_D_lock
+11827d60   SWI_D_rdybeg
+11827d68   SWI_D_rdytab
+11827d44   SWI_D_runaddr
+00000000   SWI_EHOOKFXN
+c0059184   SWI_EXECFXN
+c0058fa0   SWI_F_enable
+c0059184   SWI_F_exec
+c00591ac   SWI_F_iexec
+c0059010   SWI_F_post
+c005922c   SWI_F_run
+00000000   SWI_IHOOKFXN
+c005922c   SWI_RUNFXN
+00000001   SYS$
+1183a108   SYS$config
+c005d200   SYS_ABORTFXN
+c005d360   SYS_ERRORFXN
+c005d380   SYS_EXITFXN
+c005d240   SYS_PUTCFXN
+1183a128   TRC_R_mask
+1183a124   TRC_cinit
+00000001   TSK$
+00000000   TSK_NUM_HOOKS
+00000001   TSK_PRIORITY
+00000000   TSK_READYFXN
+00000000   TSK_STACKSEG
+00000400   TSK_STACKSIZE
+00000000   TSK_SWITCHFXN
+c005d280   TSK_VCREATEFXN
+c005d280   TSK_VDELETEFXN
+c005d280   TSK_VEXITFXN
+11839fcc   TSK_idle
+00000000   TSK_idle$ord
+00000000   TSK_idle$pri
+118394f8   TSK_idle$stack
+11839890   TSK_idle$stkptr
+11836fbc   TSK_idle$sts
+1182775f   TSK_idle$sts$avgfmt
+00000002   TSK_idle$sts$filter
+00000001   TSK_idle$sts$filtmaxmult
+00000001   TSK_idle$sts$filtsummult
+1182774f   TSK_idle$sts$maxfmt
+11836fb8   TSK_idle$sts$stsobj
+11827757   TSK_idle$sts$sumfmt
+00000000   TSK_idle$sts$unittype
+00000000   TSK_idle$tsk
+00000001   UDEV$
+11839e74   UDEV_aic310$device
+11839e68   UDEV_aic310$obj
+11839e98   UDEV_audio0$device
+11839e8c   UDEV_audio0$obj
+11839ee0   UDEV_i2c0$device
+11839ed4   UDEV_i2c0$obj
+11839ebc   UDEV_mcasp0$device
+11839eb0   UDEV_mcasp0$obj
+11800540   _ADPCM_SBCoder_dut
+1180438c   _ADPCM_SBDecoder_dut
+c00455d0   _AES128_Check
+c0042eac   _AES128_Check2048
+c00455c8   _AES128_Decrypt
+c0042bf0   _AES128_Decrypt2048
+c00455c0   _AES128_Encrypt
+c0042960   _AES128_Encrypt2048
+11807c28   _AESMAC
+11807c08   _AESkey
+c005c680   _ATM_andi
+c005c680   _ATM_andu
+c005c690   _ATM_cleari
+c005c690   _ATM_clearu
+c005c6a0   _ATM_deci
+c005c6a0   _ATM_decu
+c005c6b0   _ATM_inci
+c005c6b0   _ATM_incu
+c005c6c4   _ATM_ori
+c005c6c4   _ATM_oru
+c005c6d4   _ATM_seti
+c005c6d4   _ATM_setu
+11813fbc   _Aic31_IOMFXNS
+118275a0   _Aic31_PARAMS
+11813fb8   _Aic31_deviceInstInfo
+c0056440   _Aic31_init
+118137ec   _Audio_IOMFXNS
+11827690   _Audio_PARAMS
+c0044fd0   _Audio_echo_Task
+c0054e80   _Audio_init
+c005d280   _BCACHE_bootInit
+c005bb14   _BCACHE_getMar
+c005bac4   _BCACHE_getSize
+c005b754   _BCACHE_inv
+c005ba94   _BCACHE_setCacheToSram
+c005ba44   _BCACHE_setMar
+c005ba00   _BCACHE_setSize
+c005ca00   _BCACHE_wait
+c005b744   _BCACHE_wb
+c005b730   _BCACHE_wbInv
+c005e380   _BIOS_init
+c005e630   _BIOS_start
+c005d02c   _C62_clearIFR
+c005d000   _C62_disableIER
+c005d018   _C62_enableIER
+c005d02c   _C64_clearIFR
+c005d000   _C64_disableIER
+c005d018   _C64_enableIER
+ffffffff   _CACHE_L1D
+ffffffff   _CACHE_L1P
+000493e0   _CLK_COUNTSPMS
+11827f38   _CLK_DFLTMICROSECS
+11827cc0   _CLK_D_countspms
+11827cb4   _CLK_D_dirty
+11827f3c   _CLK_D_microseconds
+11827cb8   _CLK_D_prd
+11827cbc   _CLK_D_tddr
+c005b430   _CLK_F_itime
+00005dc0   _CLK_PRD
+01c21000   _CLK_REGS
+00000000   _CLK_TDDR
+00000001   _CLK_TIMERNUM
+00000001   _CLK_USETIMER
+c005d3a0   _CLK_gethtime
+11827ca4   _CLK_htimeDiv
+11827ca8   _CLK_htimeMult
+11827f58   _CLK_htimePerLtime
+11813dcc   _CLK_inputClock
+c005b430   _CLK_itime
+11827cac   _CLK_ltimeDiv
+11827cb0   _CLK_ltimeMult
+c005cfa0   _CLK_measure
+11827b44   _DDR
+c0000000   _DDR_base
+00030000   _DDR_length
+118142b0   _DEV_D_devinit
+11827b60   _DEV_devinit
+c005e780   _DEV_init
+c005c080   _DEV_match
+c005c2c0   _DEV_mkframe
+c005cc40   _DEV_rmframe
+c0045250   _DH_Process
+c0057080   _DIO_ctrl
+c005eb60   _DIO_init
+c004bc80   _DIO_tskCallback
+118141e0   _DIO_tskDynamicFxns
+c004bb8c   _DIO_tskIdle
+c004bae4   _DIO_tskIssue
+c004bac8   _DIO_tskReady
+c004baa0   _DIO_tskReclaim
+c0047554   _DSP_ADPCM_SBCoder_init
+c00474e0   _DSP_ADPCM_SBCoder_process
+c0047374   _DSP_ADPCM_SBDecoder_init
+c0047300   _DSP_ADPCM_SBDecoder_process
+c0040960   _DSP_ADPCM_dec_init
+c00406d4   _DSP_ADPCM_dec_process
+c0040600   _DSP_ADPCM_enc_init
+c0040320   _DSP_ADPCM_enc_process
+c003df24   _DSP_BitDepacker_init
+c003dbc8   _DSP_BitDepacker_process
+c003da48   _DSP_BitPacker_init
+c003d600   _DSP_BitPacker_process
+c003f9c0   _DSP_QMFA_bank_init
+c003f718   _DSP_QMFA_process
+c003f544   _DSP_QMFS_bank_init
+c003f2e0   _DSP_QMFS_process
+c004b738   _DSP_SBC_AFB_init
+c004b6f0   _DSP_SBC_AFB_process
+c004b5ec   _DSP_SBC_SFB_init
+c004b5a0   _DSP_SBC_SFB_process
+11836f90   _DVTEvent_Log
+c0045384   _DigitalSign_Create
+11814294   _ECM_ATTRS
+c005d040   _ECM_disableEvent
+c005bea0   _ECM_dispatch
+c005d080   _ECM_dispatchPlug
+11827744   _ECM_dispatchTab
+c005d0c0   _ECM_enableEvent
+c0039cc0   _EDMA3_DRV_Ioctl
+c0039b20   _EDMA3_DRV_chainChannel
+c0039a48   _EDMA3_DRV_checkAndClearTcc
+c0038480   _EDMA3_DRV_clearErrorBits
+c003e7f0   _EDMA3_DRV_close
+c003e584   _EDMA3_DRV_create
+c003e4a0   _EDMA3_DRV_delete
+c0038360   _EDMA3_DRV_disableLogicalChannel
+c0036ba8   _EDMA3_DRV_disableTransfer
+c0038100   _EDMA3_DRV_enableTransfer
+c0037030   _EDMA3_DRV_freeChannel
+c00399c0   _EDMA3_DRV_getCCRegister
+c0039924   _EDMA3_DRV_getInstHandle
+c0039840   _EDMA3_DRV_getMapChToEvtQ
+c0037f80   _EDMA3_DRV_getOptField
+c0039720   _EDMA3_DRV_getPaRAM
+c0039640   _EDMA3_DRV_getPaRAMEntry
+c0039424   _EDMA3_DRV_getPaRAMField
+c0039364   _EDMA3_DRV_getPaRAMPhyAddr
+c0039230   _EDMA3_DRV_linkChannel
+c0039030   _EDMA3_DRV_mapChToEvtQ
+c003e20c   _EDMA3_DRV_open
+c0037364   _EDMA3_DRV_requestChannel
+c0038f44   _EDMA3_DRV_setCCRegister
+c0036aa0   _EDMA3_DRV_setDestIndex
+c00368cc   _EDMA3_DRV_setDestParams
+c0038d88   _EDMA3_DRV_setEvtQPriority
+c0036660   _EDMA3_DRV_setOptField
+c0038c80   _EDMA3_DRV_setPaRAM
+c0038ba4   _EDMA3_DRV_setPaRAMEntry
+c0038940   _EDMA3_DRV_setPaRAMField
+c003888c   _EDMA3_DRV_setQdmaTrigWord
+c003654c   _EDMA3_DRV_setSrcIndex
+c0036380   _EDMA3_DRV_setSrcParams
+c0036240   _EDMA3_DRV_setTransferParams
+c00387b0   _EDMA3_DRV_unchainChannel
+c00386f4   _EDMA3_DRV_unlinkChannel
+c00385c0   _EDMA3_DRV_waitAndClearTcc
+11827ec8   _EDMA3_MAX_RM_INSTANCES
+c0036160   _EDMA3_RM_Ioctl
+c0035984   _EDMA3_RM_allocContiguousResource
+c00343a0   _EDMA3_RM_allocLogicalChannel
+c00338c8   _EDMA3_RM_allocResource
+c00337d0   _EDMA3_RM_checkAndClearTcc
+c0033600   _EDMA3_RM_close
+c0033328   _EDMA3_RM_create
+c00330c4   _EDMA3_RM_delete
+c0032f0c   _EDMA3_RM_freeContiguousResource
+c00328cc   _EDMA3_RM_freeLogicalChannel
+c00324a0   _EDMA3_RM_freeResource
+c0032400   _EDMA3_RM_getBaseAddress
+c0032380   _EDMA3_RM_getCCRegister
+c0032328   _EDMA3_RM_getGblConfigParams
+c0032204   _EDMA3_RM_getInstanceInitCfg
+c0032080   _EDMA3_RM_getPaRAM
+c0031f20   _EDMA3_RM_getPaRAMPhyAddr
+c0031de4   _EDMA3_RM_mapEdmaChannel
+c0031c80   _EDMA3_RM_mapQdmaChannel
+c0031620   _EDMA3_RM_open
+c0031308   _EDMA3_RM_registerTccCb
+c0031224   _EDMA3_RM_setCCRegister
+c00310a0   _EDMA3_RM_setPaRAM
+c0030f44   _EDMA3_RM_unregisterTccCb
+c0030e2c   _EDMA3_RM_waitAndClearTcc
+0000000a   _EVENT10
+00000064   _EVENT100
+00000065   _EVENT101
+00000066   _EVENT102
+00000067   _EVENT103
+00000068   _EVENT104
+00000069   _EVENT105
+0000006a   _EVENT106
+0000006b   _EVENT107
+0000006c   _EVENT108
+0000006d   _EVENT109
+0000000b   _EVENT11
+0000006e   _EVENT110
+0000006f   _EVENT111
+00000070   _EVENT112
+00000071   _EVENT113
+00000072   _EVENT114
+00000073   _EVENT115
+00000074   _EVENT116
+00000075   _EVENT117
+00000076   _EVENT118
+00000077   _EVENT119
+0000000c   _EVENT12
+00000078   _EVENT120
+00000079   _EVENT121
+0000007a   _EVENT122
+0000007b   _EVENT123
+0000007c   _EVENT124
+0000007d   _EVENT125
+0000007e   _EVENT126
+0000007f   _EVENT127
+0000000d   _EVENT13
+0000000e   _EVENT14
+0000000f   _EVENT15
+00000010   _EVENT16
+00000011   _EVENT17
+00000012   _EVENT18
+00000013   _EVENT19
+00000014   _EVENT20
+00000015   _EVENT21
+00000016   _EVENT22
+00000017   _EVENT23
+00000018   _EVENT24
+00000019   _EVENT25
+0000001a   _EVENT26
+0000001b   _EVENT27
+0000001c   _EVENT28
+0000001d   _EVENT29
+0000001e   _EVENT30
+0000001f   _EVENT31
+00000020   _EVENT32
+00000021   _EVENT33
+00000022   _EVENT34
+00000023   _EVENT35
+00000024   _EVENT36
+00000025   _EVENT37
+00000026   _EVENT38
+00000027   _EVENT39
+00000004   _EVENT4
+00000028   _EVENT40
+00000029   _EVENT41
+0000002a   _EVENT42
+0000002b   _EVENT43
+0000002c   _EVENT44
+0000002d   _EVENT45
+0000002e   _EVENT46
+0000002f   _EVENT47
+00000030   _EVENT48
+00000031   _EVENT49
+00000005   _EVENT5
+00000032   _EVENT50
+00000033   _EVENT51
+00000034   _EVENT52
+00000035   _EVENT53
+00000036   _EVENT54
+00000037   _EVENT55
+00000038   _EVENT56
+00000039   _EVENT57
+0000003a   _EVENT58
+0000003b   _EVENT59
+00000006   _EVENT6
+0000003c   _EVENT60
+0000003d   _EVENT61
+0000003e   _EVENT62
+0000003f   _EVENT63
+00000040   _EVENT64
+00000041   _EVENT65
+00000042   _EVENT66
+00000043   _EVENT67
+00000044   _EVENT68
+00000045   _EVENT69
+00000007   _EVENT7
+00000046   _EVENT70
+00000047   _EVENT71
+00000048   _EVENT72
+00000049   _EVENT73
+0000004a   _EVENT74
+0000004b   _EVENT75
+0000004c   _EVENT76
+0000004d   _EVENT77
+0000004e   _EVENT78
+0000004f   _EVENT79
+00000008   _EVENT8
+00000050   _EVENT80
+00000051   _EVENT81
+00000052   _EVENT82
+00000053   _EVENT83
+00000054   _EVENT84
+00000055   _EVENT85
+00000056   _EVENT86
+00000057   _EVENT87
+00000058   _EVENT88
+00000059   _EVENT89
+00000009   _EVENT9
+0000005a   _EVENT90
+0000005b   _EVENT91
+0000005c   _EVENT92
+0000005d   _EVENT93
+0000005e   _EVENT94
+0000005f   _EVENT95
+00000060   _EVENT96
+00000061   _EVENT97
+00000062   _EVENT98
+00000063   _EVENT99
+c0058a90   _EXC_clearLastStatus
+c005a820   _EXC_dispatch
+c00588b4   _EXC_exceptionHandler
+11827edc   _EXC_exceptionHook
+c0058880   _EXC_external
+11827ee4   _EXC_externalHook
+c0058860   _EXC_getLastStatus
+c0058820   _EXC_init
+c0058574   _EXC_internal
+11827ee0   _EXC_internalHook
+c0058540   _EXC_nmi
+11827ee8   _EXC_nmiHook
+11827e60   _EXC_returnPtr
+c005a9e4   _EXC_setReturnPtr
+1181425c   _EXC_status
+11827e58   _EXC_sysTrapTable
+c00484e0   _Edma3_CacheFlush
+c00484a4   _Edma3_CacheInvalidate
+c005d280   _FXN_F_nop
+c005cca4   _FXN_F_run
+c005cce0   _FXN_F_zero
+00000000   _GBL_CACHE
+c005bba8   _GBL_cacheInit64P
+11827d1c   _GBL_clkIn
+11827d20   _GBL_freq
+c005d2a0   _GBL_getVersion
+11827d18   _GBL_procId
+c0054f20   _HOSTclose
+c00521e0   _HOSTlseek
+c0052fe0   _HOSTopen
+c0053ec0   _HOSTread
+c004fb40   _HOSTrename
+c0053f80   _HOSTunlink
+c0054040   _HOSTwrite
+c005d3c0   _HSRTDX_rec
+c005db20   _HSRTDX_xmt
+1183a080   _HST_A_TABBEG
+1183a0bc   _HST_A_TABEND
+00009f88   _HWI_CFGDISPATCHED
+11827ea4   _HWI_D_inhwi
+11827e98   _HWI_D_spsave
+c0058ac0   _HWI_F_dispatch
+0000000a   _HWI_INT10
+0000000b   _HWI_INT11
+0000000c   _HWI_INT12
+0000000d   _HWI_INT13
+0000000e   _HWI_INT14
+0000000f   _HWI_INT15
+00000004   _HWI_INT4
+00000005   _HWI_INT5
+00000006   _HWI_INT6
+00000007   _HWI_INT7
+00000008   _HWI_INT8
+00000009   _HWI_INT9
+00000001   _HWI_NMI
+00000002   _HWI_RESERVED0
+00000003   _HWI_RESERVED1
+00000000   _HWI_RESET
+118242b0   _HWI_STKBOTTOM
+118142b8   _HWI_STKTOP
+11827e98   _HWI_data
+c005cd00   _HWI_disable
+11827b78   _HWI_dispatchTab
+c005cd18   _HWI_enable
+c005cd2c   _HWI_restore
+118273c0   _I2c_IOMFXNS
+11827384   _I2c_PARAMS
+c00455e0   _I2c_completeIOedmaCallback
+118273b0   _I2c_defaultRxIoParams
+118273b8   _I2c_defaultTxIoParams
+c00551a0   _I2c_init
+c004f180   _I2c_loadPendedIops
+c00518e0   _I2c_localEdmaChanRequest
+c004bd20   _I2c_localEdmaTransfer
+c004a880   _I2c_localEnsureIsReadyforNext
+c00541c0   _I2c_localGetNextChannel
+c00522e0   _I2c_localLpscOff
+c0050440   _I2c_localPrepareForTransfer
+11836fdc   _IDL_busyObj
+1183a0e8   _IDL_cpuLoad
+c005d2c0   _IDL_loop
+ffffffff   _IRAM
+11807c18   _IV
+c00453f0   _Initialize
+c0045180   _KDF
+11827de8   _KNL_alarm
+c005bc60   _KNL_check
+11827e0c   _KNL_curqueue
+11827dfc   _KNL_curtask
+11827e04   _KNL_curtime
+11813c08   _KNL_dummy
+c005c180   _KNL_enter
+c005c140   _KNL_exit
+c005bd28   _KNL_idle
+11827e24   _KNL_idlefxn
+11827df0   _KNL_inactive
+c005c700   _KNL_ipost
+c005bd50   _KNL_max
+11827e10   _KNL_maxqueue
+c005c780   _KNL_post
+11827e00   _KNL_prevtask
+11827df4   _KNL_priority
+11813b68   _KNL_queues
+c005a000   _KNL_run
+c005b480   _KNL_saveIsrFrame
+11827df8   _KNL_set
+11827dec   _KNL_setpri
+1183a0bc   _KNL_swi
+11827e08   _KNL_swiptr
+c005b52c   _KNL_switch
+11827e18   _KNL_tcreatefxn
+11827e1c   _KNL_tdeletefxn
+c005a614   _KNL_tick
+11827e20   _KNL_treadyfxn
+11827e14   _KNL_tswitchfxn
+11827de0   _KNL_wFlag
+11827de4   _KNL_wList
+ffffffff   _L3_CBA_RAM
+c005c820   _LCK_pend
+c005c800   _LCK_post
+1183a0ec   _LNK_dataPump
+11827eb4   _LNK_dspFrameReadyMask
+11827eb0   _LNK_dspFrameRequestMask
+11827ebc   _LNK_readDone
+11827ec0   _LNK_readFail
+11827eb8   _LNK_readPend
+11827ec4   _LNK_writeFail
+11836f60   _LOG_A_TABBEG
+11836fa8   _LOG_A_TABEND
+00000003   _LOG_A_TABLEN
+11827c84   _LOG_D_system
+c005c5e0   _LOG_event
+c005d2e0   _LOG_printf
+11836f60   _LOG_system
+00000001   _LOG_ts
+11827f64   _MEM
+11827d24   _MEM_D_NUMSEGMENTS
+11827d2c   _MEM_D_freelist
+11827d30   _MEM_D_lockaddr
+11827d28   _MEM_D_memtab
+11827d34   _MEM_D_unlockaddr
+c005a240   _MEM_alloc
+c005a640   _MEM_free
+c005ea40   _MEM_init
+11827738   _MEM_memtab
+c005cb80   _MEM_valloc
+118125d8   _Mcasp_IOMFXNS
+11826d68   _Mcasp_PARAMS
+11812418   _Mcasp_deviceInstInfo
+c0051a00   _Mcasp_init
+c00564a0   _Mcasp_localAbortRequests
+c00443e0   _Mcasp_localAbortReset
+c0055c40   _Mcasp_localActivateSmFsForBoth
+c0056500   _Mcasp_localActivateSmFsForRcv
+c0056560   _Mcasp_localActivateSmFsForXmt
+c00531a0   _Mcasp_localCancelAndAbortAllIo
+c0054340   _Mcasp_localCompleteCurrentIo
+c004b820   _Mcasp_localConfigRcvSection
+c0049ac0   _Mcasp_localConfigXmtSection
+c00417c0   _Mcasp_localEdmaCallback
+c0043480   _Mcasp_localEdmaChanPaRAMsetup
+c0054400   _Mcasp_localEdmaProcessPkt
+c0048ee0   _Mcasp_localGetIndicesSyncType
+c00570c0   _Mcasp_localGetNextIndex
+c004fcc0   _Mcasp_localLoadPktToEdma
+c00565c0   _Mcasp_localResetRcv
+c0055240   _Mcasp_localResetXmt
+c004e700   _Mcasp_localSetupEdmaDuringOpen
+c004bf80   _Mcasp_localSetupHwInfo
+c0050dc0   _Mcasp_localSmReset
+c00525e0   _Mcasp_localSmSet
+c0039d80   _Mcasp_localSubmitIoctl
+c0048520   _Mcasp_localUpdtDtPktToLnkPrms
+11812440   _Mcasp_loopDstBuf
+118124c8   _Mcasp_loopSrcBuf
+11812550   _Mcasp_muteBuf
+c005c360   _OBJ_create
+c005cdc0   _OBJ_delete
+118140f0   _OBJ_segtab
+118140b8   _OBJ_table
+c0050b20   _OS2IP
+11839ef8   _PIP_A_TABBEG
+11839fc0   _PIP_A_TABEND
+11836c60   _PMI_bypassPLL
+c004028c   _PMI_calcWaitBypass
+c003fea4   _PMI_configurePLL
+c003fd40   _PMI_configureSources
+11836d20   _PMI_enablePLL
+c0040210   _PMI_getFrequencyLatency
+11836dec   _PMI_getModuleState
+c0040194   _PMI_getStatePLL
+11836904   _PMI_getVoltage
+c0052eb0   _PMI_getVoltageLatency
+11836b20   _PMI_goRelockPLL1
+c0056bc0   _PMI_init
+11836434   _PMI_initI2C
+c0040148   _PMI_initPLL
+c0052de0   _PMI_initVoltageControl
+c003feec   _PMI_lockPLL
+c003fe7c   _PMI_powerDownPLL
+c003fc8c   _PMI_powerUpPLL
+1183629c   _PMI_readI2C
+c003ff28   _PMI_scaleFrequency
+c003fba0   _PMI_setDividersPLL
+11836d80   _PMI_setModuleState
+11836800   _PMI_setVoltage
+11836b40   _PMI_tempStore
+118364e0   _PMI_waitCpuCycles
+1183636c   _PMI_waitR1
+118363f4   _PMI_waitR2
+11836230   _PMI_waitT1
+11836264   _PMI_waitT2
+11836160   _PMI_writeI2C
+11827cc4   _PRD_D_tick
+11827ff8   _PRD_clock
+c003c6a0   _PSCL_changeSetpoint
+11813858   _PSCL_divCfgTableCPU
+11813908   _PSCL_divCfgTablePER
+c003cb10   _PSCL_getFrequency
+c003caf0   _PSCL_getMode
+c003cacc   _PSCL_getNumSetpoints
+c003caa8   _PSCL_getSetpoint
+c003ca8c   _PSCL_getVoltage
+c003c804   _PSCL_initialize
+11813810   _PSCL_pllCfgTableCPU
+118138d8   _PSCL_pllCfgTablePER
+c003c5d4   _PSCL_querySetpoint
+c003c540   _PSCL_querySetpointFrequency
+c003c4a0   _PSCL_querySetpointMode
+c003c360   _PSCL_querySetpointTransition
+c003c2c0   _PSCL_querySetpointVoltage
+c003c230   _PSCL_queryWillChangeVoltage
+11827f78   _PSCL_voltScalingSupported
+11813dd0   _PWRM_ATTRS
+11813e28   _PWRM_delayCompletionFxns
+c0056340   _PWRM_getCurrentSetpoint
+c0055a60   _PWRM_getDependencyCount
+c00563c0   _PWRM_getNumSetpoints
+c0054dc0   _PWRM_getSetpointInfo
+11813dd8   _PWRM_notifyQueues
+11813e50   _PWRM_notifyWaitCount
+c0052ee0   _PWRM_registerConstraint
+c0051680   _PWRM_registerNotify
+c004f800   _PWRM_releaseDependency
+c004f9a0   _PWRM_setDependency
+c0055ba0   _PWRM_unregisterConstraint
+c0056c20   _PWRM_unregisterNotify
+11813314   _QUE_ATTRS
+c005d140   _QUE_create
+c005d180   _QUE_get
+c005d1a8   _QUE_put
+1183a0f0   _RTA_dispatcher
+1183a084   _RTA_fromHost
+1183a0a0   _RTA_toHost
+11839080   _RTDX_Buffer
+1183948c   _RTDX_Buffer_End
+c005e1a0   _RTDX_Buffer_Initialize
+c005e320   _RTDX_Buffer_Read
+c005e260   _RTDX_Buffer_ReadCB
+c005e2a0   _RTDX_Buffer_Size
+11839488   _RTDX_Buffer_Start
+c005e340   _RTDX_Buffer_Write
+c005d660   _RTDX_Buffer_WriteCB
+c005e120   _RTDX_Final_RT_Monitor
+c005e200   _RTDX_Init_RT_Monitor
+00000002   _RTDX_JTAGONLY
+c005e360   _RTDX_Mask_IER
+c005de20   _RTDX_Mon_Queue
+c005e080   _RTDX_Poll
+00000000   _RTDX_interrupt_mask
+c005e2e0   _RTDX_memfill
+118394e0   _RTDX_writing
+1181429c   _SEM_ATTRS
+c005c880   _SEM_create
+c005d300   _SEM_delete
+c005ce20   _SEM_pend
+c005abe0   _SEM_pendEnterKnl
+c005bfa0   _SEM_post
+c005bfa0   _SEM_postBinary
+c005c400   _SEM_postEnterKnl
+c003f284   _SHA256_Data
+c003f170   _SHA256_End
+c003eed0   _SHA256_Final
+c003ee64   _SHA256_Init
+c003e960   _SHA256_Transform
+c003ec2c   _SHA256_Update
+118141fc   _SIO_ATTRS
+c00597e0   _SIO_create
+c005adc0   _SIO_delete
+c005cb00   _SIO_issue
+c005c200   _SIO_reclaim
+11836fa8   _STS_A_TABBEG
+11836fe8   _STS_A_TABEND
+c005ceac   _STS_add
+c005ce80   _STS_delta
+c005cec8   _STS_reset
+c005d320   _STS_set
+11814248   _SWI_ATTRS
+11827d5c   _SWI_D_curfxn
+11827d4c   _SWI_D_curmask
+11827d50   _SWI_D_curset
+11827d48   _SWI_D_execaddr
+11827d64   _SWI_D_inswi
+11827d54   _SWI_D_lock
+11827d60   _SWI_D_rdybeg
+11827d44   _SWI_D_runaddr
+c005c900   _SWI_create
+11827d44   _SWI_data
+c005cee0   _SWI_disable
+c005cf04   _SWI_enable
+c0059010   _SWI_post
+c005c4a0   _SWI_setattrs
+11827d38   _SYS
+11839b20   _SYS_PUTCBEG
+11839d1f   _SYS_PUTCEND
+c005cf40   _SYS_abort
+c005cbe0   _SYS_error
+c005c540   _SYS_exit
+118141c0   _SYS_exitStack
+11827f40   _SYS_exitStackPtr
+11827f44   _SYS_exitStackTop
+c005d348   _SYS_one
+c0057f40   _SYS_printf
+c0057f0c   _SYS_sprintf
+c0057f00   _SYS_vprintf
+c00578e0   _SYS_vsprintf
+c005d340   _SYS_zero
+1183a128   _TRC_R_mask
+11827f14   _TSK
+11814058   _TSK_ATTRS
+11814074   _TSK_config
+c005c9a4   _TSK_disable
+c005c980   _TSK_enable
+c005b8c0   _TSK_exit
+11839fcc   _TSK_idle
+c005eb00   _TSK_init
+11827f0c   _TSK_nTasks
+11827f10   _TSK_pid
+c005b140   _TSK_setup
+c005be24   _TSK_startup
+11814094   _TSK_timerSem
+c005d200   _UTL_doAbort
+c005d360   _UTL_doError
+c005d240   _UTL_doPutc
+c005d380   _UTL_halt
+11813804   __BCACHE_emifAddr
+11836e40   __CIOBUF_
+c005b450   __CLK_lat1beg
+c005b470   __CLK_lat1end
+11827f5c   __DEV_D_NUMINITFXNS
+11827b74   __DEV_NUMINITFXNS
+11827d40   __HOOK_NUMHOOKS
+11827d3c   __HOOK_knlId
+c0058ac0   __HWI_lat1beg
+c0058c48   __HWI_lat1end
+c0058c48   __HWI_lat2beg
+c0058e24   __HWI_lat2end1
+c0058db0   __HWI_lat2end2
+c0058e40   __HWI_lat3beg
+c0058de0   __HWI_lat3end2
+c005cd60   __IDL_lat1beg
+c005cda0   __IDL_lat1end
+c005bcac   __KNL_lat1beg
+c005bd28   __KNL_lat1end
+c005c5e0   __LOG_lat1beg
+11814134   __MEM_mutex
+118364f8   __PMI_doRelockPLL1
+11827f20   __PMI_maxLockLatency
+11827f74   __PMI_maxLockToBypassLatency
+11827f1c   __PMI_maxVoltageDownLatency
+11827f18   __PMI_maxVoltageUpLatency
+11813898   __PSCL_SP_table_CPU
+11813928   __PSCL_SP_table_PER
+c003c1a0   __PSCL_checkInitParams
+11814220   __PSCL_currFreq
+11814228   __PSCL_currMode
+11814218   __PSCL_currSP
+11827f50   __PSCL_currVolt
+11827f54   __PSCL_initialized
+11813808   __PSCL_numSP
+c003bf80   __PSCL_scaleFreqVoltage
+11827e48   __PWRM_CAPSMASK
+11827e84   __PWRM_PSCLinitCode
+11827e88   __PWRM_PSCLinitOK
+11827e94   __PWRM_busy
+11827e50   __PWRM_busyAcc
+11827e4c   __PWRM_busyStartTs
+11813e78   __PWRM_constraintsQueue
+11813f2a   __PWRM_currentConfig
+11827e28   __PWRM_currentSP
+11827e34   __PWRM_currentSPPER
+118369a0   __PWRM_database
+c0055b90   __PWRM_delayCompletion0
+c0055b80   __PWRM_delayCompletion1
+c0055b70   __PWRM_delayCompletion2
+c0055b60   __PWRM_delayCompletion3
+c0055b50   __PWRM_delayCompletion4
+c0055b40   __PWRM_delayCompletion5
+c0055b30   __PWRM_delayCompletion6
+c0055b20   __PWRM_delayCompletion7
+c0055b10   __PWRM_delayCompletion8
+c0055b00   __PWRM_delayCompletion9
+11827e78   __PWRM_disallowedSPCPU
+11827e7c   __PWRM_disallowedSPPER
+11827e80   __PWRM_disallowedSleepMode
+11827e54   __PWRM_idleFlag
+c0053de0   __PWRM_initRefCounts
+11827e40   __PWRM_initSPCPU
+11827e44   __PWRM_initSPPER
+c005e880   __PWRM_initialize
+11827e2c   __PWRM_nextSP
+11827e38   __PWRM_nextSPPER
+11827e8c   __PWRM_numSPCPU
+11827e90   __PWRM_numSPPER
+11827e30   __PWRM_previousSP
+11827e3c   __PWRM_previousSPPER
+c0050a2c   __PWRM_rebuildConstraint
+c00509c0   __PWRM_updateConstraints
+c005d180   __QUE_lat1beg
+c005d1a0   __QUE_lat1end
+c005d1a8   __QUE_lat2beg
+c005d1b4   __QUE_lat2end
+c0059e20   __RTA_lat1beg
+c0059e54   __RTA_lat1end
+c005afa0   __SEM_dopost
+118242b8   __STACK_END
+00010000   __STACK_SIZE
+c0059118   __SWI_lat1beg
+c00591c4   __SWI_lat1end
+c00591c8   __SWI_lat2beg
+c0059228   __SWI_lat2end
+c0058fa0   __SWI_lat3beg
+c005900c   __SWI_lat3end
+1181410c   __TSK_mutex
+11814290   ___TI_enable_exit_profile_output
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+c0056cc0   ___add_dtor
+11813510   ___atexit_func_id__
+ffffffff   ___binit__
+11827738   ___bss__
+ffffffff   ___c_args__
+11830000   ___cinit__
+11800000   ___data__
+11800000   ___edata__
+11827f84   ___end__
+c0057800   ___etext__
+c0056d00   ___isinf
+1183a118   ___pinit__
+c0030000   ___text__
+c0056620   __abort_msg
+c005b780   __auto_init
+c0054640   __c6xabi_divu
+c0055600   __c6xabi_remu
+c0053280   __c6xabi_strasgi
+c0056e40   __c6xabi_strasgi_64plus
+c00544c0   __cleanup
+11814288   __cleanup_ptr
+11826f80   __ctypes_
+c0041e20   __divd
+c00552e0   __divli
+c0054640   __divu
+c004f320   __divul
+c004c1e0   __divull
+c0054700   __doflush
+1181428c   __dtors_ptr
+c00554c0   __fixdli
+c0055cc0   __fixdu
+c0055d40   __fltlid
+c0056d80   __frcmpyd_div
+11813310   __ft_end
+11812ff0   __ftable
+c0055dc0   __llshl
+c0056dc0   __llshru
+118142a4   __lock
+c00570e0   __negll
+c0057100   __nop
+c0045a20   __printfi
+c00571a0   __register_lock
+c00571c0   __register_unlock
+c0056e00   __remli
+c0055600   __remu
+118142b8   __stack
+c0053280   __strasgi
+c0056e40   __strasgi_64plus
+c0056680   __subcull
+118131d0   __tmpnams
+118142a8   __unlock
+c00527e0   __wrt_ok
+c00571e0   _abort
+c003bacc   _aes_decrypt
+c003b630   _aes_encrypt
+c003b38c   _aes_set_decrypt_key
+c003aea0   _aes_set_encrypt_key
+c00547c0   _atexit
+c0053440   _atoi
+11813b28   _audioAic31Params
+11813468   _audioChanParamsIN
+118134bc   _audioChanParamsOUT
+11814190   _audioI2cParams
+11813a6c   _audioMcaspParams
+11813b48   _audioParams
+c0050960   _audioUserAic31Init
+c00508f0   _audioUserAudioInit
+c0056860   _audioUserI2cInit
+c00508a8   _audioUserMcaspInit
+11807d38   _bit_buffer_decrypted
+11807c38   _bit_buffer_encrypted
+11807b08   _bit_buffer_toencrypt
+11813318   _buf
+11813fd8   _buffer
+c005e980   _c_int00
+c0052ae0   _call_dtors
+c0059d2c   _calloc
+11811280   _ccErrorInt
+11811278   _ccXferCompInt
+11813888   _clkCfg
+c00536e0   _close
+c0055e40   _configureAudio
+11827f2f   _dataCount
+11810d28   _defInstInitConfig
+118083f8   _drvInstance
+11807e38   _drvObj
+118140b4   _dtors
+1183a02c   _echoTask
+11809078   _edma3DrvChBoundRes
+11810780   _edma3GblCfgParams
+c0030e08   _edma3MemCpy
+c0030df0   _edma3MemSet
+11827f28   _edma3NumPaRAMSets
+c004838c   _edma3OsProtectEntry
+c00482e8   _edma3OsProtectExit
+c0048290   _edma3OsSemCreate
+c0048258   _edma3OsSemDelete
+c0048208   _edma3OsSemGive
+c00481a0   _edma3OsSemTake
+c0044300   _edma3deinit
+c0044160   _edma3init
+c004b300   _encode
+c0051c40   _fclose
+c0052be0   _fflush
+c0055ec0   _fprintf
+c0051180   _fputc
+c0049200   _fputs
+c0059b00   _free
+c0054880   _fseek
+118125f0   _g
+11814160   _hEdma
+118112d0   _hwIntCcErr
+118112d8   _hwIntTcErr
+118112c8   _hwIntXferComp
+c004d604   _init_audio
+118126f0   _keyA
+118127f0   _keyB
+c0030dd4   _lisrEdma3CCErrHandler0
+c0030780   _lisrEdma3ComplHandler0
+c003050c   _lisrEdma3TC0ErrHandler0
+c00304ec   _lisrEdma3TC1ErrHandler0
+c00304cc   _lisrEdma3TC2ErrHandler0
+c00304ac   _lisrEdma3TC3ErrHandler0
+c003048c   _lisrEdma3TC4ErrHandler0
+c003046c   _lisrEdma3TC5ErrHandler0
+c003044c   _lisrEdma3TC6ErrHandler0
+c003042c   _lisrEdma3TC7ErrHandler0
+c0054940   _lseek
+c0054a00   _ltoa
+c0050860   _main
+c0059b24   _malloc
+c0057240   _mcaspIsr
+c004a300   _mcaspIsrInput
+c004a5c0   _mcaspIsrOutput
+11813338   _mcaspRcvSetup
+11813360   _mcaspXmtSetup
+11813388   _mcasp_chanparam
+c0059c68   _memalign
+c0056b00   _memccpy
+c00559c0   _memcpy
+c0053d00   _memset
+118128f0   _modofA
+118129f0   _modofB
+c0040b54   _mont
+c0040f4c   _mont_exp
+c0040ac4   _mp_print
+11812af0   _n
+11812bf0   _nprime
+11811268   _numEdma3EvtQue
+11827f6c   _numEdma3Instances
+11811270   _numEdma3Tc
+11812ef0   _one
+c0040a74   _print32
+c0040a20   _print64
+c00561c0   _printf
+c004d480   _process_audio
+11814170   _ptrEdma3TcIsrHandler
+11827ed8   _ptrInitCfgArray
+11827ed4   _ptrRMIArray
+c0051180   _putc
+11812df0   _r2modn
+c0056240   _readmsg
+c0059b84   _realloc
+c0043fa8   _registerEdma3Interrupts
+c0057260   _remove
+11827ecc   _resMgrInstance
+1180ff80   _resMgrInstanceArray
+1180c738   _resMgrObj
+11812cf0   _rmodn
+11827ef4   _rtdxNullChanCnt
+11827ef8   _rtdxNullFuncCnt
+11827f00   _rtdxRecNotDoneCnt
+11827f08   _rtdxXmtErrorCnt
+11827efc   _rtdxXmtNotDoneCnt
+11827f04   _rtdxXmtRestartCnt
+118394d4   _rtdx_buffer_state
+11839490   _rtdx_mon_state
+11811318   _sampleEdma3GblCfgParams
+118118c0   _sampleInstInitConfig
+11814168   _semHandle
+c00502c0   _setvbuf
+11827f4c   _sha1_prefix_size
+c0050c18   _sha256
+118276d0   _sha256_prefix
+11827f48   _sha256_prefix_size
+11827f2e   _spaceLeft
+11811288   _tcErrorInt
+11836f78   _trace
+c00562c0   _unlink
+c0043f00   _unregisterEdma3Interrupts
+11827ed0   _userInitConfig
+1180f500   _userInstInitConfigArray
+c0054c40   _write
+c0056b60   _writemsg
+ffffffff   binit
+11830000   cinit
+1183a02c   echoTask
+00000000   echoTask$ord
+00000005   echoTask$pri
+11834160   echoTask$stack
+118360f8   echoTask$stkptr
+11836fcc   echoTask$sts
+11827779   echoTask$sts$avgfmt
+00000002   echoTask$sts$filter
+00000001   echoTask$sts$filtmaxmult
+00000001   echoTask$sts$filtsummult
+11827769   echoTask$sts$maxfmt
+11836fc8   echoTask$sts$stsobj
+11827771   echoTask$sts$sumfmt
+00000000   echoTask$sts$unittype
+00000000   echoTask$tsk
+11800000   edata
+11827f84   end
+c0057800   etext
+c005ec00   hwi0
+c005ec20   hwi1
+c005ed40   hwi10
+c005ed60   hwi11
+c005ed80   hwi12
+c005eda0   hwi13
+c005edc0   hwi14
+c005ede0   hwi15
+c005ec40   hwi2
+c005ec60   hwi3
+c005ec80   hwi4
+c005eca0   hwi5
+c005ecc0   hwi6
+c005ece0   hwi7
+c005ed00   hwi8
+c005ed20   hwi9
+1183a118   pinit
+11836f78   trace
+11838000   trace$buf
+00000001   trace$datatype
+00000000   trace$log
+00000400   trace$size
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   BUF$
+00000000   CLK_PRDHIGH
+00000000   CLK_TDDR
+00000000   CLK_TDDRHIGH
+00000000   DEV$
+00000000   DGN$
+00000000   DHL$
+00000000   DHL_gChannelsAvailable
+00000000   DIO_NUMSWIBASE
+00000000   DIO_NUMTSKBASE
+00000000   DIO_STATIC
+00000000   DPI$
+00000000   DVTEvent_Log$log
+00000000   GBL_BCACHEREADADDR0
+00000000   GBL_BCACHEREADADDR1
+00000000   GBL_BCACHEREADADDR2
+00000000   GBL_BIGENDIAN
+00000000   GBL_CACHE
+00000000   GBL_CALLCSLCFGINIT
+00000000   GBL_ENABLE_SK
+00000000   GBL_GEMTRUECOMPEN
+00000000   GBL_L2MAR0_31
+00000000   GBL_L2MAR160_191
+00000000   GBL_L2MAR224_255
+00000000   GBL_L2MAR32_63
+00000000   GBL_L2MAR64_95
+00000000   GBL_L2MAR96_127
+00000000   GBL_L2MODE
+00000000   GBL_NULL
+00000000   GBL_PROCID
+00000000   GBL_ROM
+00000000   GBL_SUPPORTCSL
+00000000   GBL_USERINIT
+00000000   GIO$
+00000000   HOOK$
+00000000   HOOK_KNLID
+00000000   HST_DSM
+00000000   HST_NONE
+00000000   HWI_GENERATE_RESET_VEC
+00000000   HWI_INT10$hwi
+00000000   HWI_INT11$hwi
+00000000   HWI_INT12$hwi
+00000000   HWI_INT13$hwi
+00000000   HWI_INT14$hwi
+00000000   HWI_INT15$hwi
+00000000   HWI_INT4$hwi
+00000000   HWI_INT5$hwi
+00000000   HWI_INT6$hwi
+00000000   HWI_INT7$hwi
+00000000   HWI_INT8$hwi
+00000000   HWI_INT9$hwi
+00000000   HWI_NMI$hwi
+00000000   HWI_POLARITYMASK
+00000000   HWI_RESERVED0$hwi
+00000000   HWI_RESERVED1$hwi
+00000000   HWI_RESET
+00000000   HWI_RESET$hwi
+00000000   HWI_ZEROTAB
+00000000   IDL_busyObj$iB
+00000000   IDL_busyObj$operation
+00000000   KNL_swi$ord
+00000000   KNL_swi$pri
+00000000   KNL_swi$sts$unittype
+00000000   KNL_swi$swi
+00000000   LOG_system$datatype
+00000000   LOG_system$log
+00000000   MBX$
+00000000   MEM_NULL
+00000000   MEM_USEMPC
+00000000   MSGQ$
+00000000   MSGQ_USEMSGQ
+00000000   OBJ$
+00000000   PIP$
+00000000   PIP_gNextId
+00000000   POOL$
+00000000   POOL_USEPOOL
+00000000   PRD_A_TABLEN
+00000000   PRD_SWIHANDLE
+00000000   PWRM_PWRM_INITSPPER
+00000000   PWRM_PWRM_LOADENABLE
+00000000   PWRM_PWRM_TIMERIDNUM
+00000000   PWRM_PWRM_TIMERINTRMASK
+00000000   PWRM_PWRM_TIMERWUGENMASK
+00000000   PWRM_PWRM_USERRESOURCES
+00000000   PWRM_PWRM_USETIMER
+00000000   RTA_fromHost$hst
+00000000   RTA_fromHost$mode
+00000000   RTA_toHost$hst
+00000000   RTA_toHost$id
+00000000   RTDX_MODE
+00000000   RTDX_USERTEXECUTION
+00000000   SEM$
+00000000   SIO$
+00000000   SWI_EHOOKFXN
+00000000   SWI_IHOOKFXN
+00000000   TSK_NUM_HOOKS
+00000000   TSK_READYFXN
+00000000   TSK_STACKSEG
+00000000   TSK_SWITCHFXN
+00000000   TSK_idle$ord
+00000000   TSK_idle$pri
+00000000   TSK_idle$sts$unittype
+00000000   TSK_idle$tsk
+00000000   _CLK_TDDR
+00000000   _GBL_CACHE
+00000000   _HWI_RESET
+00000000   _RTDX_interrupt_mask
+00000000   echoTask$ord
+00000000   echoTask$sts$unittype
+00000000   echoTask$tsk
+00000000   trace$log
+00000001   BUF_ENABLED
+00000001   CLK$
+00000001   CLK_CALDIV
+00000001   CLK_CALMULT
+00000001   CLK_ENABLEHTIME
+00000001   CLK_HTIMEDIV
+00000001   CLK_HTIMEMULT
+00000001   CLK_LTIMEDIV
+00000001   CLK_RESETTIMER
+00000001   CLK_TIMERNUM
+00000001   CLK_USETIMER
+00000001   DIO$
+00000001   DVTEvent_Log$datatype
+00000001   ECM$
+00000001   ECM_ENABLE
+00000001   GBL$
+00000001   GBL_ENABLEINST
+00000001   GBL_L2CONFIGURE
+00000001   GBL_boot
+00000001   HST$
+00000001   HST_RTDX
+00000001   HWI$
+00000001   HWI_ENABLE_EXC
+00000001   HWI_NMI
+00000001   IDL$
+00000001   IDL_USECLKIDLTIME
+00000001   IDL_busyObj$filter
+00000001   IDL_busyObj$iA
+00000001   IDL_busyObj$iC
+00000001   ISRC$
+00000001   KNL_swi$dorta
+00000001   KNL_swi$sts$filtmaxmult
+00000001   KNL_swi$sts$filtsummult
+00000001   LCK$
+00000001   LOG$
+00000001   LOG_ENABLED
+00000001   MEM$
+00000001   MEM_gNumHeap
+00000001   PRD$
+00000001   PRD_SCALAR
+00000001   PWRM$
+00000001   PWRM_PWRM_ENABLE
+00000001   PWRM_PWRM_NUMSLOTS
+00000001   PWRM_PWRM_RESOURCETRACKING
+00000001   PWRM_PWRM_SCALING
+00000001   QUE$
+00000001   RTA_fromHost$id
+00000001   RTA_toHost$mode
+00000001   RTDX$
+00000001   RTDX_NORMALIZED_HDR
+00000001   RTDX_USERTDX
+00000001   STS$
+00000001   SWI$
+00000001   SWI_A_TABLEN
+00000001   SYS$
+00000001   TSK$
+00000001   TSK_PRIORITY
+00000001   TSK_idle$sts$filtmaxmult
+00000001   TSK_idle$sts$filtsummult
+00000001   UDEV$
+00000001   _CLK_TIMERNUM
+00000001   _CLK_USETIMER
+00000001   _HWI_NMI
+00000001   _LOG_ts
+00000001   echoTask$sts$filtmaxmult
+00000001   echoTask$sts$filtsummult
+00000001   trace$datatype
+00000002   HWI_RESERVED0
+00000002   IDL_busyObj$unittype
+00000002   KNL_swi$sts$filter
+00000002   PIP_A_TABLEN
+00000002   PIP_gNumEmbed
+00000002   PWRM_PWRM_INITSPCPU
+00000002   TSK_idle$sts$filter
+00000002   _HWI_RESERVED0
+00000002   _RTDX_JTAGONLY
+00000002   echoTask$sts$filter
+00000003   HWI_RESERVED1
+00000003   LOG_A_TABLEN
+00000003   _HWI_RESERVED1
+00000003   _LOG_A_TABLEN
+00000004   CLK_COUNTSPMSHIGH
+00000004   EVENT4
+00000004   HWI_INT4
+00000004   RTA_fromHost$framesize
+00000004   _EVENT4
+00000004   _HWI_INT4
+00000005   CLK_TIMMODE
+00000005   EVENT5
+00000005   HWI_INT5
+00000005   _EVENT5
+00000005   _HWI_INT5
+00000005   echoTask$pri
+00000006   EVENT6
+00000006   HWI_INT6
+00000006   IDL_CALIBRERROR
+00000006   _EVENT6
+00000006   _HWI_INT6
+00000007   EVENT7
+00000007   GBL_L1DMODE
+00000007   GBL_L1PMODE
+00000007   HWI_INT7
+00000007   _EVENT7
+00000007   _HWI_INT7
+00000008   EVENT8
+00000008   HWI_INT8
+00000008   _EVENT8
+00000008   _HWI_INT8
+00000009   EVENT9
+00000009   HWI_INT9
+00000009   _EVENT9
+00000009   _HWI_INT9
+0000000a   EVENT10
+0000000a   HWI_INT10
+0000000a   PWRM_PWRM_CLKTICKSPERSLOT
+0000000a   _EVENT10
+0000000a   _HWI_INT10
+0000000b   EVENT11
+0000000b   HWI_INT11
+0000000b   _EVENT11
+0000000b   _HWI_INT11
+0000000c   EVENT12
+0000000c   HWI_INT12
+0000000c   _EVENT12
+0000000c   _HWI_INT12
+0000000d   EVENT13
+0000000d   HWI_INT13
+0000000d   _EVENT13
+0000000d   _HWI_INT13
+0000000e   EVENT14
+0000000e   HWI_INT14
+0000000e   _EVENT14
+0000000e   _HWI_INT14
+0000000f   EVENT15
+0000000f   HWI_INT15
+0000000f   _EVENT15
+0000000f   _HWI_INT15
+00000010   EVENT16
+00000010   _EVENT16
+00000011   EVENT17
+00000011   _EVENT17
+00000012   EVENT18
+00000012   _EVENT18
+00000013   EVENT19
+00000013   _EVENT19
+00000014   EVENT20
+00000014   _EVENT20
+00000015   EVENT21
+00000015   _EVENT21
+00000016   EVENT22
+00000016   _EVENT22
+00000017   EVENT23
+00000017   _EVENT23
+00000018   EVENT24
+00000018   _EVENT24
+00000019   EVENT25
+00000019   _EVENT25
+0000001a   EVENT26
+0000001a   _EVENT26
+0000001b   EVENT27
+0000001b   _EVENT27
+0000001c   EVENT28
+0000001c   _EVENT28
+0000001d   EVENT29
+0000001d   _EVENT29
+0000001e   EVENT30
+0000001e   _EVENT30
+0000001f   EVENT31
+0000001f   _EVENT31
+00000020   CLK_TCR
+00000020   EVENT32
+00000020   _EVENT32
+00000021   EVENT33
+00000021   _EVENT33
+00000022   EVENT34
+00000022   _EVENT34
+00000023   EVENT35
+00000023   _EVENT35
+00000024   EVENT36
+00000024   _EVENT36
+00000025   EVENT37
+00000025   _EVENT37
+00000026   EVENT38
+00000026   _EVENT38
+00000027   EVENT39
+00000027   _EVENT39
+00000028   EVENT40
+00000028   _EVENT40
+00000029   EVENT41
+00000029   _EVENT41
+0000002a   EVENT42
+0000002a   _EVENT42
+0000002b   EVENT43
+0000002b   _EVENT43
+0000002c   EVENT44
+0000002c   _EVENT44
+0000002d   EVENT45
+0000002d   _EVENT45
+0000002e   EVENT46
+0000002e   _EVENT46
+0000002f   EVENT47
+0000002f   _EVENT47
+00000030   EVENT48
+00000030   _EVENT48
+00000031   EVENT49
+00000031   _EVENT49
+00000032   EVENT50
+00000032   _EVENT50
+00000033   EVENT51
+00000033   _EVENT51
+00000034   EVENT52
+00000034   _EVENT52
+00000035   EVENT53
+00000035   _EVENT53
+00000036   EVENT54
+00000036   _EVENT54
+00000037   EVENT55
+00000037   _EVENT55
+00000038   EVENT56
+00000038   _EVENT56
+00000039   EVENT57
+00000039   _EVENT57
+0000003a   EVENT58
+0000003a   _EVENT58
+0000003b   EVENT59
+0000003b   _EVENT59
+0000003c   EVENT60
+0000003c   _EVENT60
+0000003d   EVENT61
+0000003d   _EVENT61
+0000003e   EVENT62
+0000003e   GBL_DSPTYPE
+0000003e   _EVENT62
+0000003f   EVENT63
+0000003f   _EVENT63
+00000040   EVENT64
+00000040   HST_MAXFRAMESET
+00000040   RTA_toHost$framesize
+00000040   _EVENT64
+00000041   EVENT65
+00000041   _EVENT65
+00000042   EVENT66
+00000042   GBL_FOOTPRINT
+00000042   _EVENT66
+00000043   EVENT67
+00000043   _EVENT67
+00000044   EVENT68
+00000044   _EVENT68
+00000045   EVENT69
+00000045   _EVENT69
+00000046   EVENT70
+00000046   _EVENT70
+00000047   EVENT71
+00000047   _EVENT71
+00000048   EVENT72
+00000048   _EVENT72
+00000049   EVENT73
+00000049   _EVENT73
+0000004a   EVENT74
+0000004a   _EVENT74
+0000004b   EVENT75
+0000004b   _EVENT75
+0000004c   EVENT76
+0000004c   _EVENT76
+0000004d   EVENT77
+0000004d   _EVENT77
+0000004e   EVENT78
+0000004e   _EVENT78
+0000004f   EVENT79
+0000004f   _EVENT79
+00000050   EVENT80
+00000050   _EVENT80
+00000051   EVENT81
+00000051   _EVENT81
+00000052   EVENT82
+00000052   _EVENT82
+00000053   EVENT83
+00000053   _EVENT83
+00000054   EVENT84
+00000054   _EVENT84
+00000055   EVENT85
+00000055   _EVENT85
+00000056   EVENT86
+00000056   _EVENT86
+00000057   EVENT87
+00000057   _EVENT87
+00000058   EVENT88
+00000058   _EVENT88
+00000059   EVENT89
+00000059   _EVENT89
+0000005a   EVENT90
+0000005a   _EVENT90
+0000005b   EVENT91
+0000005b   _EVENT91
+0000005c   EVENT92
+0000005c   _EVENT92
+0000005d   EVENT93
+0000005d   _EVENT93
+0000005e   EVENT94
+0000005e   _EVENT94
+0000005f   EVENT95
+0000005f   _EVENT95
+00000060   EVENT96
+00000060   _EVENT96
+00000061   EVENT97
+00000061   _EVENT97
+00000062   EVENT98
+00000062   _EVENT98
+00000063   EVENT99
+00000063   _EVENT99
+00000064   EVENT100
+00000064   PIP_OBJSIZE
+00000064   _EVENT100
+00000065   EVENT101
+00000065   _EVENT101
+00000066   EVENT102
+00000066   _EVENT102
+00000067   EVENT103
+00000067   _EVENT103
+00000068   EVENT104
+00000068   _EVENT104
+00000069   EVENT105
+00000069   _EVENT105
+0000006a   EVENT106
+0000006a   _EVENT106
+0000006b   EVENT107
+0000006b   _EVENT107
+0000006c   EVENT108
+0000006c   _EVENT108
+0000006d   EVENT109
+0000006d   _EVENT109
+0000006e   EVENT110
+0000006e   _EVENT110
+0000006f   EVENT111
+0000006f   _EVENT111
+00000070   EVENT112
+00000070   _EVENT112
+00000071   EVENT113
+00000071   _EVENT113
+00000072   EVENT114
+00000072   _EVENT114
+00000073   EVENT115
+00000073   _EVENT115
+00000074   EVENT116
+00000074   _EVENT116
+00000075   EVENT117
+00000075   _EVENT117
+00000076   EVENT118
+00000076   _EVENT118
+00000077   EVENT119
+00000077   _EVENT119
+00000078   EVENT120
+00000078   _EVENT120
+00000079   EVENT121
+00000079   _EVENT121
+0000007a   EVENT122
+0000007a   _EVENT122
+0000007b   EVENT123
+0000007b   _EVENT123
+0000007c   EVENT124
+0000007c   _EVENT124
+0000007d   EVENT125
+0000007d   _EVENT125
+0000007e   EVENT126
+0000007e   _EVENT126
+0000007f   EVENT127
+0000007f   _EVENT127
+000000ff   HST_MAXFRAMEALLOWED
+00000238   PWRM_PWRM_CAPSMASK
+000003e8   CLK_MICROSECS
+00000400   HST_DSMMEMSIZE
+00000400   LOG_system$size
+00000400   TSK_STACKSIZE
+00000400   trace$size
+00000408   RTDX_BUFMEMSIZE
+00001a5b   GBL_CLKTYPE
+00001a5c   GBL_DSPSUBTYPE
+00002000   DVTEvent_Log$size
+00004e20   GBL_CLKIN
+00005205   GBL_A_VERSION
+00005dc0   CLK_INPUTCLK
+00005dc0   CLK_PRD
+00005dc0   _CLK_PRD
+00008000   CLK_INTBIT
+00009f88   HWI_CFGDISPATCHED
+00009f88   _HWI_CFGDISPATCHED
+0000dbef   GBL_TRCMASKVALUE
+0000ffff   GBL_L2MAR128_159
+00010000   __STACK_SIZE
+00030000   DDR$L
+00030000   _DDR_length
+000493e0   CLK_COUNTSPMS
+000493e0   CLK_HTIMEPERLTIME
+000493e0   CLK_LTIMEMULT
+000493e0   GBL_FREQ
+000493e0   _CLK_COUNTSPMS
+00060504   HWI_INTRMUX1
+01c21000   CLK_REGS
+01c21000   _CLK_REGS
+0b030201   HWI_INTRMUX2
+11800000   .data
+11800000   PRD_A_TABBEG
+11800000   PRD_A_TABEND
+11800000   ___data__
+11800000   ___edata__
+11800000   edata
+11800540   _ADPCM_SBCoder_dut
+1180438c   _ADPCM_SBDecoder_dut
+11807b08   _bit_buffer_toencrypt
+11807c08   _AESkey
+11807c18   _IV
+11807c28   _AESMAC
+11807c38   _bit_buffer_encrypted
+11807d38   _bit_buffer_decrypted
+11807e38   _drvObj
+118083f8   _drvInstance
+11809078   _edma3DrvChBoundRes
+1180c738   _resMgrObj
+1180f500   _userInstInitConfigArray
+1180ff80   _resMgrInstanceArray
+11810780   _edma3GblCfgParams
+11810d28   _defInstInitConfig
+11811268   _numEdma3EvtQue
+11811270   _numEdma3Tc
+11811278   _ccXferCompInt
+11811280   _ccErrorInt
+11811288   _tcErrorInt
+118112c8   _hwIntXferComp
+118112d0   _hwIntCcErr
+118112d8   _hwIntTcErr
+11811318   _sampleEdma3GblCfgParams
+118118c0   _sampleInstInitConfig
+11812418   _Mcasp_deviceInstInfo
+11812440   _Mcasp_loopDstBuf
+118124c8   _Mcasp_loopSrcBuf
+11812550   _Mcasp_muteBuf
+118125d8   _Mcasp_IOMFXNS
+118125f0   _g
+118126f0   _keyA
+118127f0   _keyB
+118128f0   _modofA
+118129f0   _modofB
+11812af0   _n
+11812bf0   _nprime
+11812cf0   _rmodn
+11812df0   _r2modn
+11812ef0   _one
+11812ff0   __ftable
+118131d0   __tmpnams
+11813310   __ft_end
+11813314   _QUE_ATTRS
+11813318   _buf
+11813338   _mcaspRcvSetup
+11813360   _mcaspXmtSetup
+11813388   _mcasp_chanparam
+11813468   _audioChanParamsIN
+118134bc   _audioChanParamsOUT
+11813510   ___atexit_func_id__
+118137ec   _Audio_IOMFXNS
+11813804   __BCACHE_emifAddr
+11813808   __PSCL_numSP
+11813810   _PSCL_pllCfgTableCPU
+11813858   _PSCL_divCfgTableCPU
+11813888   _clkCfg
+11813898   __PSCL_SP_table_CPU
+118138d8   _PSCL_pllCfgTablePER
+11813908   _PSCL_divCfgTablePER
+11813928   __PSCL_SP_table_PER
+11813a6c   _audioMcaspParams
+11813b28   _audioAic31Params
+11813b48   _audioParams
+11813b68   _KNL_queues
+11813c08   _KNL_dummy
+11813dcc   _CLK_inputClock
+11813dd0   _PWRM_ATTRS
+11813dd8   _PWRM_notifyQueues
+11813e28   _PWRM_delayCompletionFxns
+11813e50   _PWRM_notifyWaitCount
+11813e78   __PWRM_constraintsQueue
+11813f2a   __PWRM_currentConfig
+11813fb8   _Aic31_deviceInstInfo
+11813fbc   _Aic31_IOMFXNS
+11813fd8   _buffer
+11814058   _TSK_ATTRS
+11814074   _TSK_config
+11814094   _TSK_timerSem
+118140b4   _dtors
+118140b8   _OBJ_table
+118140f0   _OBJ_segtab
+1181410c   __TSK_mutex
+11814134   __MEM_mutex
+11814160   _hEdma
+11814168   _semHandle
+11814170   _ptrEdma3TcIsrHandler
+11814190   _audioI2cParams
+118141c0   _SYS_exitStack
+118141e0   _DIO_tskDynamicFxns
+118141fc   _SIO_ATTRS
+11814218   __PSCL_currSP
+11814220   __PSCL_currFreq
+11814228   __PSCL_currMode
+11814248   _SWI_ATTRS
+1181425c   _EXC_status
+11814288   __cleanup_ptr
+1181428c   __dtors_ptr
+11814290   ___TI_enable_exit_profile_output
+11814294   _ECM_ATTRS
+1181429c   _SEM_ATTRS
+118142a4   __lock
+118142a8   __unlock
+118142b0   _DEV_D_devinit
+118142b8   GBL_stackbeg
+118142b8   _HWI_STKTOP
+118142b8   __stack
+118242b0   _HWI_STKBOTTOM
+118242b7   GBL_stackend
+118242b8   __STACK_END
+11826d68   _Mcasp_PARAMS
+11826f80   __ctypes_
+11827384   _I2c_PARAMS
+118273b0   _I2c_defaultRxIoParams
+118273b8   _I2c_defaultTxIoParams
+118273c0   _I2c_IOMFXNS
+118275a0   _Aic31_PARAMS
+11827690   _Audio_PARAMS
+118276d0   _sha256_prefix
+11827735   KNL_swi$sts$maxfmt
+11827738   $bss
+11827738   .bss
+11827738   _MEM_memtab
+11827738   ___bss__
+1182773d   KNL_swi$sts$sumfmt
+11827744   _ECM_dispatchTab
+11827745   KNL_swi$sts$avgfmt
+1182774f   TSK_idle$sts$maxfmt
+11827757   TSK_idle$sts$sumfmt
+1182775f   TSK_idle$sts$avgfmt
+11827769   echoTask$sts$maxfmt
+11827771   echoTask$sts$sumfmt
+11827779   echoTask$sts$avgfmt
+11827783   IDL_busyObj$maxfmt
+11827786   IDL_busyObj$sumfmt
+11827789   IDL_busyObj$avgfmt
+11827b44   DDR
+11827b44   MEM_MALLOCSEG
+11827b44   MEM_SEGZERO
+11827b44   _DDR
+11827b48   RTA_fromHost$pipe$dtab
+11827b54   RTA_toHost$pipe$dtab
+11827b60   _DEV_devinit
+11827b74   __DEV_NUMINITFXNS
+11827b78   _HWI_dispatchTab
+11827c78   IDL_D_tabbeg
+11827c7c   IDL_D_calibrate
+11827c80   IDL_D_calbeg
+11827c84   LOG_D_system
+11827c84   _LOG_D_system
+11827c88   PIP_D_tabbeg
+11827c8c   PIP_D_tablen
+11827c90   CLK_R_time
+11827c94   CLK_D_timefxn
+11827c98   CLK_D_tabbeg
+11827c9c   CLK_D_isrhook
+11827ca0   CLK_D_idletime
+11827ca4   _CLK_htimeDiv
+11827ca8   _CLK_htimeMult
+11827cac   _CLK_ltimeDiv
+11827cb0   _CLK_ltimeMult
+11827cb4   _CLK_D_dirty
+11827cb8   _CLK_D_prd
+11827cbc   _CLK_D_tddr
+11827cc0   _CLK_D_countspms
+11827cc4   PRD_D_tick
+11827cc4   _PRD_D_tick
+11827cc8   PRD_D_cur
+11827ccc   PRD_D_elapsed
+11827cd0   PRD_D_prevtim
+11827cd4   PRD_D_scalar
+11827cd8   PRD_D_swihandle
+11827cdc   PRD_D_tabbeg
+11827ce0   PRD_D_tablen
+11827ce4   PRD_D_thook
+11827ce8   RTA_D_fromHost
+11827cec   RTA_D_toHost
+11827cf0   RTA_D_logval
+11827d00   RTA_D_stsval
+11827d0c   HST_D_chanmask
+11827d10   HST_D_tabbeg
+11827d14   HST_D_tabend
+11827d18   _GBL_procId
+11827d1c   _GBL_clkIn
+11827d20   _GBL_freq
+11827d24   _MEM_D_NUMSEGMENTS
+11827d28   _MEM_D_memtab
+11827d2c   _MEM_D_freelist
+11827d30   _MEM_D_lockaddr
+11827d34   _MEM_D_unlockaddr
+11827d38   _SYS
+11827d3c   __HOOK_knlId
+11827d40   __HOOK_NUMHOOKS
+11827d44   SWI_D_runaddr
+11827d44   _SWI_D_runaddr
+11827d44   _SWI_data
+11827d48   SWI_D_execaddr
+11827d48   _SWI_D_execaddr
+11827d4c   SWI_D_curmask
+11827d4c   _SWI_D_curmask
+11827d50   SWI_D_curset
+11827d50   _SWI_D_curset
+11827d54   SWI_D_lock
+11827d54   _SWI_D_lock
+11827d58   SWI_D_curmbox
+11827d5c   SWI_D_curfxn
+11827d5c   _SWI_D_curfxn
+11827d60   SWI_D_rdybeg
+11827d60   _SWI_D_rdybeg
+11827d64   SWI_D_inswi
+11827d64   _SWI_D_inswi
+11827d68   SWI_D_rdytab
+11827de0   _KNL_wFlag
+11827de4   _KNL_wList
+11827de8   _KNL_alarm
+11827dec   _KNL_setpri
+11827df0   _KNL_inactive
+11827df4   _KNL_priority
+11827df8   _KNL_set
+11827dfc   _KNL_curtask
+11827e00   _KNL_prevtask
+11827e04   _KNL_curtime
+11827e08   _KNL_swiptr
+11827e0c   _KNL_curqueue
+11827e10   _KNL_maxqueue
+11827e14   _KNL_tswitchfxn
+11827e18   _KNL_tcreatefxn
+11827e1c   _KNL_tdeletefxn
+11827e20   _KNL_treadyfxn
+11827e24   _KNL_idlefxn
+11827e28   __PWRM_currentSP
+11827e2c   __PWRM_nextSP
+11827e30   __PWRM_previousSP
+11827e34   __PWRM_currentSPPER
+11827e38   __PWRM_nextSPPER
+11827e3c   __PWRM_previousSPPER
+11827e40   __PWRM_initSPCPU
+11827e44   __PWRM_initSPPER
+11827e48   __PWRM_CAPSMASK
+11827e4c   __PWRM_busyStartTs
+11827e50   __PWRM_busyAcc
+11827e54   __PWRM_idleFlag
+11827e58   _EXC_sysTrapTable
+11827e60   _EXC_returnPtr
+11827e78   __PWRM_disallowedSPCPU
+11827e7c   __PWRM_disallowedSPPER
+11827e80   __PWRM_disallowedSleepMode
+11827e84   __PWRM_PSCLinitCode
+11827e88   __PWRM_PSCLinitOK
+11827e8c   __PWRM_numSPCPU
+11827e90   __PWRM_numSPPER
+11827e94   __PWRM_busy
+11827e98   HWI_D_spsave
+11827e98   _HWI_D_spsave
+11827e98   _HWI_data
+11827ea4   _HWI_D_inhwi
+11827ea8   HWI_D_bss
+11827eac   HWI_D_ccmask
+11827eb0   LNK_dspFrameRequestMask
+11827eb0   _LNK_dspFrameRequestMask
+11827eb4   LNK_dspFrameReadyMask
+11827eb4   _LNK_dspFrameReadyMask
+11827eb8   LNK_readPend
+11827eb8   _LNK_readPend
+11827ebc   LNK_readDone
+11827ebc   _LNK_readDone
+11827ec0   LNK_readFail
+11827ec0   _LNK_readFail
+11827ec4   LNK_writeFail
+11827ec4   _LNK_writeFail
+11827ec8   _EDMA3_MAX_RM_INSTANCES
+11827ecc   _resMgrInstance
+11827ed0   _userInitConfig
+11827ed4   _ptrRMIArray
+11827ed8   _ptrInitCfgArray
+11827edc   _EXC_exceptionHook
+11827ee0   _EXC_internalHook
+11827ee4   _EXC_externalHook
+11827ee8   _EXC_nmiHook
+11827ef4   _rtdxNullChanCnt
+11827ef8   _rtdxNullFuncCnt
+11827efc   _rtdxXmtNotDoneCnt
+11827f00   _rtdxRecNotDoneCnt
+11827f04   _rtdxXmtRestartCnt
+11827f08   _rtdxXmtErrorCnt
+11827f0c   _TSK_nTasks
+11827f10   _TSK_pid
+11827f14   _TSK
+11827f18   __PMI_maxVoltageUpLatency
+11827f1c   __PMI_maxVoltageDownLatency
+11827f20   __PMI_maxLockLatency
+11827f28   _edma3NumPaRAMSets
+11827f2e   _spaceLeft
+11827f2f   _dataCount
+11827f38   _CLK_DFLTMICROSECS
+11827f3c   _CLK_D_microseconds
+11827f40   _SYS_exitStackPtr
+11827f44   _SYS_exitStackTop
+11827f48   _sha256_prefix_size
+11827f4c   _sha1_prefix_size
+11827f50   __PSCL_currVolt
+11827f54   __PSCL_initialized
+11827f58   _CLK_htimePerLtime
+11827f5c   __DEV_D_NUMINITFXNS
+11827f60   IDL_D_busyObj
+11827f64   _MEM
+11827f6c   _numEdma3Instances
+11827f74   __PMI_maxLockToBypassLatency
+11827f78   _PSCL_voltScalingSupported
+11827f84   ___end__
+11827f84   end
+11827ff8   CLK_A_TABBEG
+11827ff8   PRD_clock
+11827ff8   _PRD_clock
+11827ffc   CLK_null
+11828000   DVTEvent_Log$buf
+11830000   ___cinit__
+11830000   cinit
+11834160   echoTask$stack
+118360f8   echoTask$stkptr
+11836160   _PMI_writeI2C
+11836230   _PMI_waitT1
+11836264   _PMI_waitT2
+1183629c   _PMI_readI2C
+1183636c   _PMI_waitR1
+118363f4   _PMI_waitR2
+11836434   _PMI_initI2C
+118364e0   _PMI_waitCpuCycles
+118364f8   __PMI_doRelockPLL1
+11836800   _PMI_setVoltage
+11836904   _PMI_getVoltage
+118369a0   __PWRM_database
+11836b20   _PMI_goRelockPLL1
+11836b40   _PMI_tempStore
+11836c60   _PMI_bypassPLL
+11836d20   _PMI_enablePLL
+11836d80   _PMI_setModuleState
+11836dec   _PMI_getModuleState
+11836e40   __CIOBUF_
+11836f60   LOG_A_TABBEG
+11836f60   LOG_system
+11836f60   _LOG_A_TABBEG
+11836f60   _LOG_system
+11836f78   _trace
+11836f78   trace
+11836f90   DVTEvent_Log
+11836f90   _DVTEvent_Log
+11836fa8   KNL_swi$sts$stsobj
+11836fa8   LOG_A_TABEND
+11836fa8   STS_A_TABBEG
+11836fa8   _LOG_A_TABEND
+11836fa8   _STS_A_TABBEG
+11836fac   KNL_swi$sts
+11836fb8   TSK_idle$sts$stsobj
+11836fbc   TSK_idle$sts
+11836fc8   echoTask$sts$stsobj
+11836fcc   echoTask$sts
+11836fd8   IDL_busyObj$stsobj
+11836fdc   IDL_busyObj
+11836fdc   _IDL_busyObj
+11836fe8   RTA_fromHost$buf
+11836fe8   STS_A_TABEND
+11836fe8   _STS_A_TABEND
+11837000   LOG_system$buf
+11838000   trace$buf
+11839080   _RTDX_Buffer
+11839488   _RTDX_Buffer_Start
+1183948c   _RTDX_Buffer_End
+11839490   _rtdx_mon_state
+118394d4   _rtdx_buffer_state
+118394e0   _RTDX_writing
+118394f8   TSK_idle$stack
+11839890   TSK_idle$stkptr
+11839b20   _SYS_PUTCBEG
+11839d1f   _SYS_PUTCEND
+11839d20   RTA_toHost$buf
+11839e20   DIO_dioAudioOUT$obj
+11839e2c   DIO_dioAudioOUT$device
+11839e44   DIO_dioAudioIN$obj
+11839e50   DIO_dioAudioIN$device
+11839e68   UDEV_aic310$obj
+11839e74   UDEV_aic310$device
+11839e8c   UDEV_audio0$obj
+11839e98   UDEV_audio0$device
+11839eb0   UDEV_mcasp0$obj
+11839ebc   UDEV_mcasp0$device
+11839ed4   UDEV_i2c0$obj
+11839ee0   UDEV_i2c0$device
+11839ef8   PIP_A_TABBEG
+11839ef8   RTA_fromHost$pipe
+11839ef8   _PIP_A_TABBEG
+11839efc   RTA_fromHost$pipe$rd
+11839f28   RTA_fromHost$pipe$aaa
+11839f2c   RTA_fromHost$pipe$wr
+11839f58   RTA_fromHost$pipe$bbb
+11839f5c   RTA_toHost$pipe
+11839f60   RTA_toHost$pipe$rd
+11839f8c   RTA_toHost$pipe$aaa
+11839f90   RTA_toHost$pipe$wr
+11839fbc   RTA_toHost$pipe$bbb
+11839fc0   PIP_A_TABEND
+11839fc0   _PIP_A_TABEND
+11839fcc   TSK_idle
+11839fcc   _TSK_idle
+1183a02c   _echoTask
+1183a02c   echoTask
+1183a080   HST_A_TABBEG
+1183a080   _HST_A_TABBEG
+1183a084   RTA_fromHost
+1183a084   _RTA_fromHost
+1183a08c   RTA_fromHost$rtdx
+1183a0a0   RTA_toHost
+1183a0a0   _RTA_toHost
+1183a0a8   RTA_toHost$rtdx
+1183a0bc   HST_A_TABEND
+1183a0bc   KNL_swi
+1183a0bc   SWI_A_TABBEG
+1183a0bc   _HST_A_TABEND
+1183a0bc   _KNL_swi
+1183a0e8   IDL_A_TABBEG
+1183a0e8   IDL_cpuLoad
+1183a0e8   SWI_A_TABEND
+1183a0e8   _IDL_cpuLoad
+1183a0ec   LNK_dataPump
+1183a0ec   _LNK_dataPump
+1183a0f0   RTA_dispatcher
+1183a0f0   _RTA_dispatcher
+1183a0f4   IDL_END
+1183a0f8   IDL_A_CALBEG
+1183a0f8   IDL_cpuLoad$
+1183a0fc   LNK_dataPump$
+1183a100   RTA_dispatcher$
+1183a104   IDL_END$
+1183a108   SYS$config
+1183a118   ___pinit__
+1183a118   pinit
+1183a124   TRC_cinit
+1183a128   TRC_R_mask
+1183a128   _TRC_R_mask
+1183a12c   GBL_initdone
+28040d0c   HWI_INTRMUX3
+c0000000   DDR$B
+c0000000   _DDR_base
+c0030000   .text
+c0030000   ___text__
+c003042c   _lisrEdma3TC7ErrHandler0
+c003044c   _lisrEdma3TC6ErrHandler0
+c003046c   _lisrEdma3TC5ErrHandler0
+c003048c   _lisrEdma3TC4ErrHandler0
+c00304ac   _lisrEdma3TC3ErrHandler0
+c00304cc   _lisrEdma3TC2ErrHandler0
+c00304ec   _lisrEdma3TC1ErrHandler0
+c003050c   _lisrEdma3TC0ErrHandler0
+c0030780   _lisrEdma3ComplHandler0
+c0030dd4   _lisrEdma3CCErrHandler0
+c0030df0   _edma3MemSet
+c0030e08   _edma3MemCpy
+c0030e2c   _EDMA3_RM_waitAndClearTcc
+c0030f44   _EDMA3_RM_unregisterTccCb
+c00310a0   _EDMA3_RM_setPaRAM
+c0031224   _EDMA3_RM_setCCRegister
+c0031308   _EDMA3_RM_registerTccCb
+c0031620   _EDMA3_RM_open
+c0031c80   _EDMA3_RM_mapQdmaChannel
+c0031de4   _EDMA3_RM_mapEdmaChannel
+c0031f20   _EDMA3_RM_getPaRAMPhyAddr
+c0032080   _EDMA3_RM_getPaRAM
+c0032204   _EDMA3_RM_getInstanceInitCfg
+c0032328   _EDMA3_RM_getGblConfigParams
+c0032380   _EDMA3_RM_getCCRegister
+c0032400   _EDMA3_RM_getBaseAddress
+c00324a0   _EDMA3_RM_freeResource
+c00328cc   _EDMA3_RM_freeLogicalChannel
+c0032f0c   _EDMA3_RM_freeContiguousResource
+c00330c4   _EDMA3_RM_delete
+c0033328   _EDMA3_RM_create
+c0033600   _EDMA3_RM_close
+c00337d0   _EDMA3_RM_checkAndClearTcc
+c00338c8   _EDMA3_RM_allocResource
+c00343a0   _EDMA3_RM_allocLogicalChannel
+c0035984   _EDMA3_RM_allocContiguousResource
+c0036160   _EDMA3_RM_Ioctl
+c0036240   _EDMA3_DRV_setTransferParams
+c0036380   _EDMA3_DRV_setSrcParams
+c003654c   _EDMA3_DRV_setSrcIndex
+c0036660   _EDMA3_DRV_setOptField
+c00368cc   _EDMA3_DRV_setDestParams
+c0036aa0   _EDMA3_DRV_setDestIndex
+c0036ba8   _EDMA3_DRV_disableTransfer
+c0037030   _EDMA3_DRV_freeChannel
+c0037364   _EDMA3_DRV_requestChannel
+c0037f80   _EDMA3_DRV_getOptField
+c0038100   _EDMA3_DRV_enableTransfer
+c0038360   _EDMA3_DRV_disableLogicalChannel
+c0038480   _EDMA3_DRV_clearErrorBits
+c00385c0   _EDMA3_DRV_waitAndClearTcc
+c00386f4   _EDMA3_DRV_unlinkChannel
+c00387b0   _EDMA3_DRV_unchainChannel
+c003888c   _EDMA3_DRV_setQdmaTrigWord
+c0038940   _EDMA3_DRV_setPaRAMField
+c0038ba4   _EDMA3_DRV_setPaRAMEntry
+c0038c80   _EDMA3_DRV_setPaRAM
+c0038d88   _EDMA3_DRV_setEvtQPriority
+c0038f44   _EDMA3_DRV_setCCRegister
+c0039030   _EDMA3_DRV_mapChToEvtQ
+c0039230   _EDMA3_DRV_linkChannel
+c0039364   _EDMA3_DRV_getPaRAMPhyAddr
+c0039424   _EDMA3_DRV_getPaRAMField
+c0039640   _EDMA3_DRV_getPaRAMEntry
+c0039720   _EDMA3_DRV_getPaRAM
+c0039840   _EDMA3_DRV_getMapChToEvtQ
+c0039924   _EDMA3_DRV_getInstHandle
+c00399c0   _EDMA3_DRV_getCCRegister
+c0039a48   _EDMA3_DRV_checkAndClearTcc
+c0039b20   _EDMA3_DRV_chainChannel
+c0039cc0   _EDMA3_DRV_Ioctl
+c0039d80   _Mcasp_localSubmitIoctl
+c003aea0   _aes_set_encrypt_key
+c003b38c   _aes_set_decrypt_key
+c003b630   _aes_encrypt
+c003bacc   _aes_decrypt
+c003bf80   __PSCL_scaleFreqVoltage
+c003c1a0   __PSCL_checkInitParams
+c003c230   _PSCL_queryWillChangeVoltage
+c003c2c0   _PSCL_querySetpointVoltage
+c003c360   _PSCL_querySetpointTransition
+c003c4a0   _PSCL_querySetpointMode
+c003c540   _PSCL_querySetpointFrequency
+c003c5d4   _PSCL_querySetpoint
+c003c6a0   _PSCL_changeSetpoint
+c003c804   _PSCL_initialize
+c003ca8c   _PSCL_getVoltage
+c003caa8   _PSCL_getSetpoint
+c003cacc   _PSCL_getNumSetpoints
+c003caf0   _PSCL_getMode
+c003cb10   _PSCL_getFrequency
+c003d600   _DSP_BitPacker_process
+c003da48   _DSP_BitPacker_init
+c003dbc8   _DSP_BitDepacker_process
+c003df24   _DSP_BitDepacker_init
+c003e20c   _EDMA3_DRV_open
+c003e4a0   _EDMA3_DRV_delete
+c003e584   _EDMA3_DRV_create
+c003e7f0   _EDMA3_DRV_close
+c003e960   _SHA256_Transform
+c003ec2c   _SHA256_Update
+c003ee64   _SHA256_Init
+c003eed0   _SHA256_Final
+c003f170   _SHA256_End
+c003f284   _SHA256_Data
+c003f2e0   _DSP_QMFS_process
+c003f544   _DSP_QMFS_bank_init
+c003f718   _DSP_QMFA_process
+c003f9c0   _DSP_QMFA_bank_init
+c003fba0   _PMI_setDividersPLL
+c003fc50   PMI_goDiv
+c003fc8c   _PMI_powerUpPLL
+c003fd40   _PMI_configureSources
+c003fe7c   _PMI_powerDownPLL
+c003fea4   _PMI_configurePLL
+c003feec   _PMI_lockPLL
+c003ff28   _PMI_scaleFrequency
+c0040148   _PMI_initPLL
+c0040194   _PMI_getStatePLL
+c0040210   _PMI_getFrequencyLatency
+c004028c   _PMI_calcWaitBypass
+c0040320   _DSP_ADPCM_enc_process
+c0040600   _DSP_ADPCM_enc_init
+c00406d4   _DSP_ADPCM_dec_process
+c0040960   _DSP_ADPCM_dec_init
+c0040a20   _print64
+c0040a74   _print32
+c0040ac4   _mp_print
+c0040b54   _mont
+c0040f4c   _mont_exp
+c00417c0   _Mcasp_localEdmaCallback
+c0041e20   __divd
+c0042960   _AES128_Encrypt2048
+c0042bf0   _AES128_Decrypt2048
+c0042eac   _AES128_Check2048
+c0043480   _Mcasp_localEdmaChanPaRAMsetup
+c0043f00   _unregisterEdma3Interrupts
+c0043fa8   _registerEdma3Interrupts
+c0044160   _edma3init
+c0044300   _edma3deinit
+c00443e0   _Mcasp_localAbortReset
+c0044fd0   _Audio_echo_Task
+c0045180   _KDF
+c0045250   _DH_Process
+c0045384   _DigitalSign_Create
+c00453f0   _Initialize
+c00455c0   _AES128_Encrypt
+c00455c8   _AES128_Decrypt
+c00455d0   _AES128_Check
+c00455e0   _I2c_completeIOedmaCallback
+c0045a20   __printfi
+c0047300   _DSP_ADPCM_SBDecoder_process
+c0047374   _DSP_ADPCM_SBDecoder_init
+c00474e0   _DSP_ADPCM_SBCoder_process
+c0047554   _DSP_ADPCM_SBCoder_init
+c00481a0   _edma3OsSemTake
+c0048208   _edma3OsSemGive
+c0048258   _edma3OsSemDelete
+c0048290   _edma3OsSemCreate
+c00482e8   _edma3OsProtectExit
+c004838c   _edma3OsProtectEntry
+c00484a4   _Edma3_CacheInvalidate
+c00484e0   _Edma3_CacheFlush
+c0048520   _Mcasp_localUpdtDtPktToLnkPrms
+c0048ee0   _Mcasp_localGetIndicesSyncType
+c0049200   _fputs
+c0049ac0   _Mcasp_localConfigXmtSection
+c004a300   _mcaspIsrInput
+c004a5c0   _mcaspIsrOutput
+c004a880   _I2c_localEnsureIsReadyforNext
+c004b300   _encode
+c004b5a0   _DSP_SBC_SFB_process
+c004b5ec   _DSP_SBC_SFB_init
+c004b6f0   _DSP_SBC_AFB_process
+c004b738   _DSP_SBC_AFB_init
+c004b820   _Mcasp_localConfigRcvSection
+c004baa0   _DIO_tskReclaim
+c004bac8   _DIO_tskReady
+c004bae4   _DIO_tskIssue
+c004bb8c   _DIO_tskIdle
+c004bc80   _DIO_tskCallback
+c004bd20   _I2c_localEdmaTransfer
+c004bf80   _Mcasp_localSetupHwInfo
+c004c1e0   __divull
+c004d480   _process_audio
+c004d604   _init_audio
+c004e700   _Mcasp_localSetupEdmaDuringOpen
+c004f180   _I2c_loadPendedIops
+c004f320   __divul
+c004f800   _PWRM_releaseDependency
+c004f9a0   _PWRM_setDependency
+c004fb40   _HOSTrename
+c004fcc0   _Mcasp_localLoadPktToEdma
+c00502c0   _setvbuf
+c0050440   _I2c_localPrepareForTransfer
+c0050860   _main
+c00508a8   _audioUserMcaspInit
+c00508f0   _audioUserAudioInit
+c0050960   _audioUserAic31Init
+c00509c0   __PWRM_updateConstraints
+c0050a2c   __PWRM_rebuildConstraint
+c0050b20   _OS2IP
+c0050c18   _sha256
+c0050dc0   _Mcasp_localSmReset
+c0051180   _fputc
+c0051180   _putc
+c0051680   _PWRM_registerNotify
+c00518e0   _I2c_localEdmaChanRequest
+c0051a00   _Mcasp_init
+c0051c40   _fclose
+c00521e0   _HOSTlseek
+c00522e0   _I2c_localLpscOff
+c00525e0   _Mcasp_localSmSet
+c00527e0   __wrt_ok
+c0052ae0   _call_dtors
+c0052be0   _fflush
+c0052de0   _PMI_initVoltageControl
+c0052eb0   _PMI_getVoltageLatency
+c0052ee0   _PWRM_registerConstraint
+c0052fe0   _HOSTopen
+c00531a0   _Mcasp_localCancelAndAbortAllIo
+c0053280   __c6xabi_strasgi
+c0053280   __strasgi
+c0053440   _atoi
+c00536e0   _close
+c0053d00   _memset
+c0053de0   __PWRM_initRefCounts
+c0053ec0   _HOSTread
+c0053f80   _HOSTunlink
+c0054040   _HOSTwrite
+c00541c0   _I2c_localGetNextChannel
+c0054340   _Mcasp_localCompleteCurrentIo
+c0054400   _Mcasp_localEdmaProcessPkt
+c00544c0   __cleanup
+c0054640   __c6xabi_divu
+c0054640   __divu
+c0054700   __doflush
+c00547c0   _atexit
+c0054880   _fseek
+c0054940   _lseek
+c0054a00   _ltoa
+c0054c40   _write
+c0054dc0   _PWRM_getSetpointInfo
+c0054e80   _Audio_init
+c0054f20   _HOSTclose
+c00551a0   _I2c_init
+c0055240   _Mcasp_localResetXmt
+c00552e0   __divli
+c00554c0   __fixdli
+c0055600   __c6xabi_remu
+c0055600   __remu
+c00559c0   _memcpy
+c0055a60   _PWRM_getDependencyCount
+c0055b00   __PWRM_delayCompletion9
+c0055b10   __PWRM_delayCompletion8
+c0055b20   __PWRM_delayCompletion7
+c0055b30   __PWRM_delayCompletion6
+c0055b40   __PWRM_delayCompletion5
+c0055b50   __PWRM_delayCompletion4
+c0055b60   __PWRM_delayCompletion3
+c0055b70   __PWRM_delayCompletion2
+c0055b80   __PWRM_delayCompletion1
+c0055b90   __PWRM_delayCompletion0
+c0055ba0   _PWRM_unregisterConstraint
+c0055c40   _Mcasp_localActivateSmFsForBoth
+c0055cc0   __fixdu
+c0055d40   __fltlid
+c0055dc0   __llshl
+c0055e40   _configureAudio
+c0055ec0   _fprintf
+c00561c0   _printf
+c0056240   _readmsg
+c00562c0   _unlink
+c0056340   _PWRM_getCurrentSetpoint
+c00563c0   _PWRM_getNumSetpoints
+c0056440   _Aic31_init
+c00564a0   _Mcasp_localAbortRequests
+c0056500   _Mcasp_localActivateSmFsForRcv
+c0056560   _Mcasp_localActivateSmFsForXmt
+c00565c0   _Mcasp_localResetRcv
+c0056620   __abort_msg
+c0056680   __subcull
+c0056860   _audioUserI2cInit
+c0056b00   _memccpy
+c0056b60   _writemsg
+c0056bb8   C$$IO$$
+c0056bc0   _PMI_init
+c0056c20   _PWRM_unregisterNotify
+c0056cc0   ___add_dtor
+c0056d00   ___isinf
+c0056d80   __frcmpyd_div
+c0056dc0   __llshru
+c0056e00   __remli
+c0056e40   __c6xabi_strasgi_64plus
+c0056e40   __strasgi_64plus
+c0057080   _DIO_ctrl
+c00570c0   _Mcasp_localGetNextIndex
+c00570e0   __negll
+c0057100   __nop
+c00571a0   __register_lock
+c00571c0   __register_unlock
+c00571e0   C$$EXIT
+c00571e0   _abort
+c0057240   _mcaspIsr
+c0057260   _remove
+c0057800   ___etext__
+c0057800   etext
+c00578e0   _SYS_vsprintf
+c0057f00   _SYS_vprintf
+c0057f0c   _SYS_sprintf
+c0057f40   _SYS_printf
+c0057f80   LNK_F_checkBufferCall
+c0057fa0   LNK_F_getChanPtr
+c0057ff8   LNK_F_init
+c0058000   LNK_F_dataPump
+c0058010   LNK_rcloop
+c00580d4   LNK_rdrtry
+c00580e4   LNK_rrloop
+c00581a4   LNK_wrrtry
+c00581b0   LNK_wrloop
+c0058280   LNK_newin
+c00583b4   LNK_newout
+c0058508   LNK_F_readCallBack
+c0058540   _EXC_nmi
+c0058574   _EXC_internal
+c0058820   _EXC_init
+c0058860   _EXC_getLastStatus
+c0058880   _EXC_external
+c00588b4   _EXC_exceptionHandler
+c0058a90   _EXC_clearLastStatus
+c0058ac0   CLK_HOOKFXN
+c0058ac0   HWI_F_dispatch
+c0058ac0   _HWI_F_dispatch
+c0058ac0   __HWI_lat1beg
+c0058c48   __HWI_lat1end
+c0058c48   __HWI_lat2beg
+c0058db0   __HWI_lat2end2
+c0058de0   __HWI_lat3end2
+c0058e24   __HWI_lat2end1
+c0058e40   __HWI_lat3beg
+c0058fa0   SWI_F_enable
+c0058fa0   __SWI_lat3beg
+c005900c   __SWI_lat3end
+c0059010   SWI_F_post
+c0059010   _SWI_post
+c0059118   __SWI_lat1beg
+c0059184   SWI_EXECFXN
+c0059184   SWI_F_exec
+c00591ac   SWI_F_iexec
+c00591c4   __SWI_lat1end
+c00591c8   __SWI_lat2beg
+c0059228   __SWI_lat2end
+c005922c   SWI_F_run
+c005922c   SWI_RUNFXN
+c0059460   PRD_F_swi
+c00596e4   PRD_F_tick
+c00597e0   _SIO_create
+c0059b00   _free
+c0059b24   _malloc
+c0059b84   _realloc
+c0059c68   _memalign
+c0059d2c   _calloc
+c0059d80   RTA_F_getlog
+c0059db8   RTA_F_getsts
+c0059df8   RTA_F_readblk
+c0059e14   RTA_F_writeword
+c0059e20   RTA_F_resetmem
+c0059e20   __RTA_lat1beg
+c0059e54   __RTA_lat1end
+c0059e60   RTA_F_dispatch
+c0059eac   RTA_execute
+c005a000   _KNL_run
+c005a240   _MEM_alloc
+c005a614   PRD_THOOKFXN
+c005a614   _KNL_tick
+c005a640   _MEM_free
+c005a820   _EXC_dispatch
+c005a9e4   _EXC_setReturnPtr
+c005aa00   PIP_F_take
+c005aa78   PIP_F_give
+c005aa78   PIP_F_probe
+c005ab48   PIP_F_start
+c005abe0   _SEM_pendEnterKnl
+c005adc0   _SIO_delete
+c005afa0   __SEM_dopost
+c005b140   _TSK_setup
+c005b2e0   CLK_F_getltime
+c005b2f0   CLK_F_isr
+c005b430   CLK_F_itime
+c005b430   _CLK_F_itime
+c005b430   _CLK_itime
+c005b450   __CLK_lat1beg
+c005b470   __CLK_lat1end
+c005b480   _KNL_saveIsrFrame
+c005b52c   _KNL_switch
+c005b5d8   KNL_glue
+c005b730   _BCACHE_wbInv
+c005b744   _BCACHE_wb
+c005b754   _BCACHE_inv
+c005b780   __auto_init
+c005b8c0   _TSK_exit
+c005ba00   _BCACHE_setSize
+c005ba44   _BCACHE_setMar
+c005ba94   _BCACHE_setCacheToSram
+c005bac4   _BCACHE_getSize
+c005bb14   _BCACHE_getMar
+c005bba8   _GBL_cacheInit64P
+c005bc60   _KNL_check
+c005bcac   __KNL_lat1beg
+c005bd28   _KNL_idle
+c005bd28   __KNL_lat1end
+c005bd50   _KNL_max
+c005be24   _TSK_startup
+c005bea0   _ECM_dispatch
+c005bfa0   _SEM_post
+c005bfa0   _SEM_postBinary
+c005c080   _DEV_match
+c005c140   _KNL_exit
+c005c180   _KNL_enter
+c005c200   _SIO_reclaim
+c005c2c0   _DEV_mkframe
+c005c360   _OBJ_create
+c005c400   _SEM_postEnterKnl
+c005c4a0   _SWI_setattrs
+c005c540   _SYS_exit
+c005c5e0   LOG_F_event
+c005c5e0   _LOG_event
+c005c5e0   __LOG_lat1beg
+c005c680   _ATM_andi
+c005c680   _ATM_andu
+c005c690   _ATM_cleari
+c005c690   _ATM_clearu
+c005c6a0   _ATM_deci
+c005c6a0   _ATM_decu
+c005c6b0   _ATM_inci
+c005c6b0   _ATM_incu
+c005c6c4   _ATM_ori
+c005c6c4   _ATM_oru
+c005c6d4   _ATM_seti
+c005c6d4   _ATM_setu
+c005c700   _KNL_ipost
+c005c780   _KNL_post
+c005c800   _LCK_post
+c005c820   _LCK_pend
+c005c880   _SEM_create
+c005c900   _SWI_create
+c005c980   _TSK_enable
+c005c9a4   _TSK_disable
+c005ca00   _BCACHE_wait
+c005ca80   IDL_F_calibrate
+c005cb00   _SIO_issue
+c005cb80   _MEM_valloc
+c005cbe0   _SYS_error
+c005cc40   _DEV_rmframe
+c005cca0   FXN_F_nop
+c005cca4   FXN_F_run
+c005cca4   _FXN_F_run
+c005cce0   FXN_F_zero
+c005cce0   _FXN_F_zero
+c005cd00   _HWI_disable
+c005cd18   _HWI_enable
+c005cd2c   _HWI_restore
+c005cd60   IDL_F_busy
+c005cd60   __IDL_lat1beg
+c005cda0   __IDL_lat1end
+c005cdc0   _OBJ_delete
+c005ce20   _SEM_pend
+c005ce80   STS_F_delta
+c005ce80   _STS_delta
+c005ceac   STS_F_add
+c005ceac   _STS_add
+c005cec8   STS_F_reset
+c005cec8   _STS_reset
+c005cee0   _SWI_disable
+c005cf04   _SWI_enable
+c005cf40   _SYS_abort
+c005cfa0   _CLK_measure
+c005d000   _C62_disableIER
+c005d000   _C64_disableIER
+c005d018   _C62_enableIER
+c005d018   _C64_enableIER
+c005d02c   _C62_clearIFR
+c005d02c   _C64_clearIFR
+c005d040   _ECM_disableEvent
+c005d080   _ECM_dispatchPlug
+c005d0c0   _ECM_enableEvent
+c005d100   IDL_CALIBRFXN
+c005d100   IDL_F_stub
+c005d140   _QUE_create
+c005d180   _QUE_get
+c005d180   __QUE_lat1beg
+c005d1a0   __QUE_lat1end
+c005d1a8   _QUE_put
+c005d1a8   __QUE_lat2beg
+c005d1b4   __QUE_lat2end
+c005d1c0   RTA_F_andn
+c005d1d8   RTA_F_or
+c005d200   SYS_ABORTFXN
+c005d200   _UTL_doAbort
+c005d240   SYS_PUTCFXN
+c005d240   _UTL_doPutc
+c005d280   GBL_USERINITFXN
+c005d280   GIO_CREATEFXN
+c005d280   GIO_DELETEFXN
+c005d280   GIO_PENDFXN
+c005d280   GIO_POSTFXN
+c005d280   PWRM_PWRM_SHAREDRESOURCEFXN
+c005d280   PWRM_PWRM_SLOTHOOKFXN
+c005d280   TSK_VCREATEFXN
+c005d280   TSK_VDELETEFXN
+c005d280   TSK_VEXITFXN
+c005d280   _BCACHE_bootInit
+c005d280   _FXN_F_nop
+c005d2a0   _GBL_getVersion
+c005d2c0   IDL_F_loop
+c005d2c0   _IDL_loop
+c005d2e0   _LOG_printf
+c005d300   _SEM_delete
+c005d320   _STS_set
+c005d340   _SYS_zero
+c005d348   _SYS_one
+c005d360   SYS_ERRORFXN
+c005d360   _UTL_doError
+c005d380   SYS_EXITFXN
+c005d380   _UTL_halt
+c005d3a0   CLK_F_gethtime
+c005d3a0   CLK_TIMEFXN
+c005d3a0   _CLK_gethtime
+c005d3c0   _HSRTDX_rec
+c005d660   _RTDX_Buffer_WriteCB
+c005db20   _HSRTDX_xmt
+c005de20   _RTDX_Mon_Queue
+c005e080   _RTDX_Poll
+c005e120   _RTDX_Final_RT_Monitor
+c005e1a0   _RTDX_Buffer_Initialize
+c005e200   _RTDX_Init_RT_Monitor
+c005e260   _RTDX_Buffer_ReadCB
+c005e2a0   _RTDX_Buffer_Size
+c005e2e0   _RTDX_memfill
+c005e320   _RTDX_Buffer_Read
+c005e340   _RTDX_Buffer_Write
+c005e360   _RTDX_Mask_IER
+c005e380   BIOS_init
+c005e380   _BIOS_init
+c005e504   BIOS$$CLKON
+c005e544   BIOS$$CLKOFF
+c005e630   BIOS_start
+c005e630   _BIOS_start
+c005e780   _DEV_init
+c005e880   __PWRM_initialize
+c005e980   _c_int00
+c005ea40   _MEM_init
+c005eb00   _TSK_init
+c005eb60   _DIO_init
+c005ec00   HWI_A_VECS
+c005ec00   hwi0
+c005ec20   hwi1
+c005ec40   hwi2
+c005ec60   hwi3
+c005ec80   hwi4
+c005eca0   hwi5
+c005ecc0   hwi6
+c005ece0   hwi7
+c005ed00   hwi8
+c005ed20   hwi9
+c005ed40   hwi10
+c005ed60   hwi11
+c005ed80   hwi12
+c005eda0   hwi13
+c005edc0   hwi14
+c005ede0   hwi15
+ffffffff   CACHE_L1D
+ffffffff   CACHE_L1P
+ffffffff   ECM_EVTMASK0
+ffffffff   ECM_EVTMASK1
+ffffffff   ECM_EVTMASK2
+ffffffff   ECM_EVTMASK3
+ffffffff   GBL_L2MAR192_223
+ffffffff   HST_DSMBUFSEG
+ffffffff   IRAM
+ffffffff   L3_CBA_RAM
+ffffffff   RTDX_DATAMEMSEG
+ffffffff   _CACHE_L1D
+ffffffff   _CACHE_L1P
+ffffffff   _IRAM
+ffffffff   _L3_CBA_RAM
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   binit
+
+[1555 symbols]

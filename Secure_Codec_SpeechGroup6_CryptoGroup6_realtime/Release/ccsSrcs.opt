@@ -1,0 +1,1 @@
+"../DSP_ADPCM.c" "../DSP_ADPCM_SBC.c" "../DSP_BitPacker.c" "../DSP_QMF.c" "../DSP_SBC.c" "../Encrypt.c" "../aes.c" "../audioSample.tcf" "./audioSamplecfg.s??" "./audioSamplecfg_c.c" "../digest-info.c" "../encode.c" "../mont.c" "../sha2.c" "../sha_convert.c" "../sym.c" "../transmit.c" 
