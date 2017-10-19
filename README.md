@@ -1,5 +1,5 @@
 
-The Crypto6_C_code dir is a c version of Encryption 
+The Crypto6_C_code dir is a C version of Encryption (RSA + AES)
 It "only" consists of the Encryption part, and leave funtions for futher integration with the transmission group
 
 To run the code:
